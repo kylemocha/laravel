@@ -184,7 +184,7 @@ div.desc {
           <h3 class="h3-responsive" style="color: #006a89; text-shadow: 2px 2px 2px #ABCDEF; font-weight: bold;">Schedule an appointment</h3>
           <p style="color: #006a89;">Providing mental health services at any moment</p>
           <li class="list-inline-item">
-            <a href="login.html" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Sign In</a>
+            <a href="login" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Sign In</a>
           </li>
         </div>
       </div>
