@@ -125,7 +125,7 @@ div.desc {
     <div class="m-4">
         <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
             <div class="container-fluid">
-                <a href="main_home.html" class="navbar-brand">
+                <a href="main_home" class="navbar-brand">
                     <img src="https://i.ibb.co/MVz8Mnw/MENTAL-HELPLINE-LOGO.png" alt="MENTAL-HELPLINE-LOGO" border="0" width="50">
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -133,7 +133,7 @@ div.desc {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="main_home.html" class="nav-item nav-link active" style=" color: black;">Home</a>
+                        <a href="main_home" class="nav-item nav-link active" style=" color: black;">Home</a>
                         <a href="#" class="nav-item nav-link" style=" color: black;" >Take Test</a>
                         <a href="#" class="nav-item nav-link" style="color: black;">Our Center</a>
                         <a href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm" class="nav-item nav-link"style=" color: black;">Contact Us</a>
