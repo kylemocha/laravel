@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,700");
+*{  
+    font-family: Assistant, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/*navbar*/
+.navbar{
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+.navbar-nav a{
+      font-size: 17px;
+}
+.navbar-nav a:hover{
+    color: darkgray !important;
+}
+/*carousel responsive*/
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+/*dropdown menu*/
+.dropdown-menu{
+    position: absolute;
+    top: 90%; 
+    right: 0;
+    margin-left: -100px; 
+}
+.btn:hover{
+    background-color: #006a89 !important;
+}
+@media (max-width: 768px) {
+    .dropdown-menu{
+        position: relative;
+        margin-left: 2px; 
+        top: 100%; 
+    }
+}
+@media (max-width: 800px) {
+    .dropdown-menu{
+        position: relative;
+        margin-left: 2px; 
+        top: 100%; 
+    }
+}
+@media (max-width: 985px) {
+    .dropdown-menu{
+        position: relative;
+        margin-left: 5px; 
+        top: 100%; 
+    }
+}
+/*image gallery */
+.img-gal{
+    box-sizing: border-box; 
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+div.gallery{
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}  
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*back to top btn*/
+#btn-back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+/*about section
+.about-section {
+    background-color: #cbe1ef;
+    padding: 50px;
+    text-align: center;
+    color: #006a89;
+  }*/
+
+  
+
+
