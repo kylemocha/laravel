@@ -30,7 +30,6 @@
 
 <html>
 <body>
-  @extends('main_home')
   @section('content')
 <!--home page for the users-->
   <div class="m-4">
