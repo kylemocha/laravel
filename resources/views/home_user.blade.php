@@ -30,6 +30,8 @@
 
 <html>
 <body>
+  @extends('main_home')
+  @section('content')
 <!--home page for the users-->
   <div class="m-4">
     <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">

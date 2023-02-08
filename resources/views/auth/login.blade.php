@@ -10,9 +10,8 @@
     <title>Login Page</title>
 </head>
 <body>
-  @extends('auth.login')
+  @extends('main_home')
   @section('content')
-
   <div class="container">
     <div class="wrapper">
       <div class="exit">
@@ -20,31 +19,29 @@
       <div class="title"><span>Login</span> 
       </div>
     </div>
-      <form method="POST" action="{{ route('login.custom') }}">
-        @csrf
+      <form action="{{ route('login.post') }}" method="POST">
         <div class="row">
           <i class="fas fa-user"></i>
           <input type="text" placeholder="Email" id="email" autofocus required>
           @if ($errors->has('email'))
-           <span class="text-danger">{{ $errors->first('email') }}</span>
+          <span class="text-danger">{{ $errors->first('email') }}</span>
           @endif
         </div>
         <div class="row">
           <i class="fas fa-lock"></i>
           <input type="password" placeholder="Password" id="password" required>
           @if ($errors->has('password'))
-            <span class="text-danger">{{ $errors->first('password') }}</span>
+          <span class="text-danger">{{ $errors->first('password') }}</span>
           @endif
         </div>
         <div class="pass"><a href="#">Forgot password?</a></div>
         <div class="row button">
           <input type="submit" value="Login">
         </div>
-        <div class="signup-link">Not yet registered?<a href="/register">Sign In</a></div>
+        <div class="signup-link">Not yet registered?<a href="{{ route('register') }}">Sign In</a></div>
       </form>
     </div>
   </div>
-  @endsection
-  
+  @endsection  
 </body>
 </html>

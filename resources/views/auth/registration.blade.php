@@ -20,18 +20,17 @@
       <a href="login" class="btn btn-info" role="button" style="color: white; cursor: pointer;"><i class="fas fa-times"></i></a> 
       <div class="title"><span>Register</span></div>
       </div>
-       <form class ="form" action="{{ route('register.custom') }}" method="POST">
-        @csrf
+       <form class ="form">
         <div class="row">
           <i class="fas fa-user-circle"></i>
           <input type="text" placeholder="Name" id="name" required>
           @if ($errors->has('name'))
           <span class="text-danger">{{ $errors->first('name') }}</span>
-          @endif
+           @endif
         </div>
         <div class="row">
           <i class="fas fa-user"></i>
-          <input type="text" placeholder="Email" id="email_address"  name="email" required>
+          <input type="text" id="email_address" class="form-control" name="email" required autofocus>
           @if ($errors->has('email'))
           <span class="text-danger">{{ $errors->first('email') }}</span>
           @endif
@@ -41,7 +40,7 @@
           <input type="password" placeholder="Password" id="password" name="password" required>
           @if ($errors->has('password'))
           <span class="text-danger">{{ $errors->first('password') }}</span>
-          @endif
+          @endif 
         </div>
         <div class="row button">
           <input type="submit" value="Create Account">
@@ -51,9 +50,6 @@
       </div>
     </div>
     @endsection
-    
-      
-
-    
+       
 </body>
 </html>
