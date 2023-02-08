@@ -12,12 +12,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Main Home</title>
-
-    <!--<link href="resources/css/main.css" rel="stylesheet" type="text/css">-->
 </head>
 <body>
-    <!--navbar-->
-    
+
+    <!--navbar-->  
     <div class="m-4">
         <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
             <div class="container-fluid">
@@ -339,7 +337,7 @@
     </div>
   </div>
 </div>
-@yield('content')
+
 
 
    <script  src="main.js"></script>
