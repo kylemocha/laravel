@@ -23,12 +23,12 @@ Route::get('home_user', function () {
     return view('home_user');
 });
 
-
-//Route::get('main_home', [CustomAuthController::class, 'main_home']); 
+Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
 Route::get('login', [CustomAuthController::class, 'index'])->name('login');
 Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
-Route::get('register', [CustomAuthController::class, 'register'])->name('register-user');
+Route::get('registration', [CustomAuthController::class, 'registration'])->name('register-user');
 Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom'); 
 Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
+
 
 

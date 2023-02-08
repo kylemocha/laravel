@@ -35,10 +35,7 @@
                     <button type="button" class="btn btn-danger dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false" style="font-size:20px; border: none; color: black; background-color: aqua;"><i class="far fa-user"></i></button>
                     <div class="dropdown-menu">
-                      @guest
-                        <li><a class="dropdown-item" href="{{ route('login') }}">Login</a></li>
-                      @endguest
-                      @yield('content')
+                        <li><a class="dropdown-item" href="/login">Login</a></li>
                     </div>                     
                 </div>
             </div>

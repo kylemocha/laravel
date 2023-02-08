@@ -1,20 +1,17 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use Hash;
 use Session;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
-
 class CustomAuthController extends Controller
 {
-    //
     public function index()
     {
         return view('auth.login');
-    }
+    }  
+      
     public function customLogin(Request $request)
     {
         $request->validate([
@@ -24,16 +21,16 @@ class CustomAuthController extends Controller
    
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('main_home')
+            return redirect()->intended('dashboard')
                         ->withSuccess('Signed in');
         }
   
         return redirect("login")->withSuccess('Login details are not valid');
     }
 
-    public function register()
+    public function registration()
     {
-        return view('auth.register');
+        return view('auth.registration');
     }
       
     public function customRegistration(Request $request)
@@ -75,4 +72,3 @@ class CustomAuthController extends Controller
         return Redirect('login');
     }
 }
-

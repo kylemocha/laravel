@@ -21,6 +21,7 @@
       <div class="title"><span>Register</span></div>
       </div>
        <form class ="form" action="{{ route('register.custom') }}" method="POST">
+        @csrf
         <div class="row">
           <i class="fas fa-user-circle"></i>
           <input type="text" placeholder="Name" id="name" required>

@@ -21,6 +21,7 @@
       </div>
     </div>
       <form method="POST" action="{{ route('login.custom') }}">
+        @csrf
         <div class="row">
           <i class="fas fa-user"></i>
           <input type="text" placeholder="Email" id="email" autofocus required>
