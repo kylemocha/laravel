@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +7,10 @@
     <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
     <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
     <link href="css/log.css" rel="stylesheet" type="text/css">
-<style>
-
-</style>
     <title>Login Page</title>
 </head>
 <body>
+
 @extends('login')
 @section('content')
   <div class="container">
