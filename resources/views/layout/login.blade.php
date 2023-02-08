@@ -11,8 +11,6 @@
 </head>
 <body>
 
-@extends('layout.login')
-@section('content')
   <div class="container">
     <div class="wrapper">
       <div class="exit">
@@ -20,31 +18,23 @@
       <div class="title"><span>Login</span> 
       </div>
     </div>
-      <form action=form method="POST" action="{{ route('login.custom') }}">
-      @csrf
+      <form>
         <div class="row">
           <i class="fas fa-user"></i>
           <input type="text" placeholder="Email or Phone" id="email" autofocus required>
-          @if ($errors->has('email'))
-           <span class="text-danger">{{ $errors->first('email') }}</span>
-          @endif
         </div>
         <div class="row">
           <i class="fas fa-lock"></i>
           <input type="password" placeholder="Password" id="password" required>
-          @if ($errors->has('password'))
-              <span class="text-danger">{{ $errors->first('password') }}</span>
-          @endif
         </div>
         <div class="pass"><a href="#">Forgot password?</a></div>
         <div class="row button">
           <input type="submit" value="Login">
         </div>
-        <div class="signup-link">Not yet registered?<a href="register">Sign In</a></div>
+        <div class="signup-link">Not yet registered?<a href="/register">Sign In</a></div>
       </form>
     </div>
   </div>
-@endsection
   
 </body>
 </html>
