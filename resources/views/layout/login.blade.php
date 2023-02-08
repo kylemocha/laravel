@@ -11,7 +11,7 @@
 </head>
 <body>
 
-@extends('login')
+@extends('layout.login')
 @section('content')
   <div class="container">
     <div class="wrapper">
