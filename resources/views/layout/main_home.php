@@ -10,117 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link href="{{ asset('main.css') }}" rel="stylesheet" type="text/css" rel="stylesheet">
     <title>Main Home</title>
-<style>
-      @import url("https://fonts.googleapis.com/css?family=Assistant:400,700");
-*{  
-    font-family: Assistant, sans-serif;
-}
-body{
-    margin: 0;
-    padding: 0;
-}
-/*navbar*/
-.navbar{
-    -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -6px #999;
-}
-.navbar-nav a{
-      font-size: 17px;
-}
-.navbar-nav a:hover{
-    color: darkgray !important;
-}
-/*carousel responsive*/
-.carousel-item.active,
-.carousel-item-next,
-.carousel-item-prev {
-  display: block;
-}
-/*dropdown menu*/
-.dropdown-menu{
-    position: absolute;
-    top: 90%; 
-    right: 0;
-    margin-left: -100px; 
-}
-.btn:hover{
-    background-color: #006a89 !important;
-}
-@media (max-width: 768px) {
-    .dropdown-menu{
-        position: relative;
-        margin-left: 2px; 
-        top: 100%; 
-    }
-}
-@media (max-width: 800px) {
-    .dropdown-menu{
-        position: relative;
-        margin-left: 2px; 
-        top: 100%; 
-    }
-}
-@media (max-width: 985px) {
-    .dropdown-menu{
-        position: relative;
-        margin-left: 5px; 
-        top: 100%; 
-    }
-}
-/*image gallery */
-.img-gal{
-    box-sizing: border-box; 
-}
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-}
-div.gallery{
-    margin: 10px;
-    border: 1px solid #ccc;
-}
-div.gallery:hover {
-    border: 1px solid #777;
-}
-div.gallery img {
-    width: 100%;
-    height: auto;
-}  
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-@media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-}
-@media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-}
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-/*back to top btn*/
-#btn-back-to-top{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-}
-</style>
 
     <!--<link href="resources/css/main.css" rel="stylesheet" type="text/css">-->
 </head>
 <body>
+
     <!--navbar-->
     <div class="m-4">
         <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
@@ -443,6 +339,7 @@ div.desc {
     </div>
   </div>
 </div>
+
 
    <script  src="main.js"></script>
    <script src="https://code.jquery.com/jquery.js"></script>
