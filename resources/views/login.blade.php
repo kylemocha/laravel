@@ -14,8 +14,8 @@
     <title>Login Page</title>
 </head>
 <body>
-<!--@extends
-@section('content')-->
+@extends('login')
+@section('content')
   <div class="container">
     <div class="wrapper">
       <div class="exit">
@@ -24,20 +24,20 @@
       </div>
     </div>
       <form action=form method="POST" action="{{ route('login.custom') }}">
-      <!--@csrf-->
+      @csrf
         <div class="row">
           <i class="fas fa-user"></i>
           <input type="text" placeholder="Email or Phone" id="email" autofocus required>
-          <!--@if ($errors->has('email'))
+          @if ($errors->has('email'))
            <span class="text-danger">{{ $errors->first('email') }}</span>
-          @endif-->
+          @endif
         </div>
         <div class="row">
           <i class="fas fa-lock"></i>
           <input type="password" placeholder="Password" id="password" required>
-          <!--@if ($errors->has('password'))
+          @if ($errors->has('password'))
               <span class="text-danger">{{ $errors->first('password') }}</span>
-          @endif-->
+          @endif
         </div>
         <div class="pass"><a href="#">Forgot password?</a></div>
         <div class="row button">
@@ -47,6 +47,7 @@
       </form>
     </div>
   </div>
+@endsection
   
 </body>
 </html>
