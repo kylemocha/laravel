@@ -10,13 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    <link href="{{ asset('main.css') }}" rel="stylesheet" type="text/css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Main Home</title>
 
     <!--<link href="resources/css/main.css" rel="stylesheet" type="text/css">-->
 </head>
 <body>
-
     <!--navbar-->
     <div class="m-4">
         <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">

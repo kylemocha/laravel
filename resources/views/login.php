@@ -136,7 +136,7 @@ form .signup-link a:hover{
     <title>Login Page</title>
 </head>
 <body>
-@extends('main_home')
+@extends('layout.main_home')
 @section('content')
   <div class="container">
     <div class="wrapper">
