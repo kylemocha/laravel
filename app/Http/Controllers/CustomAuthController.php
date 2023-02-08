@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Auth;
 class CustomAuthController extends Controller
 {
     //
+    public function index()
+    {
+        return view('auth.login');
+    }
     public function customLogin(Request $request)
     {
         $request->validate([
@@ -20,7 +24,7 @@ class CustomAuthController extends Controller
    
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('dashboard')
+            return redirect()->intended('main_home')
                         ->withSuccess('Signed in');
         }
   
@@ -29,7 +33,7 @@ class CustomAuthController extends Controller
 
     public function registration()
     {
-        return view('auth.registration');
+        return view('auth.register');
     }
       
     public function customRegistration(Request $request)

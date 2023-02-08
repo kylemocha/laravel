@@ -10,9 +10,9 @@ Route::view('/', 'welcome');
 //Route::view('/register', 'register'); 
 //Route::view('/home_user', 'home_user'); 
 
-//Route::get('main_home', function () {
-    //return view('layout/main_home');
-//});
+Route::get('main_home', function () {
+    return view('main_home');
+});
 //Route::get('login', function () {
     //return view('layout/login');
 //});
@@ -23,7 +23,8 @@ Route::get('home_user', function () {
     return view('home_user');
 });
 
-Route::get('main_home', [CustomAuthController::class, 'main_home']); 
+
+//Route::get('main_home', [CustomAuthController::class, 'main_home']); 
 Route::get('login', [CustomAuthController::class, 'index'])->name('login');
 Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
 Route::get('register', [CustomAuthController::class, 'register'])->name('register-user');

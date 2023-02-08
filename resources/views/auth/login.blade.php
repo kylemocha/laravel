@@ -10,7 +10,7 @@
     <title>Login Page</title>
 </head>
 <body>
-  @extends('main_home')
+  @extends('auth.login')
   @section('content')
 
   <div class="container">

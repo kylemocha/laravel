@@ -14,7 +14,6 @@
     <title>Main Home</title>
 </head>
 <body>
-
     <!--navbar-->  
     <div class="m-4">
         <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
@@ -36,7 +35,9 @@
                     <button type="button" class="btn btn-danger dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false" style="font-size:20px; border: none; color: black; background-color: aqua;"><i class="far fa-user"></i></button>
                     <div class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/login">Login</a></li>
+                      @guest
+                        <li><a class="dropdown-item" href="{{ route('login') }}">Login</a></li>
+                      @endguest
                     </div>                     
                 </div>
             </div>
