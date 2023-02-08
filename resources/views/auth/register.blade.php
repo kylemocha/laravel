@@ -11,6 +11,8 @@
 </head>
 
 <body>
+  @extends('main_home')
+  @section('content')
       <!--register form-->
     <div class="container">
       <div class="wrapper">
@@ -18,18 +20,27 @@
       <a href="login" class="btn btn-info" role="button" style="color: white; cursor: pointer;"><i class="fas fa-times"></i></a> 
       <div class="title"><span>Register</span></div>
       </div>
-       <form class ="form" action="#">
+       <form class ="form" action="{{ route('register.custom') }}" method="POST">
         <div class="row">
           <i class="fas fa-user-circle"></i>
-          <input type="text" placeholder="Name" required>
+          <input type="text" placeholder="Name" id="name" required>
+          @if ($errors->has('name'))
+          <span class="text-danger">{{ $errors->first('name') }}</span>
+          @endif
         </div>
         <div class="row">
           <i class="fas fa-user"></i>
-          <input type="text" placeholder="Email or Phone" required>
+          <input type="text" placeholder="Email" id="email_address"  name="email" required>
+          @if ($errors->has('email'))
+          <span class="text-danger">{{ $errors->first('email') }}</span>
+          @endif
         </div>
         <div class="row">
           <i class="fas fa-lock"></i>
-          <input type="password" placeholder="Password" required>
+          <input type="password" placeholder="Password" id="password" name="password" required>
+          @if ($errors->has('password'))
+          <span class="text-danger">{{ $errors->first('password') }}</span>
+          @endif
         </div>
         <div class="row button">
           <input type="submit" value="Create Account">
@@ -38,6 +49,7 @@
       </form>
       </div>
     </div>
+    @endsection
     
       
 
