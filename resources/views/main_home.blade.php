@@ -38,6 +38,7 @@
                       @guest
                         <li><a class="dropdown-item" href="{{ route('login') }}">Login</a></li>
                       @endguest
+                      @yield('content')
                     </div>                     
                 </div>
             </div>

@@ -31,7 +31,7 @@ class CustomAuthController extends Controller
         return redirect("login")->withSuccess('Login details are not valid');
     }
 
-    public function registration()
+    public function register()
     {
         return view('auth.register');
     }
