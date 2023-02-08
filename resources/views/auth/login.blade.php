@@ -20,6 +20,7 @@
       </div>
     </div>
       <form action="{{ route('login.post') }}" method="POST">
+        @csrf
         <div class="row">
           <i class="fas fa-user"></i>
           <input type="text" placeholder="Email" id="email" autofocus required>
