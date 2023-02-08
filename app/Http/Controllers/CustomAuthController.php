@@ -26,11 +26,11 @@ class CustomAuthController extends Controller
    
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('home_user')
+            return redirect()->intended('dashboard')
                         ->withSuccess('You have Successfully logged in');
         }
   
-        return redirect("login")->withSuccess('Oppes! You have entered invalid credentials');
+        return redirect("login")->withSuccess('Opps! You have entered invalid credentials');
     }
       
     public function postRegistration(Request $request)
@@ -50,10 +50,10 @@ class CustomAuthController extends Controller
     public function dashboard()
     {
         if(Auth::check()){
-            return view('dashboard');
+            return view('home_user');
         }
   
-        return redirect("login")->withSuccess('Opps! You do not have access');
+        return redirect("login")->withSuccess('Opps! You did not successfully logged in');
     }
 
     public function create(array $data)
