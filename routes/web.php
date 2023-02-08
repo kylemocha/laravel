@@ -13,12 +13,12 @@ Route::view('/', 'welcome');
 Route::get('main_home', function () {
     return view('main_home');
 });
-Route::get('login', function () {
-    return view('auth/login');
-});
-Route::get('register', function () {
-    return view('auth/registration');
-});
+//Route::get('login', function () {
+    //return view('auth/login');
+//});
+//Route::get('register', function () {
+    //return view('auth/registration');
+//});
 Route::get('home_user', function () {
     return view('home_user');
 });
