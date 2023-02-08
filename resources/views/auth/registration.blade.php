@@ -20,7 +20,7 @@
       <a href="login" class="btn btn-info" role="button" style="color: white; cursor: pointer;"><i class="fas fa-times"></i></a> 
       <div class="title"><span>Register</span></div>
       </div>
-       <form class ="form">
+       <form class ="form" action="{{ route('register.post') }}" method="POST">
         <div class="row">
           <i class="fas fa-user-circle"></i>
           <input type="text" placeholder="Name" id="name" required>
@@ -30,7 +30,7 @@
         </div>
         <div class="row">
           <i class="fas fa-user"></i>
-          <input type="text" id="email_address" class="form-control" name="email" required autofocus>
+          <input type="text" placeholder="Email" id="email_address" class="form-control" name="email" required autofocus>
           @if ($errors->has('email'))
           <span class="text-danger">{{ $errors->first('email') }}</span>
           @endif

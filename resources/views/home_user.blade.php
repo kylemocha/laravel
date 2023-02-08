@@ -104,6 +104,15 @@
     </nav>
  
  <div id="content">
+  <div class="card-body">
+    @if (session('success'))
+        <div class="alert alert-success" role="alert">
+            {{ session('success') }}
+        </div>
+    @endif
+
+    You are Logged In
+  </div>
     <div class="page" id="page1">
         <button type="button" id="sidebarCollapse" class="btn btn-info">
          <i class="fas fa-align-left"></i>

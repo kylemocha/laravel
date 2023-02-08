@@ -41,9 +41,9 @@
                     </div>                     
                 </div>
             </div>
-        </nav>
-        @yield('content')
+        </nav>     
     </div>
+    @yield('content')
     
     
   <!--Carousel-->

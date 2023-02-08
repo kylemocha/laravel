@@ -27,7 +27,7 @@ Route::get('login', [CustomAuthController::class, 'index'])->name('login');
 Route::post('post-login', [CustomAuthController::class, 'postLogin'])->name('login.post'); 
 Route::get('registration', [CustomAuthController::class, 'registration'])->name('register');
 Route::post('post-registration', [CustomAuthController::class, 'postRegistration'])->name('register.post'); 
-Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
+Route::get('home_user', [CustomAuthController::class, 'home_user']); 
 Route::get('logout', [CustomAuthController::class, 'logout'])->name('logout');
 
 
