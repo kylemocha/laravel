@@ -16,6 +16,9 @@ Route::get('main_home', function () {
 Route::get('login', function () {
     return view('layout/login');
 });
+Route::get('register', function () {
+    return view('layout/register');
+});
 
 
 
