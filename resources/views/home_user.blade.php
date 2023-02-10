@@ -55,7 +55,7 @@
                     <button type="button" class="btn btn-danger dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false" style="font-size:20px; border: none; color: black; background-color: aqua;"><i class="far fa-user"></i></button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="main_home">Logout</a>
+                        <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>
                     </div>   
                 </div>   
             </div>
@@ -109,8 +109,6 @@
             {{ session('success') }}
         </div>
     @endif
-
-    You are Logged In
   </div>
     <div class="page" id="page1">
         <button type="button" id="sidebarCollapse" class="btn btn-info">
