@@ -24,7 +24,7 @@
         @csrf
         <div class="row">
           <i class="fas fa-user-circle"></i>
-          <input type="text" placeholder="Name" id="name" required>
+          <input type="text" placeholder="Name" id="name" name="name" required>
           @if ($errors->has('name'))
           <span class="text-danger">{{ $errors->first('name') }}</span>
            @endif
