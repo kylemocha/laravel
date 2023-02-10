@@ -23,14 +23,14 @@
         @csrf
         <div class="row">
           <i class="fas fa-user"></i>
-          <input type="text" placeholder="Email" id="email" autofocus required>
+          <input type="text" placeholder="Email" id="email_address" name="email" autofocus required>
           @if ($errors->has('email'))
           <span class="text-danger">{{ $errors->first('email') }}</span>
           @endif
         </div>
         <div class="row">
           <i class="fas fa-lock"></i>
-          <input type="password" placeholder="Password" id="password" required>
+          <input type="password" placeholder="Password" id="password" name="password" autofocus required>
           @if ($errors->has('password'))
           <span class="text-danger">{{ $errors->first('password') }}</span>
           @endif
