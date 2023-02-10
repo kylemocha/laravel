@@ -44,7 +44,7 @@ class CustomAuthController extends Controller
         $data = $request->all();
         $check = $this->create($data);
          
-        return redirect("home_user")->withSuccess('Great! You have Successfully loggedin');
+        return redirect("home_user")->withSuccess('Great! You have Successfully logged in');
     }
     
     public function dashboard()
