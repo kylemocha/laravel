@@ -10,8 +10,6 @@
     <title>Login Page</title>
 </head>
 <body>
-  @extends('main_home')
-  @section('content')
   <div class="container">
     <div class="wrapper">
       <div class="exit">
@@ -43,6 +41,5 @@
       </form>
     </div>
   </div>
-  @endsection  
 </body>
 </html>

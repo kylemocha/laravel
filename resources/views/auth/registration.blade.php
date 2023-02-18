@@ -11,8 +11,6 @@
 </head>
 
 <body>
-  @extends('main_home')
-  @section('content')
       <!--register form-->
     <div class="container">
       <div class="wrapper">
@@ -50,7 +48,6 @@
       </form>
       </div>
     </div>
-    @endsection
        
 </body>
 </html>
