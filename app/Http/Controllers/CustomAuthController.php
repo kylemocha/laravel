@@ -27,7 +27,7 @@ class CustomAuthController extends Controller
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
             return redirect()->intended('home_user')
-                        ->withSuccess('You have Successfully logged in');
+                        ->withSuccess('You have successfully logged in');
         }
   
         return redirect("login")->withSuccess('Opps! You have entered invalid credentials');
@@ -44,7 +44,7 @@ class CustomAuthController extends Controller
         $data = $request->all();
         $check = $this->create($data);
          
-        return redirect("home_user")->withSuccess('Great! You have Successfully logged in');
+        return redirect("login")->withSuccess('Great! You have successfully created your account');
     }
     
     public function dashboard()
