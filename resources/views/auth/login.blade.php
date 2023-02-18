@@ -19,6 +19,11 @@
     </div>
       <form action="{{ route('login.post') }}" method="POST">
         @csrf
+        @if (session('success'))
+        <div class="alert alert-success" role="alert">
+            {{ session('success') }}
+        </div>
+        @endif
         <div class="row">
           <i class="fas fa-user"></i>
           <input type="text" placeholder="Email" id="email_address" name="email" autofocus required>
