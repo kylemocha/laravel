@@ -117,49 +117,72 @@
         </button>
         <h2 style="font-weight: bold;">Welcome User!</h2>
         <p style="font-size: 17px">Let's track your mental health today!</p>
-
-      <div class="float-container">
-      <div class="float-child">
+      
         <p style="font-weight: bold;">Upcoming appointments:</p>
+        <div class="content">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4">
+                      <div class="text-center card-box">
+                          <div class="member-card pt-2 pb-2">
+                              <div class="thumb-lg member-thumb mx-auto"><img src="https://i.ibb.co/XXnRvHS/920988.png"  class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                              <div class="">
+                                  <h4>Dr. Freddie J. Plourde</h4>
+                                  <p class="text-muted">09675721234 <span>| </span><span><a href="#" class="text-pink">ed@gmail.com</a></span></p>
+                              </div>
+                              <ul class="social-links list-inline">
+                                  <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                  <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                  <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Google"><i class="fab fa-google"></i></a></li>
+                              </ul>
+                              <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Message Now</button>
 
-        <div class="row"> 
-        <div class="gallery">
-          <a href="#">
-            <img src="https://i.ibb.co/XXnRvHS/920988.png" alt="920988">
-          </a>
-          <div class="desc">Dr. Esther Dean</div>
-          <p style="text-align: center; font-size: 16px;">Psychologist</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="text-center card-box">
+                        <div class="member-card pt-2 pb-2">
+                            <div class="thumb-lg member-thumb mx-auto"><img src="https://i.ibb.co/XXnRvHS/920988.png"  class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                            <div class="">
+                                <h4>Dr. Freddie J. Plourde</h4>
+                                <p class="text-muted">09675721234 <span>| </span><span><a href="#" class="text-pink">ed@gmail.com</a></span></p>
+                            </div>
+                            <ul class="social-links list-inline">
+                                <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Google"><i class="fab fa-google"></i></a></li>
+                            </ul>
+                            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Message Now</button>
 
-          <p style="text-align: center; font-size: 18px;">Mar. 10, 2023 1 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="text-center card-box">
+                      <div class="member-card pt-2 pb-2">
+                          <div class="thumb-lg member-thumb mx-auto"><img src="https://i.ibb.co/XXnRvHS/920988.png"  class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                          <div class="">
+                              <h4>Dr. Freddie J. Plourde</h4>
+                              <p class="text-muted">09675721234 <span>| </span><span><a href="#" class="text-pink">ed@gmail.com</a></span></p>
+                          </div>
+                          <ul class="social-links list-inline">
+                              <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                              <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                              <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Google"><i class="fab fa-google"></i></a></li>
+                          </ul>
+                          <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Message Now</button>
 
-          <div class="form-row text-center">
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Proceed</button>
-            </div>
+                      </div>
+                  </div>
+               </div>
+               </div>  
           </div>
         </div>
-
-          <div class="gallery">
-            <a href="#">
-              <img src="https://i.ibb.co/BGLX4QZ/4320333.png" alt="4320333">
-            </a>
-            <p style="text-align: center;">Location</p>
-  
-          </div>
-
-      </div>
-      </div>
+    </div>
+     
         
-      
-      <div class="float-child">
-      <p style="font-weight: bold;">Calendar:</p>
-
-    
-
-
-      </div>
-      </div>
-
+  
     <div class="page" id="page2" style="display:none">
         <h2 style="font-weight: bold;">Write Journal</h2>
         <p>You are free to share your opinions and feelings in this section.</p>
