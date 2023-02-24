@@ -143,7 +143,7 @@
             <a href="#">
               <img src="https://i.ibb.co/BGLX4QZ/4320333.png" alt="4320333">
             </a>
-            <h2>Dr. Esther Dean</div>
+            <p style="text-align: center;">Location</p>
   
           </div>
 
