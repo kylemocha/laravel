@@ -179,6 +179,10 @@
                </div>  
           </div>
         </div>
+
+        <p style="font-weight: bold;">List of appointments:</p>
+
+
     </div>
      
         
