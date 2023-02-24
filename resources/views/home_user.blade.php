@@ -44,7 +44,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a href="home_user" class="nav-item nav-link active" style=" color: black;">Home</a>
+                    <a href="main_home" class="nav-item nav-link active" style=" color: black;">Home</a>
                     <a href="#" class="nav-item nav-link" style=" color: black;" >Take Test</a>
                     <a href="#" class="nav-item nav-link" style="color: black;">Our Center</a>
                     <a href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm" class="nav-item nav-link"style=" color: black;">Contact Us</a>
@@ -120,12 +120,16 @@
 
         <p style="font-weight: bold;">Upcoming appointments:</p>
         <div class="gallery">
-          <a target="_blank" href="img_5terre.jpg">
-            <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+          <a href="#">
+            <img src="https://i.ibb.co/XXnRvHS/920988.png" alt="920988">
           </a>
-          <div class="desc">Add a description of the image here</div>
+          <div class="desc">Dr. Esther Dean</div>
+          <p style="text-align: center; font-size: 16px;">Psychologist</p>
+
+          <p class="desc1"></p>
+           
         </div>
-         
+       
     </div>
 
     <div class="page" id="page2" style="display:none">

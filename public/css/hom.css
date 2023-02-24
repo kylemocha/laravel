@@ -135,3 +135,26 @@ ul ul a {
       display: none;
   }
 }
+/*img*/
+div.gallery {
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+div.desc1{
+  float: right;
+  text-align: right;
+}
