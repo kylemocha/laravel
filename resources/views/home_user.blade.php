@@ -141,18 +141,10 @@
 
           <div class="gallery">
             <a href="#">
-              <img src="https://i.ibb.co/XXnRvHS/920988.png" alt="920988">
+              <img src="https://i.ibb.co/BGLX4QZ/4320333.png" alt="4320333">
             </a>
-            <div class="desc">Dr. Esther Dean</div>
-            <p style="text-align: center; font-size: 16px;">Psychologist</p>
+            <h2>Dr. Esther Dean</div>
   
-            <p style="text-align: center; font-size: 18px;">Mar. 10, 2023 1 PM</p>
-  
-            <div class="form-row text-center">
-              <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Proceed</button>
-              </div>
-            </div>
           </div>
 
       </div>
