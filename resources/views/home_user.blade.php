@@ -118,7 +118,7 @@
         <h2 style="font-weight: bold;">Welcome User!</h2>
         <p style="font-size: 17px">Let's track your mental health today!</p>
       
-        <p style="font-weight: bold;">Upcoming appointments:</p>
+        <p style="font-weight: bold;">Schedule appointments:</p>
         <div class="content">
           <div class="container">
               <div class="row">
