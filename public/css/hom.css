@@ -140,7 +140,9 @@ div.gallery {
   margin: 5px;
   padding: 8px;
   border: 1px solid #ccc;
-  width: 250px;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 div.gallery:hover {
   border: 1px solid #777;
@@ -153,6 +155,11 @@ div.desc{
   padding: 10px;
   font-weight: bold;
   text-align: center;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /*page1*/
