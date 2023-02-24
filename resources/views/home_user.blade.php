@@ -116,10 +116,16 @@
          <span></span>
         </button>
         <h2 style="font-weight: bold;">Welcome User!</h2>
-        <p>Let's track your mental health today!</p>
+        <p style="font-size: 17px">Let's track your mental health today!</p>
 
-        <p style="font-size:20px;">Upcoming appointments:</p>
-    
+        <p style="font-weight: bold;">Upcoming appointments:</p>
+        <div class="gallery">
+          <a target="_blank" href="img_5terre.jpg">
+            <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+         
     </div>
 
     <div class="page" id="page2" style="display:none">
