@@ -125,8 +125,15 @@
           </a>
           <div class="desc">Dr. Esther Dean</div>
           <p style="text-align: center; font-size: 16px;">Psychologist</p>
+          
+          <p style="text-align: center; font-size: 18px;">Mar. 10, 2023 1 PM</p>
 
-          <p class="desc1"></p>
+          <div class="form-row text-center">
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Proceed</button>
+            </div>
+         </div>
+         
            
         </div>
        

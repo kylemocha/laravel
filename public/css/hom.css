@@ -149,12 +149,9 @@ div.gallery img {
   width: 100%;
   height: auto;
 }
-div.desc {
+div.desc{
   padding: 10px;
   font-weight: bold;
   text-align: center;
 }
-div.desc1{
-  float: right;
-  text-align: right;
-}
+
