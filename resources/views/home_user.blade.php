@@ -199,8 +199,7 @@
       
 
         <h3 style="font-weight: bold; font-size: 22px;">Upcoming Appointments:</h3>
-        <!--div id="calendar"></div>-->
-
+       
 
     </div>
      
