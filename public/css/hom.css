@@ -163,7 +163,6 @@ div.desc{
   margin-bottom: 30px;
   background-color: #ABCDEF;
 }
-
 .social-links li a {
   border-radius: 50%;
   color: rgba(121, 121, 121, .8);
@@ -174,7 +173,6 @@ div.desc{
   text-align: center;
   width: 30px
 }
-
 .social-links li a:hover {
   color: #797979;
   border: 2px solid #797979

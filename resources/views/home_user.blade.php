@@ -122,7 +122,8 @@
           <!-- Modal content -->
           <div class="modal-content1">
             <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
+            <p>Calendar</p>
+            
           </div>
         
         </div>
@@ -197,7 +198,7 @@
       
 
         <p style="font-weight: bold;">List of upcoming appointments:</p>
-        
+        <!--div id="calendar"></div>-->
 
 
     </div>
@@ -332,6 +333,7 @@
     }
   }
   </script>
+
 
   <script  src="hom.js"></script>
   <script src="https://code.jquery.com/jquery.js"></script>
