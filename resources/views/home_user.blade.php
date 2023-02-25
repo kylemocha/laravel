@@ -116,6 +116,9 @@
          <span></span>
         </button>
         <h2 style="font-weight: bold;">Welcome User!</h2>
+        <!--Modal Calendar-->
+        <button type="button" class="btn btn-primary btn-md float-end"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</button>
+        
         <p style="font-size: 17px">Let's track your mental health today!</p>
       
         <p style="font-weight: bold;">Schedule a appointment:</p>
@@ -182,8 +185,10 @@
                </div>  
           </div>
         </div>
+      
 
         <p style="font-weight: bold;">List of upcoming appointments:</p>
+        
 
 
     </div>
