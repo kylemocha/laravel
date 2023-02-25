@@ -118,7 +118,7 @@
         <h2 style="font-weight: bold;">Welcome User!</h2>
         <p style="font-size: 17px">Let's track your mental health today!</p>
       
-        <p style="font-weight: bold;">Schedule appointments:</p>
+        <p style="font-weight: bold;">Schedule a appointment:</p>
         <div class="content">
           <div class="container">
               <div class="row">
@@ -128,6 +128,7 @@
                               <div class="thumb-lg member-thumb mx-auto"><img src="https://i.ibb.co/XXnRvHS/920988.png"  class="rounded-circle img-thumbnail" alt="profile-image"></div>
                               <div class="">
                                   <h4>Dr. Freddie J. Plourde</h4>
+                                  <h4>Psychiatrist</h4>
                                   <p class="text-muted">09675721234 <span>| </span><span><a href="#" class="text-pink">ed@gmail.com</a></span></p>
                               </div>
                               <ul class="social-links list-inline">
@@ -135,7 +136,7 @@
                                   <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
                                   <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Google"><i class="fab fa-google"></i></a></li>
                               </ul>
-                              <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Message Now</button>
+                              <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Book Now</button>
 
                           </div>
                       </div>
@@ -145,7 +146,8 @@
                         <div class="member-card pt-2 pb-2">
                             <div class="thumb-lg member-thumb mx-auto"><img src="https://i.ibb.co/XXnRvHS/920988.png"  class="rounded-circle img-thumbnail" alt="profile-image"></div>
                             <div class="">
-                                <h4>Dr. Freddie J. Plourde</h4>
+                                <h4>Dr. Ester Dean</h4>
+                                <h4>Psychologist</h4>
                                 <p class="text-muted">09675721234 <span>| </span><span><a href="#" class="text-pink">ed@gmail.com</a></span></p>
                             </div>
                             <ul class="social-links list-inline">
@@ -153,7 +155,7 @@
                                 <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
                                 <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Google"><i class="fab fa-google"></i></a></li>
                             </ul>
-                            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Message Now</button>
+                            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Book Now</button>
 
                         </div>
                     </div>
@@ -163,7 +165,8 @@
                       <div class="member-card pt-2 pb-2">
                           <div class="thumb-lg member-thumb mx-auto"><img src="https://i.ibb.co/XXnRvHS/920988.png"  class="rounded-circle img-thumbnail" alt="profile-image"></div>
                           <div class="">
-                              <h4>Dr. Freddie J. Plourde</h4>
+                              <h4>Dr. Stephen Strange</h4>
+                              <h4>Psychoanalyst</h4>
                               <p class="text-muted">09675721234 <span>| </span><span><a href="#" class="text-pink">ed@gmail.com</a></span></p>
                           </div>
                           <ul class="social-links list-inline">
@@ -171,7 +174,7 @@
                               <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
                               <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Google"><i class="fab fa-google"></i></a></li>
                           </ul>
-                          <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Message Now</button>
+                          <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Book Now</button>
 
                       </div>
                   </div>
@@ -180,7 +183,7 @@
           </div>
         </div>
 
-        <p style="font-weight: bold;">List of appointments:</p>
+        <p style="font-weight: bold;">List of upcoming appointments:</p>
 
 
     </div>
