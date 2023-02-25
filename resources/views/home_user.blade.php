@@ -132,7 +132,7 @@
 
         <p style="font-size: 17px">Let's track your mental health today!</p>
       
-        <p style="font-weight: bold;">Schedule a appointment:</p>
+        <h3 style="font-weight: bold; font-size: 22px;">Schedule a appointment:</h3>
         <div class="content">
           <div class="container">
               <div class="row">
@@ -198,7 +198,7 @@
         </div>
       
 
-        <p style="font-weight: bold;">List of upcoming appointments:</p>
+        <h3 style="font-weight: bold; font-size: 22px;">Upcoming Appointments:</h3>
         <!--div id="calendar"></div>-->
 
 
