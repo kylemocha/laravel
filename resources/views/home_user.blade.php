@@ -118,10 +118,10 @@
         <h2 style="font-weight: bold;">Welcome User!</h2>
         <!--Modal Calendar-->
         <button type="button" id="myCalendar" class="btn btn-primary btn-md float-end"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</button>
-        <div id="myDiv" class="modal">
+        <div id="myDiv" class="modal1">
 
           <!-- Modal content -->
-          <div class="modal-content">
+          <div class="modal-content1">
             <span class="close">&times;</span>
             <p>Some text in the Modal..</p>
           </div>
