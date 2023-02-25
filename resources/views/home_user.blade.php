@@ -117,8 +117,18 @@
         </button>
         <h2 style="font-weight: bold;">Welcome User!</h2>
         <!--Modal Calendar-->
-        <button type="button" class="btn btn-primary btn-md float-end"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</button>
+        <button type="button" id="myCalendar" class="btn btn-primary btn-md float-end"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</button>
+        <div id="myDiv" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
         
+        </div>
+
+
         <p style="font-size: 17px">Let's track your mental health today!</p>
       
         <p style="font-weight: bold;">Schedule a appointment:</p>
@@ -147,7 +157,7 @@
                   <div class="col-lg-4">
                     <div class="text-center card-box">
                         <div class="member-card pt-2 pb-2">
-                            <div class="thumb-lg member-thumb mx-auto"><img src="https://i.ibb.co/XXnRvHS/920988.png"  class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                            <div class="thumb-lg member-thumb mx-auto"><img src="https://i.ibb.co/sqnjy4F/1055642-200.png"  class="rounded-circle img-thumbnail" alt="1055642-200"></div>
                             <div class="">
                                 <h4>Dr. Ester Dean</h4>
                                 <h4>Psychologist</h4>
@@ -295,6 +305,35 @@
     });
   });
   </script>
+<!--Calendar-->
+<script>
+  // Get the modal
+  var modal = document.getElementById("myDiv");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myCalendar");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
   <script  src="hom.js"></script>
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
