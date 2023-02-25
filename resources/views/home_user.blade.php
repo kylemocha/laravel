@@ -134,7 +134,7 @@
         <div class="row justify-content-center">
         <div class="col-md-8 text-center">
         <h3 class="my-3">Schedule a appointment</h3>
-        <h6 class="subtitle font-weight-normal" style="color: grey;">Decide which of our mental health specialists best meets your needs.</h6>
+        <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">Decide which of our mental health specialists best meets your needs.</h6>
         </div>
         </div>
         
