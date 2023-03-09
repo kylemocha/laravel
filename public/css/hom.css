@@ -203,6 +203,15 @@ h4 {
   line-height: 22px;
   font-size: 18px;
 }
+/**/
+.icon-hover:hover {
+  border-color: #3b71ca !important;
+  background-color: white !important;
+}
+
+.icon-hover:hover i {
+  color: #3b71ca !important;
+}
 /* Modal Content Calendar*/
 .modal1{
   display: none; /* Hidden by default */
