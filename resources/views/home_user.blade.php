@@ -130,7 +130,7 @@
         </div>
 
 
-        <p style="font-size: 17px">Let's track your mental health today!</p>
+        <p style="font-size: 17px; color: #8d97ad;">Let's track your mental health today!</p>
         <div class="row justify-content-center">
         <div class="col-md-8 text-center">
         <h3 class="my-3">Schedule a appointment</h3>
