@@ -44,7 +44,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a href="main_home" class="nav-item nav-link active" style=" color: black;">Home</a>
+                    <a href="home_user" class="nav-item nav-link active" style=" color: black;">Home</a>
                     <a href="#" class="nav-item nav-link" style=" color: black;" >Take Test</a>
                     <a href="#" class="nav-item nav-link" style="color: black;">Our Center</a>
                     <a href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm" class="nav-item nav-link"style=" color: black;">Contact Us</a>
@@ -258,7 +258,7 @@
         <span></span>
        </button>
         <h2 style="font-weight: bold;">Write Journal</h2>
-        <p>You are free to share your opinions and feelings in this section.</p>
+        <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">You are free to share your opinions and feelings in this section.</h6>
         <form class="form-horizontal">
           <div class="form-group">
             <label class="control-label col-sm-2" for="email">Your name:</label>
@@ -293,7 +293,7 @@
         <h2 style="font-weight: bold;">View Journal</h2>
         <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
           <header>
-            <p>See your diary entries</p>
+            <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">See your diary entries</h6>
             <div class="col-6">
               <select class="form-select d-inline-block w-auto border pt-1">
                 <option value="0">Recent</option>
@@ -373,10 +373,11 @@
         <i class="fas fa-align-left"></i>
         <span></span>
        </button>
-        <h2 style="font-weight: bold;">Rate your Mood</h2>
-        <p style="font-size:20px;">How do you rate your mood today?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 style="font-weight: bold; text-align:center;">Rate your Mood</h2>
+        <h6 class="subtitle font-weight-normal" style="color: #8d97ad; text-align:center;">How do you rate your mood today?</h6>
+           
     </div>
+    
 
     <div class="page" id="page5" style="display:none">
       <button type="button" id="sidebarCollapse4" class="btn btn-info">
@@ -433,8 +434,7 @@
     </div>
   </div>
 </div>
-
-
+  
   <script>
     $(document).ready(function () {
     $('#sidebarCollapse').on('click', function () {
@@ -470,6 +470,12 @@
       });
     });
     </script>
+
+<!--rating-->
+<script>
+
+  
+</script>
 
 <!--Calendar-->
 <script>
