@@ -477,10 +477,12 @@
               </div>           
             </div>
             <div id="feedback" style="display: none" class="content1">
+              <form>
               <label>Write down your feelings for the day:</label>
-              <textarea id="txtfeedback" rows="6" cols="40"></textarea>
-              <input type="submit" value="Submit">
-              <input type="button" value="Reset">
+              <textarea id="txtfeedback" rows="10" cols="54" required></textarea>
+              <input type="submit" value="Submit" >
+              <input type="reset" value="Reset">
+              </form>
           </div>
           </div>
         </div>

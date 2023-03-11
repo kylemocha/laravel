@@ -490,7 +490,7 @@ input[type="textarea"]{
   width: 305px;
   height: 100px; 
 }
-input[type=submit] {
+input[type=submit],input[type=reset]{
   padding:5px 15px; 
   background:#ABCDEF; 
   border:0 none;
@@ -498,15 +498,6 @@ input[type=submit] {
   -webkit-border-radius: 5px;
   border-radius: 5px; 
 }
-input[type=button] {
-  padding:5px 15px; 
-  background:#ABCDEF; 
-  border:0 none;
-  cursor:pointer;
-  -webkit-border-radius: 5px;
-  border-radius: 5px; 
-}
-
 
 .rating {
   display: flex;
@@ -600,7 +591,7 @@ input[type=button] {
 #rating-5:checked ~ .emoji-wrapper > .emoji { transform: translateY(-500px); }
 
 .feedback {
-  max-width: 360px;
+  max-width: 460px;
   background-color: #fff;
   width: 100%;
   padding: 30px;
