@@ -374,18 +374,19 @@
        </button>
         <h2 style="font-weight: bold; text-align:center;">Rate your Mood</h2>
         <h6 class="subtitle font-weight-normal" style="text-align:center;">How do you rate your mood today?</h6>
+        <!--ratings-->
         <div class="container1">
           <div class="feedback">
             <div class="rating">
-              <input type="radio" name="rating" id="rating-5">
+              <input type="radio" name="rating" id="rating-5" onclick="ShowHideDiv5()" >
               <label for="rating-5"></label>
-              <input type="radio" name="rating" id="rating-4">
+              <input type="radio" name="rating" id="rating-4" onclick="ShowHideDiv4()" >
               <label for="rating-4"></label>
-              <input type="radio" name="rating" id="rating-3">
+              <input type="radio" name="rating" id="rating-3" onclick="ShowHideDiv3()" >
               <label for="rating-3"></label>
-              <input type="radio" name="rating" id="rating-2">
+              <input type="radio" name="rating" id="rating-2" onclick="ShowHideDiv2()" >
               <label for="rating-2"></label>
-              <input type="radio" name="rating" id="rating-1">
+              <input type="radio" name="rating" id="rating-1" onclick="ShowHideDiv()" >
               <label for="rating-1"></label>
               <div class="emoji-wrapper">
                 <div class="emoji">
@@ -473,12 +474,18 @@
                   <path d="M290.3 434.8c-1 3.4-5.8 5.2-11 3.9s-8.4-5.1-7.4-8.7c.8-3.3 5.7-5 10.7-3.8 5.1 1.4 8.5 5.3 7.7 8.6z" fill="#fff" opacity=".2"/>
                 </svg>
                 </div>
-              </div>
+              </div>           
             </div>
+            <div id="feedback" style="display: none" class="content1">
+              <label>Write down your feelings for the day:</label>
+              <textarea id="txtfeedback" rows="6" cols="40"></textarea>
+              <input type="submit" value="Submit">
+              <input type="button" value="Reset">
           </div>
+          </div>
+        </div>
     </div>
     
-
     <div class="page" id="page5" style="display:none">
       <button type="button" id="sidebarCollapse4" class="btn btn-info">
         <i class="fas fa-align-left"></i>
@@ -488,7 +495,6 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
-</div>
 </div> 
 
 <!--modal contact form-->
@@ -572,10 +578,42 @@
     </script>
 
 <!--rating-->
-<script>
-
- 
+<script type="text/javascript">
+    function ShowHideDiv() {
+        var chkYes = document.getElementById("rating-1");
+        var dvPassport = document.getElementById("feedback");
+        dvPassport.style.display = chkYes.checked ? "block" : "none";
+    }
 </script>
+<script type="text/javascript">
+  function ShowHideDiv2() {
+      var chkYes = document.getElementById("rating-2");
+      var dvPassport = document.getElementById("feedback");
+      dvPassport.style.display = chkYes.checked ? "block" : "none";
+  }
+</script>
+<script type="text/javascript">
+  function ShowHideDiv3() {
+      var chkYes = document.getElementById("rating-3");
+      var dvPassport = document.getElementById("feedback");
+      dvPassport.style.display = chkYes.checked ? "block" : "none";
+  }
+</script>
+<script type="text/javascript">
+  function ShowHideDiv4() {
+      var chkYes = document.getElementById("rating-4");
+      var dvPassport = document.getElementById("feedback");
+      dvPassport.style.display = chkYes.checked ? "block" : "none";
+  }
+</script>
+<script type="text/javascript">
+  function ShowHideDiv5() {
+      var chkYes = document.getElementById("rating-5");
+      var dvPassport = document.getElementById("feedback");
+      dvPassport.style.display = chkYes.checked ? "block" : "none";
+  }
+</script>
+ 
 
 <!--Calendar-->
 <script>
