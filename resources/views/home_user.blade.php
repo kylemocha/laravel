@@ -290,17 +290,7 @@
               <select class="form-select d-inline-block w-auto border pt-1">
                 <option value="0">Recent</option>
                 <option value="1">Previous</option>
-                <!--<option value="2">High rated</option>
-                <option value="3">Randomly</option>-->
               </select>
-              <!--<div class="btn-group shadow-0 border">
-                <a href="#" class="btn btn-light" title="List view">
-                  <i class="fa fa-bars fa-lg"></i>
-                </a>
-                <a href="#" class="btn btn-light active" title="Grid view">
-                  <i class="fa fa-th fa-lg"></i>
-                </a>
-              </div>-->
             </div>
           </header>
        
