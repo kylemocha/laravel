@@ -253,6 +253,10 @@
         
   
     <div class="page" id="page2" style="display:none">
+      <button type="button" id="sidebarCollapse1" class="btn btn-info">
+        <i class="fas fa-align-left"></i>
+        <span></span>
+       </button>
         <h2 style="font-weight: bold;">Write Journal</h2>
         <p>You are free to share your opinions and feelings in this section.</p>
         <form class="form-horizontal">
@@ -282,6 +286,10 @@
     </div>
 
     <div class="page" id="page3" style="display:none">
+      <button type="button" id="sidebarCollapse2" class="btn btn-info">
+        <i class="fas fa-align-left"></i>
+        <span></span>
+       </button>
         <h2 style="font-weight: bold;">View Journal</h2>
         <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
           <header>
@@ -361,12 +369,20 @@
     </div>
 
     <div class="page" id="page4" style="display:none">
+      <button type="button" id="sidebarCollapse3" class="btn btn-info">
+        <i class="fas fa-align-left"></i>
+        <span></span>
+       </button>
         <h2 style="font-weight: bold;">Rate your Mood</h2>
         <p style="font-size:20px;">How do you rate your mood today?</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
     <div class="page" id="page5" style="display:none">
+      <button type="button" id="sidebarCollapse4" class="btn btn-info">
+        <i class="fas fa-align-left"></i>
+        <span></span>
+       </button>
         <h2 style="font-weight: bold;">Recommendations</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
@@ -426,6 +442,35 @@
     });
   });
   </script>
+  <script>
+    $(document).ready(function () {
+    $('#sidebarCollapse1').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
+  });
+  </script>
+   <script>
+    $(document).ready(function () {
+    $('#sidebarCollapse2').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
+  });
+  </script>
+   <script>
+    $(document).ready(function () {
+    $('#sidebarCollapse3').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
+  });
+  </script>
+    <script>
+      $(document).ready(function () {
+      $('#sidebarCollapse4').on('click', function () {
+          $('#sidebar').toggleClass('active');
+      });
+    });
+    </script>
+
 <!--Calendar-->
 <script>
   // Get the modal
