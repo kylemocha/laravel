@@ -133,7 +133,7 @@
         <p style="font-size: 17px; color: #8d97ad;">Let's track your mental health today!</p>
         <div class="row justify-content-center">
         <div class="col-md-8 text-center">
-        <h3 class="my-3">Schedule a appointment</h3>
+        <h3 class="my-3">Schedule an appointment</h3>
         <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">Decide which of our mental health specialists best meets your needs.</h6>
         </div>
         </div>
@@ -494,7 +494,8 @@
         <span></span>
        </button>
         <h2 style="font-weight: bold;">Recommendations</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p style="color: #8d97ad;">This section contains articles with our best recommendations on how to take care of your mental health.</p>
+    
     </div>
 
 </div> 
