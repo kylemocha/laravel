@@ -503,25 +503,25 @@
               <div class="card">
                 <img src="https://i.ibb.co/Q6sYkdN/engl-poems.png" alt="engl-poems" class="card-img-top">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Learn More</a>
+                  <h5 class="card-title">Caring for Your Mental Health</h5>
+                  <p class="card-text">Self-care can play a role in maintaining your mental health.</p>
+                  <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health" class="btn btn-primary" target="_blank">Learn More</a>
                 </div>
               </div>
               <div class="card d-none d-md-block">
                 <img src="https://i.ibb.co/Q6sYkdN/engl-poems.png" alt="engl-poems" class="card-img-top">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Learn More</a>
+                  <h5 class="card-title">6 ways to take care of your mental health and well-being</h5>
+                  <p class="card-text">Here are 6 things you can do to help you cope.</p>
+                  <a href="https://www.who.int/westernpacific/about/how-we-work/pacific-support/news/detail/07-10-2021-6-ways-to-take-care-of-your-mental-health-and-well-being-this-world-mental-health-day" class="btn btn-primary" target="_blank">Learn More</a>
                 </div>
               </div>
               <div class="card d-none d-md-block">
                 <img src="https://i.ibb.co/Q6sYkdN/engl-poems.png" alt="engl-poems"class="card-img-top">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Learn More</a>
+                  <h5 class="card-title">Taking Good Care of Yourself</h5>
+                  <p class="card-text">This article contains tools to aid you in the process.</p>
+                  <a href="https://mhanational.org/taking-good-care-yourself" class="btn btn-primary" target="_blank">Learn More</a>
                 </div>
               </div>
             </div>
@@ -531,53 +531,25 @@
                 <div class="card">
                   <img src="https://i.ibb.co/Q6sYkdN/engl-poems.png" alt="engl-poems" class="card-img-top">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <h5 class="card-title">Ten Things You Can Do for Your Mental Health</h5>
+                    <p class="card-text">Try these tips to keep your balance.</p>
+                    <a href="https://uhs.umich.edu/tenthings" class="btn btn-primary" target="_blank">Learn More</a>
                   </div>
                 </div>
                 <div class="card d-none d-md-block">
                   <img src="https://i.ibb.co/Q6sYkdN/engl-poems.png" alt="engl-poems" class="card-img-top">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <h5 class="card-title">Why is mental health important?</h5>
+                    <p class="card-text">Mental health encompasses our psychological, emotional and social well-being.</p>
+                    <a href="https://doctorondemand.com/blog/mental-health/why-its-important-to-care-for-your-mental-health/" class="btn btn-primary" target="_blank">Learn More</a>
                   </div>
                 </div>
                 <div class="card d-none d-md-block">
                   <img src="https://i.ibb.co/Q6sYkdN/engl-poems.png" alt="engl-poems" class="card-img-top">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards-wrapper">
-                <div class="card">
-                  <img src="https://i.ibb.co/Q6sYkdN/engl-poems.png" alt="engl-poems" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                  </div>
-                </div>
-                <div class="card d-none d-md-block">
-                  <img src="https://i.ibb.co/Q6sYkdN/engl-poems.png" alt="engl-poems" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                  </div>
-                </div>
-                <div class="card d-none d-md-block">
-                  <img src="https://i.ibb.co/Q6sYkdN/engl-poems.png" alt="engl-poems" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <h5 class="card-title">How to Improve Mental Health</h5>
+                    <p class="card-text">Why is mental health important?</p>
+                    <a href="https://medlineplus.gov/howtoimprovementalhealth.html" class="btn btn-primary" target="_blank">Learn More</a>
                   </div>
                 </div>
               </div>
