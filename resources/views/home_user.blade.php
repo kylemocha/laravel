@@ -123,8 +123,7 @@
           <div class="modal-content1">
             <span class="close">&times;</span>
             <h4 style="font-weight: bold;">See your schedule</h4>
-            <div class="calendar"></div>
-            
+            <div class="calendar"></div> 
           </div>
         
         </div>
@@ -155,11 +154,22 @@
                                   <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
                                   <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Google"><i class="fab fa-google"></i></a></li>
                               </ul>
-                              <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Book Now</button>
+                              <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light" id="myAppt">Book Now</button>
+                              <!--modal appt form-->
+                              <div id="myMod" class="modal1">
+
+                              <!-- Modal content -->
+                              <div class="modal-content2">
+                              <span class="close1">&times;</span>
+                               <p>Some text in the Modal..</p>
+                              </div>
+
+                              </div>
 
                           </div>
                       </div>
                   </div>
+
                   <div class="col-lg-4">
                     <div class="text-center card-box">
                         <div class="member-card pt-2 pb-2">
@@ -174,7 +184,7 @@
                                 <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
                                 <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Google"><i class="fab fa-google"></i></a></li>
                             </ul>
-                            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Book Now</button>
+                            <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light" id="myAppt1">Book Now</button>
                         </div>
                     </div>
                 </div>
@@ -192,7 +202,7 @@
                               <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
                               <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Google"><i class="fab fa-google"></i></a></li>
                           </ul>
-                          <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">Book Now</button>
+                          <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light" id="myAppt2">Book Now</button>
 
                       </div>
                   </div>
@@ -611,7 +621,33 @@
     </div>
   </div>
 </div>
+
+  <!--appt-->
+  <script>
+
+  var modal1 = document.getElementById("myMod");
+
+  var btn1 = document.getElementById("myAppt");
+
+  var span1 = document.getElementsByClassName("close1")[0];
+
+  // When the user clicks on the button, open the modal
+  btn1.onclick = function() {
+  modal1.style.display = "block";
+  }
+
+  span1.onclick = function() {
+  modal1.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+    }
+  }
+  </script>
   
+  <!--sidebar-->
   <script>
     $(document).ready(function () {
     $('#sidebarCollapse').on('click', function () {
@@ -714,6 +750,7 @@
     }
   }
   </script>
+
   <!--calendar-->
   <script>
     function CalendarControl() {
