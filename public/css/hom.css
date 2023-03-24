@@ -412,7 +412,7 @@ border: 1px solid transparent;
 pointer-events: none;
 }
 
-/*upcoming appt*/
+/*upcoming events*/
 .blog-home2 h1,
 .blog-home2 h2,
 .blog-home2 h3,
@@ -420,6 +420,7 @@ pointer-events: none;
 .blog-home2 h5,
 .blog-home2 h6 {
   color: #3e4555;
+  padding: 10px;
 }
 
 .blog-home2 .font-weight-medium {
@@ -620,7 +621,7 @@ input[type=submit],input[type=reset]{
   max-width: 100%;
   max-height: 100%;
 }
-.card {
+.card{
   margin: 0 0.5em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
@@ -680,6 +681,87 @@ input[type=submit],input[type=reset]{
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+/*appt*/
+.formbold-mb-5 {
+  margin-bottom: 20px;
+}
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.formbold-form-wrapper {
+  max-width: 500px;
+  width: 100%;
+  background: white;
+}
+.formbold-form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 12px;
+}
+.formbold-form-label-2 {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.formbold-form-input {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  font-weight: 500;
+  font-size: 16px;
+  color: #6b7280;
+  outline: none;
+  resize: none;
+}
+.formbold-form-input:focus {
+  border-color: #006a89;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-btn {
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 14px 32px;
+  border: none;
+  font-weight: 600;
+  background-color: #188ef4;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  background-color: #006a89;
+}
+.formbold--mx-3 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.formbold-px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+@media (min-width: 540px) {
+  .sm\:w-half {
+    width: 50%;
+  }
 }
 
 
