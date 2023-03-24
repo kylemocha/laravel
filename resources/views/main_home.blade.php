@@ -234,7 +234,7 @@
             <i class="fas fa-brain"></i>  CSWD Mental Health Counseling
           </h6>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Making mental health services accessible.
           </p>
         </div>
         <!-- Grid column -->
