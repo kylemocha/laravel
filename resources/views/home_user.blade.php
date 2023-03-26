@@ -306,13 +306,13 @@
                           </ul>
                           <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light" id="myAppt2">Book Now</button>
                            <!-- The Modal -->
-                           <div id="myMod2" class="modal3">
+                          <div id="myMod2" class="modal3">
                             <!-- Modal content -->
                             <div class="modal-content4">
                              <span class="close3">&times;</span>
                              <p>Some text in the Modal..</p>
                             </div>
-                            </div>
+                          </div>
 
                       </div>
                   </div>
@@ -781,27 +781,27 @@
     </script>
     <script>
 
-      var mod1 = document.getElementById("myMod2");
+      var Mod = document.getElementById("myMod2");
     
-      var button1 = document.getElementById("myAppt3");
+      var Btn = document.getElementById("myAppt2");
     
-      var s1 = document.getElementsByClassName("close3")[0];
+      var Span = document.getElementsByClassName("close3")[0];
     
       // When the user clicks on the button, open the modal
-      button1.onclick = function() {
-      mod1.style.display = "block";
+      Btn.onclick = function() {
+      Mod.style.display = "block";
       }
     
-      s1.onclick = function() {
-      mod1.style.display = "none";
+      Span.onclick = function() {
+      Mod.style.display = "none";
       }
     
       window.onclick = function(event) {
-      if (event.target == mod1) {
-        mod1.style.display = "none";
+      if (event.target == Mod) {
+        Mod.style.display = "none";
         }
       }
-      </script>
+    </script>
   
   <!--sidebar-->
   <script>
