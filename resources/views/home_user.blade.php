@@ -157,15 +157,18 @@
                               <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light" id="myAppt">Book Now</button>
                               <!--modal appt form-->
                               <div id="myMod" class="modal1">
-
                               <!-- Modal content -->
                               <div class="modal-content2">
                               <span class="close1">&times;</span>
                               <div class="formbold-main-wrapper">
                                 <div class="formbold-form-wrapper">
+                                    <!---->
+                                      <h4 style="font-weight: bold;">See Dr. ---- schedule</h4>
+                                      <div class="calendar"></div> 
+                                    
                                   <form action="#">
                                     <div class="formbold-mb-5">
-                                      <label for="name" class="formbold-form-label"> Full Name </label>
+                                      <label for="name" class="formbold-form-label" style="font-weight: bold;"> Full Name </label>
                                       <input
                                         type="text"
                                         name="name"
@@ -175,7 +178,7 @@
                                       />
                                     </div>
                                     <div class="formbold-mb-5">
-                                      <label for="phone" class="formbold-form-label"> Phone Number </label>
+                                      <label for="phone" class="formbold-form-label" style="font-weight: bold;"> Phone Number </label>
                                       <input
                                         type="text"
                                         name="phone"
@@ -185,7 +188,7 @@
                                       />
                                     </div>
                                     <div class="formbold-mb-5">
-                                      <label for="email" class="formbold-form-label"> Email Address </label>
+                                      <label for="email" class="formbold-form-label" style="font-weight: bold;"> Email Address </label>
                                       <input
                                         type="email"
                                         name="email"
@@ -197,7 +200,7 @@
                                     <div class="flex flex-wrap formbold--mx-3">
                                       <div class="w-full sm:w-half formbold-px-3">
                                         <div class="formbold-mb-5 w-full">
-                                          <label for="date" class="formbold-form-label"> Date </label>
+                                          <label for="date" class="formbold-form-label" style="font-weight: bold;"> Date </label>
                                           <input
                                             type="date"
                                             name="date"
@@ -220,8 +223,8 @@
                                     </div>
                               
                                     <div class="formbold-mb-5 formbold-pt-3">
-                                      <label class="formbold-form-label formbold-form-label-2">
-                                        Address Details
+                                      <label class="formbold-form-label formbold-form-label-2" style="font-weight: bold;">
+                                        Address
                                       </label>
                                       <div class="flex flex-wrap formbold--mx-3">
                                         <div class="w-full sm:w-half formbold-px-3">
@@ -230,15 +233,26 @@
                                               type="text"
                                               name="area"
                                               id="area"
-                                              placeholder="Enter address"
+                                              placeholder="Enter area"
                                               class="formbold-form-input"
                                             />
                                           </div>
-                                        </div>      
+                                        </div>   
+                                        <div class="w-full sm:w-half formbold-px-3">
+                                          <div class="formbold-mb-5">
+                                            <input
+                                              type="text"
+                                              name="city"
+                                              id="city"
+                                              placeholder="Enter city"
+                                              class="formbold-form-input"
+                                            />
+                                          </div>
+                                        </div>   
                                       </div>
                                     </div>
                                     <div>
-                                      <button class="formbold-btn">Book Appointment</button>
+                                      <button class="formbold-btn" style="font-size: 21px;">Book Appointment</button>
                                     </div>
                                   </form>
                                 </div>
@@ -264,6 +278,15 @@
                                 <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Google"><i class="fab fa-google"></i></a></li>
                             </ul>
                             <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light" id="myAppt1">Book Now</button>
+                            <!-- The Modal -->
+                            <div id="myMod1" class="modal2">
+                            <!-- Modal content -->
+                            <div class="modal-content3">
+                             <span class="close2">&times;</span>
+                             <p>Some text in the Modal..</p>
+                            </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -282,11 +305,19 @@
                               <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Google"><i class="fab fa-google"></i></a></li>
                           </ul>
                           <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light" id="myAppt2">Book Now</button>
+                           <!-- The Modal -->
+                           <div id="myMod2" class="modal3">
+                            <!-- Modal content -->
+                            <div class="modal-content4">
+                             <span class="close3">&times;</span>
+                             <p>Some text in the Modal..</p>
+                            </div>
+                            </div>
 
                       </div>
                   </div>
                </div>
-               </div>  
+            </div>  
           </div>
         </div>
       
@@ -725,6 +756,52 @@
     }
   }
   </script>
+  <script>
+
+    var mod = document.getElementById("myMod1");
+  
+    var button = document.getElementById("myAppt1");
+  
+    var s = document.getElementsByClassName("close2")[0];
+  
+    // When the user clicks on the button, open the modal
+    button.onclick = function() {
+    mod.style.display = "block";
+    }
+  
+    s.onclick = function() {
+    mod.style.display = "none";
+    }
+  
+    window.onclick = function(event) {
+    if (event.target == mod) {
+      mod.style.display = "none";
+      }
+    }
+    </script>
+    <script>
+
+      var mod1 = document.getElementById("myMod2");
+    
+      var button1 = document.getElementById("myAppt3");
+    
+      var s1 = document.getElementsByClassName("close3")[0];
+    
+      // When the user clicks on the button, open the modal
+      button1.onclick = function() {
+      mod1.style.display = "block";
+      }
+    
+      s1.onclick = function() {
+      mod1.style.display = "none";
+      }
+    
+      window.onclick = function(event) {
+      if (event.target == mod1) {
+        mod1.style.display = "none";
+        }
+      }
+      </script>
   
   <!--sidebar-->
   <script>
