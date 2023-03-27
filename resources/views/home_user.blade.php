@@ -166,6 +166,7 @@
                                       <h4 style="font-weight: bold;">See Dr. ---- schedule</h4>
                                       <div class="calendar"></div> 
                                     
+                                                 
                                   <form action="#">
                                     <div class="formbold-mb-5">
                                       <label for="name" class="formbold-form-label" style="font-weight: bold;"> Full Name </label>
@@ -287,8 +288,8 @@
                               <div class="formbold-form-wrapper">
                                   <!---->
                                     <h4 style="font-weight: bold;">See Dr. ---- schedule</h4>
-                                    <div class="calendar"></div> 
-                                  
+                                 
+
                                 <form action="#">
                                   <div class="formbold-mb-5">
                                     <label for="name" class="formbold-form-label" style="font-weight: bold;"> Full Name </label>
@@ -410,7 +411,7 @@
                               <div class="formbold-form-wrapper">
                                   <!---->
                                     <h4 style="font-weight: bold;">See Dr. ---- schedule</h4>
-                                    <div class="calendar"></div> 
+                                    <div id="calendar"></div> 
                                   
                                 <form action="#">
                                   <div class="formbold-mb-5">
@@ -1324,6 +1325,10 @@
   const calendarControl = new CalendarControl();
   </script>
 
+  <script>
+    
+  </script>
+   
 
   <script  src="hom.js"></script>
   
