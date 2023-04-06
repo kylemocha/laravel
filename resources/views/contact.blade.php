@@ -10,39 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/contact.css" rel="stylesheet" type="text/css">
     <title>Contact Form</title>
-    <style>
-     .container {
-    max-width: 500px;
-    margin: 50px auto;
-    text-align: left;
-    font-family: sans-serif;
-     }
-    form {
-    border: 1px solid #1A33FF;
-    background: #ecf5fc;
-    padding: 40px 50px 45px;
-    }
-    .form-control:focus {
-    border-color: #000;
-    box-shadow: none;
-    }
-    label {
-    font-weight: 600;
-    }
-    .error {
-    color: red;
-    font-weight: 400;
-    display: block;
-    padding: 6px 0;
-    font-size: 14px;
-    }
-    .form-control.error {
-    border-color: red;
-    padding: .375rem .75rem;
-    }   
-    </style>
 </head>
 <body>
 <!--contact form-->
@@ -55,7 +24,11 @@
         @endif
         <form action="" method="post" action="{{ route('contact.store') }}">
             @csrf
+            <button type="button" class="btn btn-default" style="float: right;"><span aria-hidden="true" style="font-size:18px; font-weight:bold;">&times;</span><a href="home_user"></a></button>
+         
+            <h2>Contact Us</h2>
             <div class="form-group">
+                <i class="fas fa-user prefix grey-text"></i>
                 <label>Name</label>
                 <input type="text" class="form-control {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name">
                 <!-- Error -->
@@ -66,6 +39,7 @@
                 @endif
             </div>
             <div class="form-group">
+                <i class="fas fa-envelope prefix grey-text"></i>
                 <label>Email</label>
                 <input type="email" class="form-control {{ $errors->has('email') ? 'error' : '' }}" name="email" id="email">
                 @if ($errors->has('email'))
@@ -75,6 +49,7 @@
                 @endif
             </div>
             <div class="form-group">
+                <i class="fas fa-phone-alt prefix grey-text"></i>
                 <label>Phone</label>
                 <input type="text" class="form-control {{ $errors->has('phone') ? 'error' : '' }}" name="phone" id="phone">
                 @if ($errors->has('phone'))
@@ -84,6 +59,7 @@
                 @endif
             </div>
             <div class="form-group">
+                <i class="fas fa-tag prefix grey-text"></i>
                 <label>Subject</label>
                 <input type="text" class="form-control {{ $errors->has('subject') ? 'error' : '' }}" name="subject"
                     id="subject">
@@ -94,6 +70,7 @@
                 @endif
             </div>
             <div class="form-group">
+                <i class="fas fa-pencil prefix grey-text"></i>
                 <label>Message</label>
                 <textarea class="form-control {{ $errors->has('message') ? 'error' : '' }}" name="message" id="message"
                     rows="4"></textarea>
@@ -103,7 +80,7 @@
                 </div>
                 @endif
             </div>
-            <input type="submit" name="send" value="Submit" class="btn btn-dark btn-block">
+            <input type="submit" name="send" value="Submit" class="btn btn-primary" style="margin: 3px;">
         </form>
     </div>
 
