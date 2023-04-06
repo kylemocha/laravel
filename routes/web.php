@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\ContactUsFormController;
 
 
 Route::view('/', 'welcome'); 
@@ -22,6 +23,9 @@ Route::get('main_home', function () {
 Route::get('home_user', function () {
     return view('home_user');
 });
+
+Route::get('contact', [ContactUsFormController::class, 'createForm']);
+Route::post('contact', [ContactUsFormController::class, 'ContactUsForm'])->name('contact.store');
 
 Route::get('login', [CustomAuthController::class, 'index'])->name('login');
 Route::post('post-login', [CustomAuthController::class, 'postLogin'])->name('login.post'); 
