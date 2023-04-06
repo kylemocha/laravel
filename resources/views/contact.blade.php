@@ -16,6 +16,9 @@
 <body>
 <!--contact form-->
     <div class="container mt-5">
+        <!--<button type="button" class="btn btn-default" style="float: right; font-size:19px; color:white;"><span aria-hidden="true" style="font-size:18px; font-weight:bold;">&times;</span><a href="home_user"></a></button>-->
+        <h2 style="text-align: center; color:white;">Contact Us &nbsp;</h2>
+    
         <!-- Success message -->
         @if(Session::has('success'))
             <div class="alert alert-success">
@@ -24,9 +27,6 @@
         @endif
         <form action="" method="post" action="{{ route('contact.store') }}">
             @csrf
-            <button type="button" class="btn btn-default" style="float: right;"><span aria-hidden="true" style="font-size:18px; font-weight:bold;">&times;</span><a href="home_user"></a></button>
-         
-            <h2>Contact Us</h2>
             <div class="form-group">
                 <i class="fas fa-user prefix grey-text"></i>
                 <label>Name</label>
@@ -82,8 +82,7 @@
             </div>
             <input type="submit" name="send" value="Submit" class="btn btn-primary" style="margin: 3px;">
         </form>
-    </div>
-
+</div>
 
 <script  src="main.js"></script>
 <script src="https://code.jquery.com/jquery.js"></script>

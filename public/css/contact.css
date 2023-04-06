@@ -8,13 +8,13 @@ font-family: 'Poppins',sans-serif;
 body{
     background: #ABCDEF;
 }
-.container {
-max-width: 500px;
-text-align: left;
+.container {  
+ max-width: 500px;
+ text-align: left;
 }
 form {
-background: #ecf5fc;
-padding: 40px 50px 45px;
+ padding: 30px;
+ background: #ecf5fc;
 }
 .form-control:focus {
 border-color: #000;
@@ -22,7 +22,7 @@ box-shadow: none;
 }
 label {
 font-weight: 600;
-margin: 2px;
+margin: 5px;
 }
 .error {
 color: red;
@@ -35,3 +35,5 @@ font-size: 14px;
 border-color: red;
 padding: .375rem .75rem;
 }   
+
+  

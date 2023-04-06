@@ -29,7 +29,7 @@
                         <a href="main_home" class="nav-item nav-link active" style=" color: black;">Home</a>
                         <a href="#" class="nav-item nav-link" style=" color: black;" >Take Test</a>
                         <a href="#" class="nav-item nav-link" style="color: black;">Our Center</a>
-                        <a href="contact" class="nav-item nav-link" style="color: black;">Contact Us</a>
+                        <a href="contact" class="nav-item nav-link" style="color: black;" target="_blank">Contact Us</a>
                     </div>
                     <div class="navbar-nav ms-auto">
                     <button type="button" class="btn btn-danger dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
