@@ -17,7 +17,7 @@
 <!--contact form-->
     <div class="container mt-5">
         <!--<button type="button" class="btn btn-default" style="float: right; font-size:19px; color:white;"><span aria-hidden="true" style="font-size:18px; font-weight:bold;">&times;</span><a href="home_user"></a></button>-->
-        <h2 style="text-align: center; color:#35587c; font-weight: bold;">Contact Us</h2>
+        <h2 style="text-align: center; color:#006a89; font-weight: bold;">Contact Us</h2>
     
         <!-- Success message -->
         @if(Session::has('success'))
