@@ -17,7 +17,7 @@
 <!--contact form-->
     <div class="container mt-5">
         <!--<button type="button" class="btn btn-default" style="float: right; font-size:19px; color:white;"><span aria-hidden="true" style="font-size:18px; font-weight:bold;">&times;</span><a href="home_user"></a></button>-->
-        <h2 style="text-align: center; color:white;">Contact Us &nbsp;</h2>
+        <h2 style="text-align: center; color:#35587c; font-weight: bold;">Contact Us &nbsp;</h2>
     
         <!-- Success message -->
         @if(Session::has('success'))
@@ -40,7 +40,7 @@
             </div>
             <div class="form-group">
                 <i class="fas fa-envelope prefix grey-text"></i>
-                <label>Email</label>
+                <label >Email</label>
                 <input type="email" class="form-control {{ $errors->has('email') ? 'error' : '' }}" name="email" id="email">
                 @if ($errors->has('email'))
                 <div class="error">
@@ -80,7 +80,7 @@
                 </div>
                 @endif
             </div>
-            <input type="submit" name="send" value="Submit" class="btn btn-primary" style="margin: 3px;">
+            <input type="submit" name="send" value="Submit" class="button-5" style="margin: 3px;">
         </form>
 </div>
 
