@@ -21,6 +21,26 @@ form {
  border-radius: 20px;
  box-shadow: rgba(0,0,0,0.3) 0 0 10px;
 }
+input[type=text], input[type=email]{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:400px;
+  border:none;
+  margin: 10px;
+  border-bottom:1px solid #757575;
+}
+input:focus { 
+  outline:none; 
+}
+textarea{
+  font-size:18px;
+  display:block;
+  width:500px;
+  border:none;
+  margin: 3px;
+  border-bottom:1px solid #757575;
+}
 .form-control:focus {
 border-color: #000;
 box-shadow: none;
@@ -87,5 +107,11 @@ padding: .375rem .75rem;
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 } 
+@media screen and (max-width: 600px) {
+  input[type=text], input[type=email], input[type=submit], textarea {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 
   

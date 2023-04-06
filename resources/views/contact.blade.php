@@ -28,9 +28,9 @@
         <form action="" method="post" action="{{ route('contact.store') }}">
             @csrf
             <div class="form-group">
-                <i class="fas fa-user prefix grey-text"></i>
-                <label>Name</label>
-                <input type="text" class="form-control {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name">
+                <!--<i class="fas fa-user prefix grey-text"></i>
+                <label>Name</label>-->
+                <input type="text" class="form-control {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name" placeholder="Name">
                 <!-- Error -->
                 @if ($errors->has('name'))
                 <div class="error">
@@ -39,9 +39,9 @@
                 @endif
             </div>
             <div class="form-group">
-                <i class="fas fa-envelope prefix grey-text"></i>
-                <label >Email</label>
-                <input type="email" class="form-control {{ $errors->has('email') ? 'error' : '' }}" name="email" id="email">
+                <!--<i class="fas fa-envelope prefix grey-text"></i>
+                <label >Email</label>-->
+                <input type="email" class="form-control {{ $errors->has('email') ? 'error' : '' }}" placeholder="Email" name="email" id="email">
                 @if ($errors->has('email'))
                 <div class="error">
                     {{ $errors->first('email') }}
@@ -49,9 +49,9 @@
                 @endif
             </div>
             <div class="form-group">
-                <i class="fas fa-phone-alt prefix grey-text"></i>
-                <label>Phone</label>
-                <input type="text" class="form-control {{ $errors->has('phone') ? 'error' : '' }}" name="phone" id="phone">
+                <!--<i class="fas fa-phone-alt prefix grey-text"></i>
+                <label>Phone</label>-->
+                <input type="text" class="form-control {{ $errors->has('phone') ? 'error' : '' }}" placeholder="Phone" name="phone" id="phone">
                 @if ($errors->has('phone'))
                 <div class="error">
                     {{ $errors->first('phone') }}
@@ -59,9 +59,9 @@
                 @endif
             </div>
             <div class="form-group">
-                <i class="fas fa-tag prefix grey-text"></i>
-                <label>Subject</label>
-                <input type="text" class="form-control {{ $errors->has('subject') ? 'error' : '' }}" name="subject"
+                <!--<i class="fas fa-tag prefix grey-text"></i>
+                <label>Subject</label>-->
+                <input type="text" class="form-control {{ $errors->has('subject') ? 'error' : '' }}" placeholder="Subject" name="subject"
                     id="subject">
                 @if ($errors->has('subject'))
                 <div class="error">
@@ -70,9 +70,9 @@
                 @endif
             </div>
             <div class="form-group">
-                <i class="fas fa-pencil prefix grey-text"></i>
-                <label>Message</label>
-                <textarea class="form-control {{ $errors->has('message') ? 'error' : '' }}" name="message" id="message"
+                <!--<i class="fas fa-pencil prefix grey-text"></i>
+                <label>Message</label>-->
+                <textarea class="form-control {{ $errors->has('message') ? 'error' : '' }}" name="message" id="message" placeholder="Message"
                     rows="4"></textarea>
                 @if ($errors->has('message'))
                 <div class="error">
