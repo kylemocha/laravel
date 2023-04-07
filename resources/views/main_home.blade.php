@@ -255,7 +255,7 @@
             <a href="#" class="text-reset">Our Center</a>
           </p>
           <p>
-            <a href="contact" class="text-reset">Contact Us</a>
+            <a href="contact" class="text-reset" target="_blank">Contact Us</a>
           </p>
         </div>
         <!-- Grid column -->
