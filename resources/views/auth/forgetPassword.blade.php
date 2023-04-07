@@ -12,7 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot Password</title>
     <style>
-        
+        .close {
+         font-size: 25px;
+         font-weight: 600;
+         color: #000;
+        }
+        a:link{
+            text-decoration: none;
+            float: right;
+        }
     </style>
 </head>
 <body>
@@ -21,7 +29,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Reset Password</div>
+                    <div class="card-header">Reset Password <a href="login"><span class="close">&times;</span></a></div>
                     <div class="card-body">
     
                       @if (Session::has('message'))
