@@ -38,7 +38,7 @@
           <span class="text-danger">{{ $errors->first('password') }}</span>
           @endif
         </div>
-        <div class="pass"><a href="#">Forgot password?</a></div>
+        <div class="pass"><a href="{{ route('forget.password.get') }}">Forgot password?</a></div>
         <div class="row button">
           <input type="submit" value="Login">
         </div>

@@ -16,7 +16,7 @@ class ForgotPasswordController extends Controller
       /**
        * Write code on Method
        *
-       * @return response()
+       * 
        */
       public function showForgetPasswordForm()
       {
@@ -26,7 +26,7 @@ class ForgotPasswordController extends Controller
       /**
        * Write code on Method
        *
-       * @return response()
+       * 
        */
       public function submitForgetPasswordForm(Request $request)
       {
@@ -52,7 +52,7 @@ class ForgotPasswordController extends Controller
       /**
        * Write code on Method
        *
-       * @return response()
+       * 
        */
       public function showResetPasswordForm($token) { 
          return view('auth.forgetPasswordLink', ['token' => $token]);
@@ -61,7 +61,7 @@ class ForgotPasswordController extends Controller
       /**
        * Write code on Method
        *
-       * @return response()
+       * 
        */
       public function submitResetPasswordForm(Request $request)
       {

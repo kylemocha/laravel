@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\ContactUsFormController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
 
 
 Route::view('/', 'welcome'); 
