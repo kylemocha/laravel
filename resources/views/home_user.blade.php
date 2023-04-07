@@ -784,25 +784,25 @@
         <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">You are free to share your opinions and feelings in this section.</h6>
         <form class="form-horizontal">
           <div class="form-group">
-            <label class="control-label col-sm-2" for="email">Your name:</label>
+            <label class="control-label col-sm-2" for="email" style="font-weight: bold">Your name:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="name" placeholder="Enter your name">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2" for="email">Date:</label>
+            <label class="control-label col-sm-2" for="email" style="font-weight: bold">Date:</label>
             <div class="col-sm-10">
               <input type="date" class="form-control" id="date" placeholder="Enter date">
               <!--<input type="submit">-->
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2" for="textAreaMessage">Message:</label>
-            <textarea class="form-control" id="textAreaMessage" rows="10" placeholder="Write here"></textarea>          
+            <label class="control-label col-sm-2" for="textAreaMessage" style="font-weight: bold">Message:</label>
+            <textarea class="form-control" id="textAreaMessage" rows="10" placeholder="Write here.."></textarea>          
           </div>
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" class="btn btn-default">Submit</button>
+              <button type="submit" class="button-5" style="margin: 4px;">Submit</button>
             </div>
           </div>
         </form>
