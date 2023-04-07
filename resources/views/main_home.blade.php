@@ -246,7 +246,7 @@
             Links
           </h6>
           <p>
-            <a href="#" class="text-reset">Home</a>
+            <a href="main_home" class="text-reset">Home</a>
           </p>
           <p>
             <a href="#" class="text-reset">Take Test</a>
@@ -255,7 +255,7 @@
             <a href="#" class="text-reset">Our Center</a>
           </p>
           <p>
-            <a href="#" class="text-reset">Contact Us</a>
+            <a href="contact" class="text-reset">Contact Us</a>
           </p>
         </div>
         <!-- Grid column -->
