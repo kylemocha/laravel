@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot Password</title>
+    <style>
+        
+    </style>
 </head>
 <body>
 <main class="login-form">
@@ -39,7 +42,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" style="margin:10px;">
                                     Send Password Reset Link
                                 </button>
                             </div>
