@@ -782,23 +782,23 @@
        </button>
         <h2 style="font-weight: bold;">Write Journal</h2>
         <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">You are free to share your opinions and feelings in this section.</h6>
-        <form class="form-horizontal">
+        <form class="form-horizontal" action="#">
           <div class="form-group">
-            <label class="control-label col-sm-2" for="email" style="font-weight: bold">Your name:</label>
+            <label class="control-label col-sm-2"  style="font-weight: bold">Your name:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              <input type="text" class="form-control" nam="User_name" id="name" placeholder="Enter your name">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2" for="email" style="font-weight: bold">Date:</label>
+            <label class="control-label col-sm-2" style="font-weight: bold">Date:</label>
             <div class="col-sm-10">
-              <input type="date" class="form-control" id="date" placeholder="Enter date">
+              <input type="date" class="form-control" name="JournalDate" id="date" placeholder="Enter date">
               <!--<input type="submit">-->
             </div>
           </div>
           <div class="form-group">
             <label class="control-label col-sm-2" for="textAreaMessage" style="font-weight: bold">Message:</label>
-            <textarea class="form-control" id="textAreaMessage" rows="10" placeholder="Write here.."></textarea>          
+            <textarea class="form-control" id="textAreaMessage" rows="10" name="message" placeholder="Write here.."></textarea>          
           </div>
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
