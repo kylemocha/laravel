@@ -115,7 +115,7 @@
          <i class="fas fa-align-left"></i>
          <span></span>
         </button>
-        <h2 style="font-weight: bold;">Welcome, User!</h2>
+        <h2 style="font-weight: bold;">Welcome, {{ Auth::user()->name }}!</h2>
         <!--Modal Calendar-->
         <button type="button" id="myCalendar" class="btn btn-primary btn-md float-end"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</button>
         <div id="myDiv" class="modal1">
