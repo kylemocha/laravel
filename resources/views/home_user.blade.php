@@ -782,11 +782,12 @@
        </button>
         <h2 style="font-weight: bold;">Write Journal</h2>
         <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">You are free to share your opinions and feelings in this section.</h6>
-        <form class="form-horizontal" action="#">
+        <form class="form-horizontal" action="/create" method="POST">
+          <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
           <div class="form-group">
             <label class="control-label col-sm-2"  style="font-weight: bold">Your name:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" nam="User_name" id="name" placeholder="Enter your name">
+              <input type="text" class="form-control" name="User_name" id="name" placeholder="Enter your name">
             </div>
           </div>
           <div class="form-group">

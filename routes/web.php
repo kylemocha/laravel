@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\ContactUsFormController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
-use App\Http\Controllers\JournalInsert;
+use App\Http\Controllers\JournalController;
 
 
 Route::view('/', 'welcome'); 
@@ -28,6 +28,10 @@ Route::get('home_user', function () {
 
 /*Route::get('/insert',[JournalInsert::class, 'insert'])->name('insert');
 Route::post('/create',[JournalInsert::class, 'create']);*/
+
+Route::get('/insert','App\Http\Controllers\JournalController@insertform');
+Route::post('/create','JournalController@insert');
+
 
 Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
 Route::post('forget-password', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post'); 
