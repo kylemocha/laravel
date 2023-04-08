@@ -20,7 +20,7 @@
       <form action="{{ route('login.post') }}" method="POST">
         @csrf
         @if (session('success'))
-        <div class="alert alert-success" role="alert">
+        <div class="alert alert-success" role="alert" style="margin-bottom: 10px; color:red;">
             {{ session('success') }}
         </div>
         @endif
