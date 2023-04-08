@@ -16,7 +16,9 @@ class JournalController extends Controller
         $message = $request->input('message');
         $data=array('User_name'=>$User_name,"JournalDate"=>$J_date,"message"=>$message);
         DB::table('journal_details')->insert($data);
-        echo "Record inserted successfully.<br/>";
-        echo '<a href = "home_user">Click Here</a> to go back.';
+        //echo "Record inserted successfully.<br/>";
+        //echo '<a href = "home_user">Click Here</a> to go back.';
+        return redirect("home_user")->withSuccess('Great! Thanks for writing in your journal.');
     }
+    
 }

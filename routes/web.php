@@ -26,8 +26,6 @@ Route::get('home_user', function () {
     return view('home_user');
 });
 
-/*Route::get('/insert',[JournalInsert::class, 'insert'])->name('insert');
-Route::post('/create',[JournalInsert::class, 'create']);*/
 
 Route::get('/insert','App\Http\Controllers\JournalController@insertform');
 Route::post('/create','JournalController@insert');
