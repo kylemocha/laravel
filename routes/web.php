@@ -5,6 +5,8 @@ use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\ContactUsFormController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\JournalController;
+use App\Http\Controllers\JournalViewController;
+use App\Http\Controllers\RatingsController;
 
 
 Route::view('/', 'welcome'); 
@@ -29,6 +31,11 @@ Route::get('home_user', function () {
 
 Route::get('/insert','App\Http\Controllers\JournalController@insertform');
 Route::post('/create','JournalController@insert');
+//retrive data
+Route::get('view-records','JournalViewController@index');
+
+//Route::get('/insert','App\Http\Controllers\RatingsController@insertForm');
+//Route::post('/create1','JournalController@insert');
 
 
 Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');

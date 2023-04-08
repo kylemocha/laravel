@@ -93,9 +93,9 @@
                 </li>
             </ul>
             </li>
-            <li>
+            <!--<li>
                 <a href="#" onclick="show('page4');">Rate your Mood</a>
-            </li>
+            </li>-->
             <li>
                 <a href="#" onclick="show('page5');">Recommendations</a>
             </li>  
@@ -785,25 +785,43 @@
         <form class="form-horizontal" action="/create" method="POST">
           <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
           <div class="form-group">
-            <label class="control-label col-sm-2"  style="font-weight: bold">Your name:</label>
+            <label class="control-label col-sm-2" style="font-weight: bold">Rate your mood:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="User_name" id="name" placeholder="Enter your name">
+              <!--<input type="text" class="form-control" name="rating" id="ratings" placeholder="Enter date">-->
+              <div class="rate" class="form-control">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <!--<label class="control-label col-sm-2"  style="font-weight: bold;  text-align:left;" >Your name:</label>-->
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="User_name" id="name" placeholder="Enter your name here" required>
             </div>
           </div>
           <div class="form-group">
             <label class="control-label col-sm-2" style="font-weight: bold">Date:</label>
             <div class="col-sm-10">
-              <input type="date" class="form-control" name="JournalDate" id="date" placeholder="Enter date">
+              <input type="date" class="form-control" name="JournalDate" id="date" placeholder="Enter date"  required>
               <!--<input type="submit">-->
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2" for="textAreaMessage" style="font-weight: bold">Message:</label>
-            <textarea class="form-control" id="textAreaMessage" rows="10" name="message" placeholder="Write here.."></textarea>          
+            <label class="control-label col-sm-2" for="textAreaMessage" style="font-weight: bold ">Message:</label>
+            <textarea class="form-control" id="textAreaMessage" rows="10" name="message" placeholder="Write here.."  required></textarea>          
           </div>
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" class="button-5" style="margin: 4px;">Submit</button>
+              <button type="submit" class="button-5" style="margin: 4px; float: left;">Submit</button>
             </div>
           </div>
         </form>
@@ -817,8 +835,8 @@
         <h2 style="font-weight: bold;">View Journal</h2>
         <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
           <header>
-            <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">See your diary entries</h6>
-            <div class="col-6">
+            <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">See your journal entries</h6>
+            <div class="col-6" style="margin:5px;">
               <select class="form-select d-inline-block w-auto border pt-1">
                 <option value="0">Recent</option>
                 <option value="1">Previous</option>
@@ -834,19 +852,14 @@
                   <div class="col-xl-3 col-md-4 d-flex justify-content-center">
                     <div class="bg-image hover-zoom ripple rounded ripple-surface me-md-3 mb-3 mb-md-0">
                       <img src="https://i.ibb.co/VV1DxHf/3173-8-diary-icon-iconbunny.jpg" alt="3173-8-diary-icon-iconbunny" width="100" height="130" class="w-100"/>
-                      <a href="#!">
+                      <a href="#">
                         <div class="hover-overlay">
                           <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
                         </div>
                       </a>
                     </div>
                   </div>
-                  <div class="col-xl-6 col-md-5 col-sm-7">
-                    <h5>Day 1</h5>
-                    <p class="text mb-4 mb-md-0">
-                      Short description
-                    </p>
-                  </div>
+                  
                   <div class="col-xl-3 col-md-3 col-sm-5">
                     <div class="mt-4">
                       <button class="btn btn-primary shadow-0" type="button">Open</button>
@@ -873,12 +886,35 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-xl-6 col-md-5 col-sm-7">
-                    <h5>Day 2</h5>
-                    <p class="text mb-4 mb-md-0">
-                      Short description
-                    </p>
+                  
+                  <div class="col-xl-3 col-md-3 col-sm-5">
+                    <div class="mt-4">
+                      <button class="btn btn-primary shadow-0" type="button">Open</button>
+                      <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover"><i class="fas fa-heart fa-lg px-1"></i></a>
+                    </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-12">
+            <div class="card shadow-0 border rounded-3">
+              <div class="card-body">
+                <div class="row g-0">
+                  <div class="col-xl-3 col-md-4 d-flex justify-content-center">
+                    <div class="bg-image hover-zoom ripple rounded ripple-surface me-md-3 mb-3 mb-md-0">
+                      <img src="https://i.ibb.co/VV1DxHf/3173-8-diary-icon-iconbunny.jpg" alt="3173-8-diary-icon-iconbunny" width="100" height="130" class="w-100"/>
+                      <a href="#!">
+                        <div class="hover-overlay">
+                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                   
                   <div class="col-xl-3 col-md-3 col-sm-5">
                     <div class="mt-4">
                       <button class="btn btn-primary shadow-0" type="button">Open</button>
@@ -892,14 +928,14 @@
         </div>
     </div>
 
-    <div class="page" id="page4" style="display:none">
+    <!--<div class="page" id="page4" style="display:none">
       <button type="button" id="sidebarCollapse3" class="btn btn-info">
         <i class="fas fa-align-left"></i>
         <span></span>
        </button>
         <h2 style="font-weight: bold; text-align:center;">Rate your Mood</h2>
         <h6 class="subtitle font-weight-normal" style="text-align:center;">How do you rate your mood today?</h6>
-        <!--ratings-->
+        ratings
         <div class="container1">
           <div class="feedback">
             <div class="rating">
@@ -1002,16 +1038,17 @@
               </div>           
             </div>
             <div id="feedback" style="display: none" class="content1">
-              <form>
+              <form action="#">
+              <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
               <label>Write down your feelings for the day:</label>
-              <textarea id="txtfeedback" rows="10" cols="54" required></textarea>
+              <textarea id="txtfeedback" rows="10" cols="54" name="message" required></textarea>
               <input type="submit" value="Submit" >
               <input type="reset" value="Reset">
               </form>
           </div>
           </div>
         </div>
-    </div>
+    </div>-->
     
     <div class="page" id="page5" style="display:none">
       <button type="button" id="sidebarCollapse4" class="btn btn-info">
