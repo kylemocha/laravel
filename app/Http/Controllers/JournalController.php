@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use DB;
+use Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -13,8 +14,9 @@ class JournalController extends Controller
     public function insert(Request $request) {
         $User_name = $request->input('User_name');
         $J_date = $request->input('JournalDate');
+        $userId = Auth::user()->id;
         $message = $request->input('message');
-        $data=array('User_name'=>$User_name,"JournalDate"=>$J_date,"message"=>$message);
+        $data=array('User_name'=>$User_name,"JournalDate"=>$J_date,"user_id"=>$userId,"message"=>$message);
         DB::table('journal_details')->insert($data);
         //echo "Record inserted successfully.<br/>";
         //echo '<a href = "home_user">Click Here</a> to go back.';

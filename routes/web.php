@@ -30,8 +30,10 @@ Route::get('home_user', function () {
 
 Route::get('/insert','App\Http\Controllers\JournalController@insertform');
 Route::post('/create','JournalController@insert');
+
 //retrive data
-Route::get('/','JournalViewController@index');
+Route::get('view-records', 'JournalViewController@index');
+
 
 //Route::get('/insert','App\Http\Controllers\RatingsController@insertForm');
 //Route::post('/create1','JournalController@insert');
