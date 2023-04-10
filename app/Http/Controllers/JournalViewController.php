@@ -16,9 +16,9 @@ class JournalViewController extends Controller
         //return view('home_user',$users);
          $users['users'] =JournalView::orderBy('User_name','message')->get();
 
-         //return view("home_user",['users'=>$users]);
+         return view("home_user",['users'=>$users]);
          //return view('home_user', compact('users'));
-         return view('home_user', $users);
+         //return view('home_user', $users);
     }    
     
 }
