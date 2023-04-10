@@ -860,12 +860,11 @@
                     </div>
                   </div>
                   <!--error here-->
-                  <div class="col-xl-6 col-md-5 col-sm-7">
+                  <!--<div class="col-xl-6 col-md-5 col-sm-7">
                     <h5>Day 1</h5>
                     <p class="text mb-4 mb-md-0">Description</p>
-                  </div>
-                  
-                  
+                  </div>-->
+                 
                   <div class="col-xl-3 col-md-3 col-sm-5">
                     <div class="mt-4">
                       <button class="btn btn-primary shadow-0" type="button">Open</button>
