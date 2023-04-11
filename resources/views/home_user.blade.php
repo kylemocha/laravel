@@ -839,133 +839,33 @@
         <span></span>
        </button>
         <h2 style="font-weight: bold;">View Journal</h2>
-        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-          <header>
-            <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">See your journal entries</h6>
-            <div class="col-6" style="margin:5px;">
-              <select class="form-select d-inline-block w-auto border pt-1">
-                <option value="0">Recent</option>
-                <option value="1">Previous</option>
-              </select>
-            </div>
-          </header>
-       
-        <div class="row justify-content-center mb-3">
-          <div class="col-md-12">
-            <div class="card shadow-0 border rounded-3">
-              <div class="card-body">
-                <div class="row g-0">
-                  <div class="col-xl-3 col-md-4 d-flex justify-content-center">
-                    <div class="bg-image hover-zoom ripple rounded ripple-surface me-md-3 mb-3 mb-md-0">
-                      <img src="https://i.ibb.co/VV1DxHf/3173-8-diary-icon-iconbunny.jpg" alt="3173-8-diary-icon-iconbunny" width="100" height="130" class="w-100"/>
-                      <a href="#">
-                        <div class="hover-overlay">
-                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-xl-6 col-md-5 col-sm-7">
-              
-                  @foreach ($users as $user)
-                  <h5>Title: {{ $user->title }}</h5>
-                   <p class="text mb-4 mb-md-0">
-                   Date Created: {{ $user->JournalDate }}
-                  </p>
-                  @endforeach
-               
-                  </div>
-              
-                  <div class="col-xl-3 col-md-3 col-sm-5">
-                    <div class="mt-4">
-                      <button class="btn btn-primary shadow-0" type="button">Open</button>
-                      <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover"><i class="fas fa-heart fa-lg px-1"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-3">
-          <div class="col-md-12">
-            <div class="card shadow-0 border rounded-3">
-              <div class="card-body">
-                <div class="row g-0">
-                  <div class="col-xl-3 col-md-4 d-flex justify-content-center">
-                    <div class="bg-image hover-zoom ripple rounded ripple-surface me-md-3 mb-3 mb-md-0">
-                      <img src="https://i.ibb.co/VV1DxHf/3173-8-diary-icon-iconbunny.jpg" alt="3173-8-diary-icon-iconbunny" width="100" height="130" class="w-100"/>
-                      <a href="#!">
-                        <div class="hover-overlay">
-                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  
-                  <div class="col-xl-6 col-md-5 col-sm-7">
-                  
-                    @foreach ($users as $user)
-                    <h5>Title: {{ $user->title }}</h5>
-                     <p class="text mb-4 mb-md-0">
-                     Date Created: {{ $user->JournalDate }}
-                    </p>
-                    @endforeach
-                 
-                    </div>
-
-                  <div class="col-xl-3 col-md-3 col-sm-5">
-                    <div class="mt-4">
-                      <button class="btn btn-primary shadow-0" type="button">Open</button>
-                      <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover"><i class="fas fa-heart fa-lg px-1"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center mb-3">
-          <div class="col-md-12">
-            <div class="card shadow-0 border rounded-3">
-              <div class="card-body">
-                <div class="row g-0">
-                  <div class="col-xl-3 col-md-4 d-flex justify-content-center">
-                    <div class="bg-image hover-zoom ripple rounded ripple-surface me-md-3 mb-3 mb-md-0">
-                      <img src="https://i.ibb.co/VV1DxHf/3173-8-diary-icon-iconbunny.jpg" alt="3173-8-diary-icon-iconbunny" width="100" height="130" class="w-100"/>
-                      <a href="#!">
-                        <div class="hover-overlay">
-                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-
-                   
-                  <div class="col-xl-6 col-md-5 col-sm-7">
-                  
-                    @foreach ($users as $user)
-                    <h5>Title: {{ $user->title }}</h5>
-                     <p class="text mb-4 mb-md-0">
-                     Date Created: {{ $user->JournalDate }}
-                    </p>
-                    @endforeach
-                 
-                    </div>
-                   
-                  <div class="col-xl-3 col-md-3 col-sm-5">
-                    <div class="mt-4">
-                      <button class="btn btn-primary shadow-0" type="button">Open</button>
-                      <a href="#!" class="btn btn-light border px-2 pt-2 icon-hover"><i class="fas fa-heart fa-lg px-1"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">See your journal entries</h6>
+        
+        <table class="table table-striped">
+          <thead>
+              <tr>
+                  <th>Journal Entry Number</th>
+                  <th>Title</th>
+                  <th>Date Created</th>
+                  <th>Content</th>
+                  <th>Actions</th>
+              </tr>
+          </thead>
+          <tbody>
+            @foreach ($users as $user)
+              <tr>
+                  <td>{{ $user->id }}</td>
+                  <td>{{ $user->title }}</td>
+                  <td>{{ $user->JournalDate }}</td> 
+                  <td>{{ $user->message }}</td> 
+                  <td>     
+                    <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+                  </td>
+              </tr>
+              @endforeach              
+          </tbody>
+      </table>                          
     </div>
 
     <!--<div class="page" id="page4" style="display:none">
