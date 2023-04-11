@@ -784,26 +784,32 @@
         <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">You are free to share your opinions and feelings in this section.</h6>
         <form class="form-horizontal" action="/create" method="POST">
           <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
-          <div class="form-group">
+          <!--<div class="form-group">
             <label class="control-label col-sm-2" style="font-weight: bold">Rate your mood:</label>
             <div class="col-sm-10">
-              <!--<input type="text" class="form-control" name="rating" id="ratings" placeholder="Enter date">-->
-              <div class="rate" class="form-control">
-                <input type="radio" id="star5" name="rate" value="5" />
+              <input type="text" class="form-control" name="rating" id="ratings" placeholder="Enter date">
+              <div class="ratings" class="form-control">
+                <input type="radio" id="star5" name="ratings" value="5" />
                 <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
+                <input type="radio" id="star4" name="ratings" value="4" />
                 <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
+                <input type="radio" id="star3" name="ratings" value="3" />
                 <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
+                <input type="radio" id="star2" name="ratings" value="2" />
                 <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
+                <input type="radio" id="star1" name="ratings" value="1" />
                 <label for="star1" title="text">1 star</label>
               </div>
             </div>
+          </div>-->
+          <div class="form-group">
+            <label class="control-label col-sm-2"  style="font-weight: bold;  text-align:left;" >Title:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="title" id="name" placeholder="Title of your journal" required>
+            </div>
           </div>
           <div class="form-group">
-            <!--<label class="control-label col-sm-2"  style="font-weight: bold;  text-align:left;" >Your name:</label>-->
+            <label class="control-label col-sm-2"  style="font-weight: bold;  text-align:left;" >Your name:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" name="User_name" id="name" placeholder="Enter your name here" required>
             </div>
@@ -863,7 +869,7 @@
                   <div class="col-xl-6 col-md-5 col-sm-7">
               
                   @foreach ($users as $user)
-                  <h5>Name: {{ $user->User_name }}</h5>
+                  <h5>Title: {{ $user->title }}</h5>
                    <p class="text mb-4 mb-md-0">
                    Date Created: {{ $user->JournalDate }}
                   </p>
@@ -901,7 +907,7 @@
                   <div class="col-xl-6 col-md-5 col-sm-7">
                   
                     @foreach ($users as $user)
-                    <h5>Name: {{ $user->User_name }}</h5>
+                    <h5>Title: {{ $user->title }}</h5>
                      <p class="text mb-4 mb-md-0">
                      Date Created: {{ $user->JournalDate }}
                     </p>
