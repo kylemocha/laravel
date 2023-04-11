@@ -809,7 +809,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2"  style="font-weight: bold;  text-align:left;" >Your name:</label>
+            <label class="control-label col-sm-2"  style="font-weight: bold;  text-align:left;" >Name:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" name="User_name" id="name" placeholder="Enter your name here" required>
             </div>
@@ -942,6 +942,18 @@
                       </a>
                     </div>
                   </div>
+
+                   
+                  <div class="col-xl-6 col-md-5 col-sm-7">
+                  
+                    @foreach ($users as $user)
+                    <h5>Title: {{ $user->title }}</h5>
+                     <p class="text mb-4 mb-md-0">
+                     Date Created: {{ $user->JournalDate }}
+                    </p>
+                    @endforeach
+                 
+                    </div>
                    
                   <div class="col-xl-3 col-md-3 col-sm-5">
                     <div class="mt-4">
