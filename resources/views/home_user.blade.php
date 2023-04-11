@@ -784,7 +784,7 @@
         <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">You are free to share your opinions and feelings in this section.</h6>
         <form class="form-horizontal" action="/create" method="POST">
           <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
-          <!--<div class="form-group">
+          <!--<div class="form-group"> need to add radio buttons
             <label class="control-label col-sm-2" style="font-weight: bold">Rate your mood:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" name="rating" id="ratings" placeholder="Enter date">
