@@ -33,10 +33,10 @@ Route::get('/insert','App\Http\Controllers\JournalController@insertform');
 Route::post('/create','JournalController@insert');
 
 //retrive data
+Route::get('/home_user', 'JournalViewController@index');
 //Route::get('/', 'JournalViewController@index');
-Route::get('/get_users', [JournalViewController::class, 'get_users'] )->name("get_users");
-//Route::get('/insert','App\Http\Controllers\RatingsController@insertForm');
-//Route::post('/create1','JournalController@insert');
+//Route::get('/get_users', [JournalViewController::class, 'get_users'] )->name("get_users");
+//Route::get('/get_users', 'App\Http\Controllers\JournalViewController@get_users');
 
 
 Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
