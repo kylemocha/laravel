@@ -57,7 +57,8 @@
                     <button type="button" class="btn btn-danger dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false" style="font-size:20px; border: none; color: black; background-color: aqua;"><i class="far fa-user"></i></button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>
+                        <a class="dropdown-item" href="">Profile</a>
+                        <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>  
                     </div>   
                 </div>   
             </div>
@@ -846,7 +847,6 @@
         <table class="table table-striped" id="editable">
           <thead>
               <tr>
-                  <th>Journal Entry Number</th>
                   <th>Title</th>
                   <th>Date Created</th>
                   <th>Content</th>
@@ -856,13 +856,12 @@
           <tbody>
             @foreach ($users as $user)
               <tr>
-                  <td>{{ $user->id }}</td>
                   <td>{{ $user->title }}</td>
                   <td>{{ $user->JournalDate }}</td> 
                   <td>{{ $user->message }}</td> 
                   <td>
-                    <a href={{'edit/'.$user->id}}>Edit</a>  
-                    <a href={{'delete/'.$user->id}}>Delete</a> 
+                    <a style="text-decoration: underline;" href={{'edit/'.$user->id}}>Edit</a>  
+                    <a style="text-decoration: underline;" href={{'delete/'.$user->id}}>Delete</a> 
                   </td>
               </tr>
               @endforeach              

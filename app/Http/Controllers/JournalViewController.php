@@ -19,7 +19,7 @@ class JournalViewController extends Controller
     {
         $users = JournalView::find($id);
         $users->delete();
-        return redirect('home_user');	
+        return redirect('home_user')->withSuccess('Successfully deleted your journal entry.');	
     }
     function showData($id){
        $users= JournalView::find($id);
@@ -30,7 +30,7 @@ class JournalViewController extends Controller
        $users->title=$req->title;
        $users->message=$req->message;
        $users->save();
-       return redirect('home_user');   
+       return redirect('home_user')->withSuccess('Successfully updated your journal entry.');   
     }
     
 }
