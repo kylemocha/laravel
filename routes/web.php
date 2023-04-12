@@ -11,12 +11,18 @@ use App\Models\JournalView;
 
 Route::view('/', 'welcome'); 
 
+Route::get('admin', function () {
+    return view('admin');
+});
+
 Route::get('main_home', function () {
     return view('main_home');
 });
 Route::get('home_user', function () {
     return view('home_user');
 });
+
+
 
 //insert journal
 Route::get('/insert','App\Http\Controllers\JournalController@insertform');
