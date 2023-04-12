@@ -13,8 +13,9 @@
 <body>
   <div class="sidebar">
     <div class="logo-details">
-      <i class='bx bxl-c-plus-plus'></i>
-      <span class="logo_name">CodingLab</span>
+      <!--i class='bx bxl-c-plus-plus'></i>-->
+      <i class='bx bx-user'></i>
+      <span class="logo_name">Admin</span>
     </div>
       <ul class="nav-links">
         <li>
@@ -26,28 +27,28 @@
         <li>
           <a href="#">
             <i class='bx bx-box' ></i>
-            <span class="links_name">Product</span>
+            <span class="links_name">Users</span>
           </a>
         </li>
         <li>
           <a href="#">
             <i class='bx bx-list-ul' ></i>
-            <span class="links_name">Order list</span>
+            <span class="links_name">Contact Form</span>
           </a>
         </li>
         <li>
           <a href="#">
             <i class='bx bx-pie-chart-alt-2' ></i>
-            <span class="links_name">Analytics</span>
+            <span class="links_name">Journal Details</span>
           </a>
         </li>
-        <li>
+       <li>
           <a href="#">
             <i class='bx bx-coin-stack' ></i>
-            <span class="links_name">Stock</span>
+            <span class="links_name">Appointments</span>
           </a>
         </li>
-        <li>
+        <!--<li>
           <a href="#">
             <i class='bx bx-book-alt' ></i>
             <span class="links_name">Total order</span>
@@ -68,9 +69,9 @@
         <li>
           <a href="#">
             <i class='bx bx-heart' ></i>
-            <span class="links_name">Favrorites</span>
+            <span class="links_name">Favorites</span>
           </a>
-        </li>
+        </li>-->
         <li>
           <a href="#">
             <i class='bx bx-cog' ></i>
@@ -96,11 +97,14 @@
         <i class='bx bx-search' ></i>
       </div>
       <div class="profile-details">
-        <!--<img src="images/profile.jpg" alt="">-->
-        <span class="admin_name">Prem Shahi</span>
-        <i class='bx bx-chevron-down' ></i>
+        <button type="button" class="btn btn-danger dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false" style="font-size:20px; border: none; color: black; background-color: aqua;"><i class="far fa-user"></i></button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Logout</a>  
+        </div>   
       </div>
     </nav>
+    <!--end of navbar-->
 
     <div class="home-content">
       <div class="overview-boxes">
