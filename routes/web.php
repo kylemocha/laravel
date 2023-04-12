@@ -29,7 +29,6 @@ Route::get('edit/{id}', [JournalViewController::class, 'showData']);
 Route::post('edit', [JournalViewController::class, 'update']);
 Route::get('delete/{id}', [JournalViewController::class, 'delete']);
 
-
 //login features
 Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
 Route::post('forget-password', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post'); 
