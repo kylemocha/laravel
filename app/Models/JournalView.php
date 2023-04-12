@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class JournalView extends Model
 {
 use HasFactory; 
+ public $timestamps=false;
  protected $table = 'journal_details';
  protected $fillable = ['id', 'User_name', 'JournalDate', 'user_id' , 'message'];
 

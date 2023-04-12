@@ -24,6 +24,11 @@ Route::post('/create','JournalController@insert');
 
 //retrive journal data
 Route::get('/home_user', 'JournalViewController@index');
+//update and delete
+Route::get('edit/{id}', [JournalViewController::class, 'showData']);
+Route::post('edit', [JournalViewController::class, 'update']);
+Route::get('delete/{id}', [JournalViewController::class, 'delete']);
+
 
 //login features
 Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
