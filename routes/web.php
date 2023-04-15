@@ -25,6 +25,9 @@ Route::get('home_user', function () {
 Route::get('profile', function () {
     return view('profile');
 });
+Route::get('therapist', function () {
+    return view('therapist');
+});
 
 //insert journal
 Route::get('/insert','App\Http\Controllers\JournalController@insertform');
@@ -57,5 +60,6 @@ Route::get('logout', [CustomAuthController::class, 'logout'])->name('logout');
 
 //for admin 
 Auth::routes();
-
 Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
+
+Route::get('therapist/home', [HomeController::class, 'therapistHome'])->name('therapist.home')->middleware('is_admin');

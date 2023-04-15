@@ -54,6 +54,12 @@
             <span class="links_name">Setting</span>
           </a>
         </li>
+        <li class="log_out">
+          <a href="{{ route('logout') }}">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
       </ul>
   </div>
   <section class="home-section">
@@ -65,13 +71,6 @@
       <div class="search-box">
         <input type="text" placeholder="Search...">
         <i class='bx bx-search' ></i>
-      </div>
-      <div class="profile-details">
-        <button type="button" class="btn btn-danger dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
-        aria-expanded="false" style="font-size:20px; border: none; color: black; background-color: aqua;"><i class="far fa-user"></i></button>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>  
-        </div>   
       </div>
     </nav>
     <!--end of navbar-->

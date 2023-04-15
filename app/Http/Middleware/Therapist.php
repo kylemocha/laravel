@@ -2,11 +2,10 @@
 
 namespace App\Http\Middleware;
 
-use Auth;
 use Closure;
 use Illuminate\Http\Request;
 
-class IsAdmin
+class Therapist
 {
     /**
      * Handle an incoming request.
@@ -15,16 +14,12 @@ class IsAdmin
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle($request, Closure $next)
+    public function handle(Request $request, Closure $next)
     {
-        if(auth()->user()->is_admin == 1){
-            return redirect('admin');
-        }
-        elseif(auth()->user()->is_admin == 2){
-            return redirect('therapist');
+        if(auth()->user()->is_admin == 2){
+            return $next($request);
         }
    
-        return redirect('login')->with('error',"You don't have admin access.");
+        return redirect('login')->with('error',"You don't have therapist access.");
     }
 }
-
