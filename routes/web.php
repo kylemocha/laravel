@@ -22,6 +22,9 @@ Route::get('main_home', function () {
 Route::get('home_user', function () {
     return view('home_user');
 });
+Route::get('profile', function () {
+    return view('profile');
+});
 
 //insert journal
 Route::get('/insert','App\Http\Controllers\JournalController@insertform');
