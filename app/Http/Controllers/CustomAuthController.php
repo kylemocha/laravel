@@ -5,6 +5,7 @@ use Hash;
 use Session;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+
 class CustomAuthController extends Controller
 {
     public function index()
@@ -15,7 +16,7 @@ class CustomAuthController extends Controller
     public function adminHome(){
         return view('admin');
     }
-      
+
     public function registration()
     {
         return view('auth.registration');
@@ -28,21 +29,13 @@ class CustomAuthController extends Controller
             'email' => 'required',
             'password' => 'required',
         ]);
-        //if(auth()->attempt(array('email'=>$input['email'], 'password'=>$input['password']))){
-            //if(auth()->user()->is_admin == 1){
-                //return redirect()->route('admin');
-            //}else{
-                //return redirect()->route('home_user');
-            //}
-        //}
-   
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
             return redirect()->intended('home_user')
                         ->withSuccess('You have successfully logged in');
         }
-  
-        return redirect("login")->withSuccess('Opps! You have entered invalid credentials'); 
+
+        return redirect("login")->withSuccess('Opps! You have entered invalid credentials');
     }
     
       
