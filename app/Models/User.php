@@ -24,9 +24,14 @@ class User extends Authenticatable
         'password',
     ];
 
-    protected $defaults = array(
+    /*protected $defaults = array(
         'role' => 3,
      );
+
+    public function getIsAdminAttribute()
+    {
+         return $this->user_type == 1;
+    }*/
 
     /**
      * The attributes that should be hidden for serialization.

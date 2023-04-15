@@ -23,7 +23,6 @@ Route::get('home_user', function () {
 });
 
 
-
 //insert journal
 Route::get('/insert','App\Http\Controllers\JournalController@insertform');
 Route::post('/create','JournalController@insert');
@@ -35,7 +34,7 @@ Route::get('edit/{id}', [JournalViewController::class, 'showData']);
 Route::post('edit', [JournalViewController::class, 'update']);
 Route::get('delete/{id}', [JournalViewController::class, 'delete']);
 
-//login features
+//forget password features
 Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
 Route::post('forget-password', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post'); 
 Route::get('reset-password/{token}', [ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset.password.get');
@@ -53,6 +52,6 @@ Route::post('post-registration', [CustomAuthController::class, 'postRegistration
 Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
 Route::get('logout', [CustomAuthController::class, 'logout'])->name('logout');
 
-
+//Route::post('/login', 'CustomAuthController@determineLoginType')->middleware('isAdmin');
 
 

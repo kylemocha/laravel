@@ -71,4 +71,14 @@ class CustomAuthController extends Controller
   
         return Redirect('main_home');
     }
+    protected function redirectTo()
+    {
+      if (Auth::user()->user_type == 'admin')
+      {
+        return 'admin';  // admin dashboard path
+      } else {
+        return 'home_user';  // member dashboard path
+      }
+    }
+
 }

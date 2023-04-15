@@ -508,12 +508,12 @@ class ComposerStaticInit475d29db86bb4184874fbeb04040646c
         ),
         'Database\\Seeders\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/database/seeders',
+            0 => __DIR__ . '/../..' . '/Database/Seeders',
             1 => __DIR__ . '/..' . '/laravel/pint/database/seeders',
         ),
         'Database\\Factories\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/database/factories',
+            0 => __DIR__ . '/../..' . '/Database/Factories/Task',
             1 => __DIR__ . '/..' . '/laravel/pint/database/factories',
         ),
         'Cron\\' => 
@@ -570,9 +570,13 @@ class ComposerStaticInit475d29db86bb4184874fbeb04040646c
         'App\\Http\\Controllers\\ContactUsFormController' => __DIR__ . '/../..' . '/app/Http/Controllers/ContactUsFormController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\CustomAuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/CustomAuthController.php',
+        'App\\Http\\Controllers\\JournalController' => __DIR__ . '/../..' . '/app/Http/Controllers/JournalController.php',
+        'App\\Http\\Controllers\\JournalViewController' => __DIR__ . '/../..' . '/app/Http/Controllers/JournalViewController.php',
+        'App\\Http\\Controllers\\RatingsController' => __DIR__ . '/../..' . '/app/Http/Controllers/RatingsController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
+        'App\\Http\\Middleware\\IsAdmin' => __DIR__ . '/../..' . '/app/Http/Middleware/IsAdmin.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
@@ -582,6 +586,7 @@ class ComposerStaticInit475d29db86bb4184874fbeb04040646c
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Mail\\contact' => __DIR__ . '/../..' . '/app/Mail/contact.php',
         'App\\Models\\Contact' => __DIR__ . '/../..' . '/app/Models/Contact.php',
+        'App\\Models\\JournalView' => __DIR__ . '/../..' . '/app/Models/JournalView.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -753,8 +758,7 @@ class ComposerStaticInit475d29db86bb4184874fbeb04040646c
         'Cron\\HoursField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
-        'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
-        'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/Database/Seeders/DatabaseSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
