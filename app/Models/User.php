@@ -22,17 +22,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'is_admin',
     ];
-
-    /*protected $defaults = array(
-        'role' => 3,
-     );
-
-    public function getIsAdminAttribute()
-    {
-         return $this->user_type == 1;
-    }*/
-
+    
     /**
      * The attributes that should be hidden for serialization.
      *

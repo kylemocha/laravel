@@ -11,6 +11,10 @@ class CustomAuthController extends Controller
     {
         return view('auth.login');
     }  
+
+    public function adminHome(){
+        return view('admin');
+    }
       
     public function registration()
     {
@@ -18,11 +22,19 @@ class CustomAuthController extends Controller
     }
       
     public function postLogin(Request $request)
-    {
+    {   
+        //$input = $request->all();
         $request->validate([
             'email' => 'required',
             'password' => 'required',
         ]);
+        //if(auth()->attempt(array('email'=>$input['email'], 'password'=>$input['password']))){
+            //if(auth()->user()->is_admin == 1){
+                //return redirect()->route('admin');
+            //}else{
+                //return redirect()->route('home_user');
+            //}
+        //}
    
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
@@ -30,8 +42,9 @@ class CustomAuthController extends Controller
                         ->withSuccess('You have successfully logged in');
         }
   
-        return redirect("login")->withSuccess('Opps! You have entered invalid credentials');
+        return redirect("login")->withSuccess('Opps! You have entered invalid credentials'); 
     }
+    
       
     public function postRegistration(Request $request)
     {  
@@ -71,14 +84,5 @@ class CustomAuthController extends Controller
   
         return Redirect('main_home');
     }
-    protected function redirectTo()
-    {
-      if (Auth::user()->user_type == 'admin')
-      {
-        return 'admin';  // admin dashboard path
-      } else {
-        return 'home_user';  // member dashboard path
-      }
-    }
-
+   
 }

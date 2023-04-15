@@ -8,6 +8,7 @@ use App\Http\Controllers\JournalController;
 use App\Http\Controllers\JournalViewController;
 use App\Models\JournalView;
 
+//Auth::routes();
 
 Route::view('/', 'welcome'); 
 
@@ -21,7 +22,6 @@ Route::get('main_home', function () {
 Route::get('home_user', function () {
     return view('home_user');
 });
-
 
 //insert journal
 Route::get('/insert','App\Http\Controllers\JournalController@insertform');
@@ -51,6 +51,10 @@ Route::get('registration', [CustomAuthController::class, 'registration'])->name(
 Route::post('post-registration', [CustomAuthController::class, 'postRegistration'])->name('register.post'); 
 Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
 Route::get('logout', [CustomAuthController::class, 'logout'])->name('logout');
+
+//for admin unta :(
+Route::get('/admin', [App\Http\Controllers\CustomAuthController::class, 'adminHome'])->name('admin.home')
+->middleware('is_admin');
 
 //Route::post('/login', 'CustomAuthController@determineLoginType')->middleware('isAdmin');
 

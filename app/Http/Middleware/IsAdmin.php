@@ -17,11 +17,10 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Auth::user()->user_type == 'admin'){
-            return $next($request);
-          } else {
-            return redirect('/home');
-          }
+        if(auth()->user()->is_admin == 1){
+          return $next($request);
+        }
+        return redirect('home_user')->with('error', 'You have no admin access');
         }
 }
 

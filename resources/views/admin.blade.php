@@ -107,6 +107,14 @@
     <!--end of navbar-->
 
     <div class="home-content">
+      <div class="card-body">
+        @if (session('success'))
+            <div class="alert alert-success" role="alert">
+                {{ session('success') }}
+            </div>
+        @endif
+        Welcome to admin dashboard
+      </div>
       <div class="overview-boxes">
         <div class="box">
           <div class="right-side">
