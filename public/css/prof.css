@@ -7,6 +7,7 @@ body {
     color: #000;
 }
 .student-profile .card {
+    font-size: 20px;
     border-radius: 10px;
 }
 .student-profile .card .card-header .profile_img {
