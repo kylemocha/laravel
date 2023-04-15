@@ -35,9 +35,9 @@ class CustomAuthController extends Controller
         if(auth()->attempt(array('email' => $input['email'], 'password' => $input['password'])))
         {
             if (auth()->user()->is_admin == 1) {
-                return redirect('admin');
+                return redirect('admin')->withSuccess('Welcome admin!');
             }else{
-                return redirect('home_user');
+                return redirect('home_user')->withSuccess('You have successfully logged in!');
             }
         }else{
             return redirect()->route('login')
@@ -57,7 +57,7 @@ class CustomAuthController extends Controller
         $data = $request->all();
         $check = $this->create($data);
          
-        return redirect("login")->withSuccess('Great! You have successfully created your account');
+        return redirect("login")->withSuccess('Great! You have successfully created your account.');
     }
     
     public function dashboard()
@@ -66,7 +66,7 @@ class CustomAuthController extends Controller
             return view('home_user');
         }
   
-        return redirect("login")->withSuccess('Opps! You did not successfully logged in');
+        return redirect("login")->withSuccess('Opps! You did not successfully logged in.');
     }
 
     public function create(array $data)

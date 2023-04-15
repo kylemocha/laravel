@@ -52,10 +52,7 @@ Route::post('post-registration', [CustomAuthController::class, 'postRegistration
 Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
 Route::get('logout', [CustomAuthController::class, 'logout'])->name('logout');
 
-//for admin unta :(
-//Route::get('/admin', [App\Http\Controllers\CustomAuthController::class, 'adminHome'])->name('admin')->middleware('is_admin');
-
-
+//for admin 
 Auth::routes();
 
 Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');

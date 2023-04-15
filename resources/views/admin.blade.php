@@ -100,21 +100,18 @@
         <button type="button" class="btn btn-danger dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false" style="font-size:20px; border: none; color: black; background-color: aqua;"><i class="far fa-user"></i></button>
         <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Logout</a>  
+            <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>  
         </div>   
       </div>
     </nav>
     <!--end of navbar-->
 
     <div class="home-content">
-      <div class="card-body">
         @if (session('success'))
             <div class="alert alert-success" role="alert">
                 {{ session('success') }}
             </div>
         @endif
-        Welcome to admin dashboard
-      </div>
       <div class="overview-boxes">
         <div class="box">
           <div class="right-side">
