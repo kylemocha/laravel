@@ -57,7 +57,7 @@
                     <button type="button" class="btn btn-danger dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false" style="font-size:20px; border: none; color: black; background-color: aqua;"><i class="far fa-user"></i></button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="profile" target="_blank">Profile</a>
+                        <a class="dropdown-item" href="#">Profile</a>
                         <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>  
                     </div>   
                 </div>   
@@ -71,7 +71,7 @@
     <nav id="sidebar">
         <div class="sidebar-header">
             <h3 style="text-align: center; font-family: Assistant, sans-serif; font-size: 20px; font-weight: bold;">
-            CSWD Mental Health Counseling Application</h3>
+            CSWD Mental Health Web Application</h3>
         </div>
         <!--searchbar-->
         <div class="form-group has-search">
@@ -82,11 +82,11 @@
         <!--<p>Features</p>-->
         <li class="active">
             <li>
-                <a href="#" onclick="show('page1');">Meet our Therapists</a>
+                <a href="#" onclick="show('page1');"><b>Schedule Appointments</b></a>
             </li>
         </li>  
             <li>
-            <a href="#moodjournal" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Mood Journal</a>
+            <a href="#moodjournal" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><b>Mood Journal</b></a>
             <ul class="collapse list-unstyled" id="moodjournal">
                 <li>
                     <a href="#" onclick="show('page2');">Write Journal</a>
@@ -100,7 +100,7 @@
                 <a href="#" onclick="show('page4');">Rate your Mood</a>
             </li>-->
             <li>
-                <a href="#" onclick="show('page5');">Recommendations</a>
+                <a href="#" onclick="show('page5');"><b>Recommendations</b></a>
             </li>  
     </ul>
     </nav>

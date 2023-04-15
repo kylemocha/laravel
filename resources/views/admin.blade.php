@@ -33,7 +33,7 @@
         <li>
           <a href="#" onclick="show('page3');">
             <i class='bx bx-list-ul' ></i>
-            <span class="links_name">Contact Form</span>
+            <span class="links_name">Contact Us</span>
           </a>
         </li>
         <li>
@@ -52,12 +52,6 @@
           <a href="#" onclick="show('page6');">
             <i class='bx bx-cog' ></i>
             <span class="links_name">Setting</span>
-          </a>
-        </li>
-        <li class="log_out">
-          <a href="{{ route('logout') }}">
-            <i class='bx bx-log-out'></i>
-            <span class="links_name">Log out</span>
           </a>
         </li>
       </ul>
@@ -94,22 +88,176 @@
       </div>
        
       <div class="page" id="page2" style="display:none">
-        <h2 style="font-weight: bold;">&nbsp; rawr</h2>
+        <h2 style="font-weight: bold;">&nbsp;Users Section</h2>
+        <a style="text-decoration: underline; float:right;" href= "#">Add User</a> 
+        <table id="users">
+          <tr>
+            <th>User ID</th>
+            <th>Role</th>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+            <td>Germany</td>
+            <td>
+              <a style="text-decoration: underline;" href= "#">Edit</a> 
+              <a style="text-decoration: underline;" href= "#">Delete</a> 
+            </td>
+          </tr>
+          <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Christina Berglund</td>
+            <td>Sweden</td>
+            <td>Germany</td>
+            <td>
+              <a style="text-decoration: underline;" href= "#">Edit</a> 
+              <a style="text-decoration: underline;" href= "#">Delete</a> 
+            </td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+            <td>Germany</td>
+            <td>
+              <a style="text-decoration: underline;" href= "#">Edit</a> 
+              <a style="text-decoration: underline;" href= "#">Delete</a> 
+            </td>
+          </tr>
+          <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+            <td>Germany</td>
+            <td>
+              <a style="text-decoration: underline;" href= "#">Edit</a> 
+              <a style="text-decoration: underline;" href= "#">Delete</a> 
+            </td>
+          </tr>
+          <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+            <td>Germany</td>
+            <td>
+              <a style="text-decoration: underline;" href= "#">Edit</a> 
+              <a style="text-decoration: underline;" href= "#">Delete</a> 
+            </td>
+          </tr>
+        </table>
         
       </div>
 
       <div class="page" id="page3" style="display:none">
-        <h2 style="font-weight: bold;">&nbsp; meow</h2>
-        
+        <h2 style="font-weight: bold;">&nbsp;Contact Us Section</h2>
+        <table id="users">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Subject</th>
+            <th>Message</th>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+            <td>Germany</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Christina Berglund</td>
+            <td>Sweden</td>
+            <td>Germany</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+            <td>Germany</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+            <td>Germany</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+            <td>Germany</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
 
       <div class="page" id="page4" style="display:none">
-        <h2 style="font-weight: bold;">&nbsp; meep</h2>
+        <h2 style="font-weight: bold;">&nbsp; Journal Section</h2>
+        <table id="users">
+          <tr>
+            <th>ID</th>
+            <th>User ID</th>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Message</th>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+            <td>Germany</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Christina Berglund</td>
+            <td>Sweden</td>
+            <td>Germany</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+            <td>Germany</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+            <td>Germany</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+            <td>Germany</td>
+            <td></td>
+          </tr>
+        </table>
         
       </div>
 
       <div class="page" id="page5" style="display:none">
-        <h2 style="font-weight: bold;">&nbsp; moop</h2>
+        <h2 style="font-weight: bold;">&nbsp; Appointments Section</h2>
+
         
       </div>
 
