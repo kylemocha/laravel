@@ -4,39 +4,46 @@ use Illuminate\Http\Request;
 use Hash;
 use Session;
 use App\Models\User;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 
 class CustomAuthController extends Controller
-{
+{    
+    use AuthenticatesUsers;
     public function index()
     {
         return view('auth.login');
     }  
-
-    public function adminHome(){
-        return view('admin');
-    }
-
+      
     public function registration()
     {
         return view('auth.registration');
     }
 
+    protected $redirectTo = 'home_user';
+   
+   
     public function postLogin(Request $request)
-    {
-        //$input = $request->all();
-        $request->validate([
-            'email' => 'required',
+    {   
+        $input = $request->all();
+   
+        $this->validate($request, [
+            'email' => 'required|email',
             'password' => 'required',
         ]);
-        $credentials = $request->only('email', 'password');
-        if (Auth::attempt($credentials )){
-            return redirect()->intended('home_user')
-                        ->withSuccess('You have successfully logged in');
-        }
-
-        return redirect("login")->withSuccess('Opps! You have entered invalid credentials');
-    } 
+   
+        if(auth()->attempt(array('email' => $input['email'], 'password' => $input['password'])))
+        {
+            if (auth()->user()->is_admin == 1) {
+                return redirect('admin');
+            }else{
+                return redirect('home_user');
+            }
+        }else{
+            return redirect()->route('login')
+                ->with('error','Email-Address And Password Are Wrong.');
+        }   
+    }
 
     
     public function postRegistration(Request $request)

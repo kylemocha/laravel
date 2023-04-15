@@ -17,21 +17,11 @@ class IsAdmin
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::check())
-        {
-            if(Auth::user()->role_as == 'admin')
-            {
-                return $next($request);
-            }
-            else
-            {
-                return redirect('/login')->with('status','Access Denied! as you are not as admin');
-            }
+        if(auth()->user()->is_admin == 1){
+            return $next($request);
         }
-        else
-        {
-            return redirect('/login')->with('status','Please Login First');
-        }
-  }
+   
+        return redirect('login')->with('error',"You don't have admin access.");
+    }
 }
 
