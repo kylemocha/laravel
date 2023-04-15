@@ -15,12 +15,23 @@ class IsAdmin
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle(Request $request, Closure $next)
+    public function handle($request, Closure $next)
     {
-        if(auth()->user()->is_admin == 1){
-          return $next($request);
+        if(Auth::check())
+        {
+            if(Auth::user()->role_as == 'admin')
+            {
+                return $next($request);
+            }
+            else
+            {
+                return redirect('/login')->with('status','Access Denied! as you are not as admin');
+            }
         }
-        return redirect('home_user')->with('error', 'You have no admin access');
+        else
+        {
+            return redirect('/login')->with('status','Please Login First');
         }
+  }
 }
 

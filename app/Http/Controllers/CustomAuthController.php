@@ -21,24 +21,24 @@ class CustomAuthController extends Controller
     {
         return view('auth.registration');
     }
-      
+
     public function postLogin(Request $request)
-    {   
+    {
         //$input = $request->all();
         $request->validate([
             'email' => 'required',
             'password' => 'required',
         ]);
         $credentials = $request->only('email', 'password');
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt($credentials )){
             return redirect()->intended('home_user')
                         ->withSuccess('You have successfully logged in');
         }
 
         return redirect("login")->withSuccess('Opps! You have entered invalid credentials');
-    }
+    } 
+
     
-      
     public function postRegistration(Request $request)
     {  
         $request->validate([
@@ -75,7 +75,8 @@ class CustomAuthController extends Controller
         Session::flush();
         Auth::logout();
   
-        return Redirect('main_home');
+        return redirect('main_home');
     }
+   
    
 }

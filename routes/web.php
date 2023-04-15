@@ -8,7 +8,7 @@ use App\Http\Controllers\JournalController;
 use App\Http\Controllers\JournalViewController;
 use App\Models\JournalView;
 
-//Auth::routes();
+Auth::routes();
 
 Route::view('/', 'welcome'); 
 
@@ -55,6 +55,10 @@ Route::get('logout', [CustomAuthController::class, 'logout'])->name('logout');
 //for admin unta :(
 //Route::get('/admin', [App\Http\Controllers\CustomAuthController::class, 'adminHome'])->name('admin')->middleware('is_admin');
 
-//Route::post('/login', 'CustomAuthController@determineLoginType')->middleware('isAdmin');
 
 
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
