@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Auth;
 
+use App\Http\Controllers\Controller;
 use DB;
 use App\Models\User; 
 use Carbon\Carbon; 
@@ -10,7 +11,7 @@ use Hash;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
-class ForgotPasswordController extends Controller
+class Forgot_PasswordController extends Controller
 {
     public function showForgetPasswordForm(){
         return view('auth.forgetPassword');
@@ -60,7 +61,5 @@ class ForgotPasswordController extends Controller
          
         return redirect('login')->with('message', 'Your password has been changed!');
     }
-
-
 
 }

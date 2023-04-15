@@ -42,7 +42,7 @@
         <div class="row button">
           <input type="submit" value="Login">
         </div>
-        <div class="signup-link">Not yet registered?<a href="{{ route('register') }}">Sign In</a></div>
+        <div class="signup-link">Not yet registered?<a href="{{ route('register') }}">Register here</a></div>
       </form>
     </div>
   </div>
