@@ -41,7 +41,7 @@ class CustomAuthController extends Controller
             }
         }else{
             return redirect()->route('login')
-                ->with('error','Email-Address And Password Are Wrong.');
+                ->withSuccess('Email address And Password are invalid.');
         }   
     }
 
