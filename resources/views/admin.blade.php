@@ -78,6 +78,7 @@
     <div class="home-content">
       <div class="page" id="page1">
         <h2 style="font-weight: bold;">&nbsp;Welcome, {{ Auth::user()->name }}!</h2>
+        
       </div>
        
       <div class="page" id="page2" style="display:none">
