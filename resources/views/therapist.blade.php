@@ -91,8 +91,8 @@
                     <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
                     <div class="mt-3">
                       <h4>Juan Dela Cruz</h4>
-                      <p class="text-secondary mb-1">Full Stack Developer</p>
-                      <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
+                      <!--<p class="text-secondary mb-1">Full Stack Developer</p>-->
+                      <!--<p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>-->
                     </div>
                   </div>
                 </div>
@@ -148,6 +148,7 @@
             </div>
           </div>
         </div>
+        
         
       </div>
 
