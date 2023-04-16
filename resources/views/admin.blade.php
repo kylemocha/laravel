@@ -76,12 +76,6 @@
     <!--end of navbar-->
 
     <div class="home-content">
-        @if (session('success'))
-            <div class="alert alert-success" role="alert">
-                {{ session('success') }}
-            </div>
-        @endif
-    
       <div class="page" id="page1">
         <h2 style="font-weight: bold;">&nbsp;Welcome, {{ Auth::user()->name }}!</h2>
       </div>
