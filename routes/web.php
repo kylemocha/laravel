@@ -35,9 +35,9 @@ Route::get('therapist', function () {
 Route::get('/insert','App\Http\Controllers\JournalController@insertform');
 Route::post('/create','JournalController@insert');
 
-//retrive journal data
+//retrieve journal data
 Route::get('/home_user', 'JournalViewController@index');
-//retrive data admin
+//retrieve data admin
 Route::get('/admin','admin_conController@index');
 
 //update and delete
