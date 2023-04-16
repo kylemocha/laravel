@@ -82,6 +82,7 @@
        
       <div class="page" id="page2" style="display:none">
         <h2 style="font-weight: bold;">&nbsp;Users Section</h2>
+        <p>&nbsp;Note for role '0=user, 1=admin, 3=therapist'</p>
         <a style="text-decoration: underline; float:right;" href= "#">Add User</a> 
         <table id="users">
           <tr>
