@@ -37,7 +37,7 @@ Route::post('/create','JournalController@insert');
 
 //retrive journal data
 Route::get('/home_user', 'JournalViewController@index');
-
+//retrive data admin
 Route::get('/admin','admin_conController@index');
 
 //update and delete
