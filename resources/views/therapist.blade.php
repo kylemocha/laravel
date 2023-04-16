@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Therapist Page</title>
     <link href="css/admin.css" rel="stylesheet" type="text/css">
@@ -76,12 +80,79 @@
 
     <div class="home-content">
       <div class="page" id="page1">
-        <h2 style="font-weight: bold;">&nbsp;Welcome, {{ Auth::user()->name }}!</h2>
+        <h3 style="font-weight: normal">&nbsp;Welcome, {{ Auth::user()->name }}!</h3>
+        <h5 style="font-weight: bold; margin:10px; ">&nbsp;Profile Section</h5>
+        <div class="container">
+          <div class="row gutters-sm">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex flex-column align-items-center text-center">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                    <div class="mt-3">
+                      <h4>Juan Dela Cruz</h4>
+                      <p class="text-secondary mb-1">Full Stack Developer</p>
+                      <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="card mb-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Full Name</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    Kenneth Valdez
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Email</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    fip@jukmuh.al
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Phone</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    (239) 816-9029
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Address</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    Bay Area, San Francisco, CA
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <a class="btn btn-info " href="#">Edit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         
       </div>
 
       <div class="page" id="page2" style="display:none">
-        <h2 style="font-weight: bold;">&nbsp;RAWR!!!!</h2>
+        <h5 style="font-weight: bold; margin:10px; ">&nbsp;Schedule Section</h5>
         
       </div>
 
