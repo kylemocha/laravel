@@ -6,7 +6,7 @@
   margin:0;
   padding:0;
   font-family: sans-serif;
-  background: linear-gradient(#ABCDEF, #243b55);
+  background: #ABCDEF;
   .update-box {
   position: absolute;
   top: 50%;
