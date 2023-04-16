@@ -142,6 +142,7 @@
           <tr>
             <th>ID</th>
             <th>User ID</th>
+            <th>User Name</th>
             <th>Title</th>
             <th>Date</th>
             <th>Message</th>
@@ -151,6 +152,7 @@
           @foreach ($journals as $journal)
             <td>{{ $journal->id }}</td>
             <td>{{ $journal->user_id }}</td>
+            <td>{{ $journal->User_name }}</td>
             <td>{{ $journal->title }}</td>
             <td>{{ $journal->JournalDate }}</td>
             <td>{{ $journal->message }}</td>

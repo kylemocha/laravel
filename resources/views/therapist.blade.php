@@ -27,22 +27,22 @@
         <li>
           <a href="#">
             <i class='bx bx-box' ></i>
-            <span class="links_name">Product</span>
+            <span class="links_name">Schedule</span>
           </a>
         </li>
         <li>
           <a href="#">
             <i class='bx bx-list-ul' ></i>
-            <span class="links_name">Order list</span>
+            <span class="links_name">Appointments</span>
           </a>
         </li>
         <li>
           <a href="#">
             <i class='bx bx-pie-chart-alt-2' ></i>
-            <span class="links_name">Analytics</span>
+            <span class="links_name">Journal</span>
           </a>
         </li>
-        <li>
+        <!--<li>
           <a href="#">
             <i class='bx bx-coin-stack' ></i>
             <span class="links_name">Stock</span>
@@ -59,17 +59,11 @@
             <i class='bx bx-user' ></i>
             <span class="links_name">Team</span>
           </a>
-        </li>
+        </li>-->
         <li>
           <a href="#">
             <i class='bx bx-message' ></i>
             <span class="links_name">Messages</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-heart' ></i>
-            <span class="links_name">Favrorites</span>
           </a>
         </li>
         <li>
@@ -96,13 +90,10 @@
         <input type="text" placeholder="Search...">
         <i class='bx bx-search' ></i>
       </div>
-      <!--<div class="profile-details">
-        <span class="admin_name">Prem Shahi</span>
-        <i class='bx bx-chevron-down' ></i>
-      </div>-->
     </nav>
 
     <div class="home-content">
+      <h2 style="font-weight: bold;">&nbsp;Welcome, {{ Auth::user()->name }}!</h2>
       <div class="overview-boxes">
         <div class="box">
           <div class="right-side">
