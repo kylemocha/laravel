@@ -6,6 +6,8 @@ use App\Http\Controllers\ContactUsFormController;
 use App\Http\Controllers\Auth\Forgot_PasswordController;
 use App\Http\Controllers\JournalController;
 use App\Http\Controllers\JournalViewController;
+use App\Http\Controllers\admin_conController;
+use App\Http\Controllers\admin_jController;
 use App\Models\JournalView;
 
 Auth::routes();
@@ -35,6 +37,11 @@ Route::post('/create','JournalController@insert');
 
 //retrive journal data
 Route::get('/home_user', 'JournalViewController@index');
+
+//Route::get('/admin', 'admin_jController@index');
+
+Route::get('/admin','admin_conController@index');
+
 //update and delete
 Route::get('edit/{id}', [JournalViewController::class, 'showData']);
 Route::post('edit', [JournalViewController::class, 'update']);
@@ -61,5 +68,4 @@ Route::get('logout', [CustomAuthController::class, 'logout'])->name('logout');
 //for admin 
 Auth::routes();
 Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
-
 Route::get('therapist/home', [HomeController::class, 'therapistHome'])->name('therapist.home')->middleware('is_admin');

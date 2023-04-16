@@ -92,55 +92,19 @@
             <th>Actions</th>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-            <td>Germany</td>
+            @if(isset($users))
+            @foreach ($users as $user)
+            <td>{{ $user->id }}</td>
+            <td>{{ $user->is_admin }}</td>
+            <td>{{ $user->name}}</td>
+            <td>{{ $user->email }}</td>
             <td>
               <a style="text-decoration: underline;" href= "#">Edit</a> 
               <a style="text-decoration: underline;" href= "#">Delete</a> 
             </td>
           </tr>
-          <tr>
-            <td>Berglunds snabbköp</td>
-            <td>Christina Berglund</td>
-            <td>Sweden</td>
-            <td>Germany</td>
-            <td>
-              <a style="text-decoration: underline;" href= "#">Edit</a> 
-              <a style="text-decoration: underline;" href= "#">Delete</a> 
-            </td>
-          </tr>
-          <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-            <td>Germany</td>
-            <td>
-              <a style="text-decoration: underline;" href= "#">Edit</a> 
-              <a style="text-decoration: underline;" href= "#">Delete</a> 
-            </td>
-          </tr>
-          <tr>
-            <td>Ernst Handel</td>
-            <td>Roland Mendel</td>
-            <td>Austria</td>
-            <td>Germany</td>
-            <td>
-              <a style="text-decoration: underline;" href= "#">Edit</a> 
-              <a style="text-decoration: underline;" href= "#">Delete</a> 
-            </td>
-          </tr>
-          <tr>
-            <td>Island Trading</td>
-            <td>Helen Bennett</td>
-            <td>UK</td>
-            <td>Germany</td>
-            <td>
-              <a style="text-decoration: underline;" href= "#">Edit</a> 
-              <a style="text-decoration: underline;" href= "#">Delete</a> 
-            </td>
-          </tr>
+          @endforeach
+          @endif 
         </table>
         
       </div>
@@ -157,45 +121,17 @@
             <th>Message</th>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-            <td>Germany</td>
-            <td></td>
-            <td></td>
+          @if(isset($cons))
+          @foreach ($cons as $con)
+            <td>{{ $con->id }}</td>
+            <td>{{ $con->name }}</td>
+            <td>{{ $con->phone }}</td>
+            <td>{{ $con->email }}</td>
+            <td>{{ $con->subject }}</td>
+            <td>{{ $con->message }}</td>
           </tr>
-          <tr>
-            <td>Berglunds snabbköp</td>
-            <td>Christina Berglund</td>
-            <td>Sweden</td>
-            <td>Germany</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-            <td>Germany</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Ernst Handel</td>
-            <td>Roland Mendel</td>
-            <td>Austria</td>
-            <td>Germany</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Island Trading</td>
-            <td>Helen Bennett</td>
-            <td>UK</td>
-            <td>Germany</td>
-            <td></td>
-            <td></td>
-          </tr>
+          @endforeach
+          @endif 
         </table>
       </div>
 
@@ -210,40 +146,16 @@
             <th>Message</th>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-            <td>Germany</td>
-            <td></td>
+          @if(isset($journals))
+          @foreach ($journals as $journal)
+            <td>{{ $journal->id }}</td>
+            <td>{{ $journal->user_id }}</td>
+            <td>{{ $journal->title }}</td>
+            <td>{{ $journal->JournalDate }}</td>
+            <td>{{ $journal->message }}</td>
           </tr>
-          <tr>
-            <td>Berglunds snabbköp</td>
-            <td>Christina Berglund</td>
-            <td>Sweden</td>
-            <td>Germany</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-            <td>Germany</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Ernst Handel</td>
-            <td>Roland Mendel</td>
-            <td>Austria</td>
-            <td>Germany</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Island Trading</td>
-            <td>Helen Bennett</td>
-            <td>UK</td>
-            <td>Germany</td>
-            <td></td>
-          </tr>
+          @endforeach
+          @endif 
         </table>
         
       </div>
