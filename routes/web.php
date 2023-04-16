@@ -38,8 +38,6 @@ Route::post('/create','JournalController@insert');
 //retrive journal data
 Route::get('/home_user', 'JournalViewController@index');
 
-//Route::get('/admin', 'admin_jController@index');
-
 Route::get('/admin','admin_conController@index');
 
 //update and delete
