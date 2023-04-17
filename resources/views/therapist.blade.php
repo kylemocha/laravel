@@ -138,12 +138,13 @@
                   <div class="col-sm-9 text-secondary">
                     {{ $user->address }}
                   </div>
-                  @endforeach
+                  
                 </div>
                 <hr>
                 <div class="row">
                   <div class="col-sm-12">
-                    <a class="btn btn-info " href="#">Edit</a>
+                    <a class="btn btn-info " href="{{ url('edit-therapist/'.$user->id) }}">Edit</a>
+                    @endforeach
                   </div>
                 </div>
               </div>

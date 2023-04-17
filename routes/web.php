@@ -6,8 +6,7 @@ use App\Http\Controllers\ContactUsFormController;
 use App\Http\Controllers\Auth\Forgot_PasswordController;
 use App\Http\Controllers\JournalController;
 use App\Http\Controllers\JournalViewController;
-use App\Http\Controllers\admin_conController;
-use App\Http\Controllers\admin_jController;
+use App\Http\Controllers\TherapistController;
 use App\Models\JournalView;
 
 Auth::routes();
@@ -40,7 +39,11 @@ Route::get('/home_user', 'JournalViewController@index');
 //retrieve data admin
 Route::get('/admin','admin_conController@index');
 
+//therapist
 Route::get('/therapist','TherapistController@index');
+
+Route::get('edit-therapist/{id}', [TherapistController::class, 'edit']);
+Route::put('update-therapist/{id}', [TherapistController::class, 'update']);
 
 //update and delete
 Route::get('edit/{id}', [JournalViewController::class, 'showData']);
