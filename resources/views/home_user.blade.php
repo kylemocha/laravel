@@ -85,9 +85,9 @@
                 <!--<a href="#" onclick="show('page1');"><b>Dashboard</b></a>-->
                 <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"  onclick="show('page1');"><b>Dashboard</b></a>
                 <ul class="collapse list-unstyled" id="dashboard">  
-                  <li>
+                  <!--<li>
                     <a href="#" onclick="show('page6');">Schedule Appointments</a>
-                </li>
+                </li>-->
                 <li>
                     <a href="#" onclick="show('page4');">Upcoming Events</a>
                 </li>
@@ -140,73 +140,15 @@
         
         </div>
 
-
         <!--<p style="font-size: 17px; color: #8d97ad;">Let's track your mental health today!</p>-->
         <div class="row justify-content-center">
         <div class="col-md-8 text-center">
-        <h3 class="my-3">User Profile</h3>
-        <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">Feel free to customize your profile.</h6>
+        <h3 class="my-3">Schedule Appointment Form</h3>
+        <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">Feel free to consult with our mental health specialists.</h6>
 
-        <div class="container-xl px-4 mt-4">
-          
-          <div class="row">
-              <div class="col-xl-4">
-                  <!-- Profile picture card-->
-                  <div class="card mb-4 mb-xl-0">
-                      <div class="card-header" style="font-weight: bold; font-size:19px;">Profile Picture</div>
-                      <div class="card-body text-center">
-                          <!-- Profile picture image-->
-                          <img class="img-account-profile rounded-circle mb-2" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
-                          <!-- Profile picture help block-->
-                          <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
-                          <!-- Profile picture upload button-->
-                          <button class="btn btn-primary" type="button">Upload new image</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-xl-8">
-                  <!-- Account details card-->
-                  <div class="card mb-4">
-                      <div class="card-header" style="font-weight: bold; font-size:19px;" >Account Details</div>
-                      <div class="card-body">
-                          <form>
-                              <!-- Form Group (name)-->
-                              <div class="mb-3">
-                                  <label class="small mb-1" for="name" style="font-weight: bold; font-size:15px;">Name</label>
-                                  <input class="form-control1" id="name" type="text" name="name" readonly>
-                              </div>
-                              <!-- Form Row        -->
-                                  <!-- Form Group (address)-->
-                                  <div class="md-3">
-                                      <label class="small mb-1" for="address" style="font-weight: bold; font-size:15px;">Address</label>
-                                      <input class="form-control1" id="address" type="text" name="address" readonly>
-                                  </div>
-                              <!-- Form Group (email address)-->
-                              <div class="mb-3">
-                                  <label class="small mb-1" for="email" style="font-weight: bold; font-size:15px;">Email</label>
-                                  <input class="form-control1" id="email" type="email" name="email" readonly>
-                              </div>
-                              <!-- Form Row-->
-                                  <!-- Form Group (phone number)-->
-                                  <div class="md-3">
-                                      <label class="small mb-1" for="phonenumber" style="font-weight: bold; font-size:15px;">Phone number</label>
-                                      <input class="form-control1" id="phonenumber" type="tel" name="phonenumber" readonly>
-                                  </div>
-                              <!-- Save changes button-->
-                              <button class="btn btn-primary" type="button">Edit Profile</button>
-                          </form>
-                      </div>
-                  </div>
-              </div>
-          </div>
-         </div>
-
-        </div>
-
-        </div>
         
-    
-
+        </div>
+        </div>
     </div>
      
         
