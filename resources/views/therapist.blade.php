@@ -72,10 +72,10 @@
         <i class='bx bx-menu sidebarBtn'></i>
         <span class="dashboard">Dashboard</span>
       </div>
-      <div class="search-box">
+      <!--<div class="search-box">
         <input type="text" placeholder="Search...">
         <i class='bx bx-search' ></i>
-      </div>
+      </div>-->
     </nav>
 
     <div class="home-content">

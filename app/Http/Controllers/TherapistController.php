@@ -27,12 +27,13 @@ class TherapistController extends Controller
       return view('edit_therapist', ['users'=>$users]);
   }
   public function update(Request $request, $id)
-  {
+  {   
+    
       $users = User::find($id);
       $users->name = $request->input('name');
       $users->email = $request->input('email');
-      //$users->phonenumber = $request->input('phonenumber'); 
-      //$users->address = $request->input('address');
+      //$users->phonenumber = $request->input('phonenumber')?? ''; 
+      //$users->address = $request->input('address')?? '';
       $users->update();
       return redirect('therapist')->withSuccess('Successfully updated your profile.');
   }
