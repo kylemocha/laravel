@@ -12,7 +12,6 @@ class JournalViewController extends Controller
         
         $users = JournalView::userr()->get();
         $posts = User::orderBy('is_admin', 'ASC')->get();
-        //$posts = User::orderBy('is_admin', 'ASC')->get();
         
         //return view('home_user')->withUsers($users); //do not edit
         //return view('home_user', compact('posts, users'));
