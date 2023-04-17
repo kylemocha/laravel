@@ -39,6 +39,9 @@ Route::get('/home_user', 'JournalViewController@index');
 //retrieve data admin
 Route::get('/admin','admin_conController@index');
 
+//home-user features
+//Route::get('/home_user','user_therapistController@viewTherapist');
+
 //therapist
 Route::get('/therapist','TherapistController@index');
 

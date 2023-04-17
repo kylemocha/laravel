@@ -2,10 +2,6 @@
     <div class="row">
         <div class="col-md-12">
 
-            @if (session('status'))
-                <h6 class="alert alert-success">{{ session('status') }}</h6>
-            @endif
-
             <div class="card">
                 <div class="card-header">
                     <h4>Update Therapist Profile

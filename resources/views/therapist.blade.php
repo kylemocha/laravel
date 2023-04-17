@@ -77,10 +77,13 @@
         <i class='bx bx-search' ></i>
       </div>-->
     </nav>
-
+    
     <div class="home-content">
       <div class="page" id="page1">
         <h3 style="font-weight: normal">&nbsp;Welcome, {{ Auth::user()->name }}!</h3>
+        @if (session('success'))
+        <h6 class="alert alert-success">{{ session('success') }}</h6>
+        @endif
         <h5 style="font-weight: bold; margin:10px; ">&nbsp;Profile Section</h5>
         <div class="container">
           <div class="row gutters-sm">

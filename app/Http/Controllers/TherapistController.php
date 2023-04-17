@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class TherapistController extends Controller
 {
-    public function index(Request $request){
+    public function index(Request $request){//display contents of logged-in user
 
     $id = Auth::user()->id;
     //
