@@ -427,7 +427,14 @@
               </div>
             </div>
             <div class="formbold-mb-5">
-            <label for="cars" class="formbold-form-label">Choose your consultant:</label>
+              <label for="mode" class="formbold-form-label">Mode of Consultation:</label>
+              <input type="radio" id="f2f" name="mode" value="Face-to-Face">
+                <label for="f2f">Face-to-Face</label>
+                <input type="radio" id="online" name="mode" value="Online">
+                <label for="online">Online</label><br>
+            </div>
+            <div class="formbold-mb-5">
+            <label for="users" class="formbold-form-label">Choose your consultant:</label>
             <select id="users" name="users">
             <option value="volvo">Volvo</option>
             <option value="saab">Saab</option>
@@ -435,6 +442,7 @@
             <option value="audi">Audi</option>
             </select>
             </div>
+           
             <div>
               <button class="formbold-btn">Book Appointment</button>
             </div>
