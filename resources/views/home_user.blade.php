@@ -85,11 +85,11 @@
                 <!--<a href="#" onclick="show('page1');"><b>Dashboard</b></a>-->
                 <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"  onclick="show('page1');"><b>Dashboard</b></a>
                 <ul class="collapse list-unstyled" id="dashboard">  
-                  <!--<li>
-                    <a href="#" onclick="show('page6');">Schedule Appointments</a>
-                </li>-->
+                  <li>
+                    <a href="#" onclick="show('page6');">Schedule Appointment</a>
+                </li>
                 <li>
-                    <a href="#" onclick="show('page4');">Upcoming Events</a>
+                    <a href="#" onclick="show('page4');">Meet our Therapists</a>
                 </li>
                 </ul>
             </li>
@@ -139,16 +139,64 @@
           </div>
         
         </div>
-
-        <!--<p style="font-size: 17px; color: #8d97ad;">Let's track your mental health today!</p>-->
-        <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-        <h3 class="my-3">Schedule Appointment Form</h3>
-        <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">Feel free to consult with our mental health specialists.</h6>
-
+         
+        <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">Let's track your mental health today!</h6>
         
+        <!--<p style="font-size: 17px; color: #8d97ad;">Let's track your mental health today!</p>
+        <div class="row justify-content-center">
+        <div class="col-md-8 text-center">-->
+        <!--<h3 class="my-3">Dashboard</h3>
+        <h2 style="font-weight: bold;">Dashboard</h2>-->
+        
+
+        <div class="blog-home2 py-5">
+          <div class="container">
+            <!-- Row  -->
+            <div class="row justify-content-center">
+              <!-- Column -->
+              <div class="col-md-8 text-center">
+                <h3 class="my-3">Upcoming Events</h3>
+                <h6 class="subtitle font-weight-normal">In order to stay up to date, you can view any upcoming events.</h6>
+              </div>
+              <!-- Column -->
+              <!-- Column -->
+            </div>
+            <div class="row mt-4">
+              <!-- Column -->
+              <div class="col-md-4 on-hover">
+                <div class="card border-0 mb-4">
+                  <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
+                  <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
+                  <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
+                  <p class="mt-3"> CDOC</p>
+                  <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
+                </div>
+              </div>
+              <!-- Column -->
+              <div class="col-md-4 on-hover">
+                <div class="card border-0 mb-4">
+                  <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
+                  <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
+                  <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
+                  <p class="mt-3"> CDOC</p>
+                  <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
+                </div>
+              </div>
+              <!-- Column -->
+              <div class="col-md-4 on-hover">
+                <div class="card border-0 mb-4">
+                  <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
+                  <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
+                  <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
+                  <p class="mt-3"> CDOC</p>
+                  <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
+       
+        
     </div>
      
         
@@ -230,53 +278,9 @@
         <i class="fas fa-align-left"></i>
         <span></span>
        </button>
+       <h2 style="font-weight: bold;">Meet our Therapists</h2>
       
-       <div class="blog-home2 py-5">
-        <div class="container">
-          <!-- Row  -->
-          <div class="row justify-content-center">
-            <!-- Column -->
-            <div class="col-md-8 text-center">
-              <h3 class="my-3">Upcoming Events</h3>
-              <h6 class="subtitle font-weight-normal">In order to stay up to date, you can view any upcoming events.</h6>
-            </div>
-            <!-- Column -->
-            <!-- Column -->
-          </div>
-          <div class="row mt-4">
-            <!-- Column -->
-            <div class="col-md-4 on-hover">
-              <div class="card border-0 mb-4">
-                <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
-                <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
-                <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
-                <p class="mt-3"> CDOC</p>
-                <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
-              </div>
-            </div>
-            <!-- Column -->
-            <div class="col-md-4 on-hover">
-              <div class="card border-0 mb-4">
-                <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
-                <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
-                <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
-                <p class="mt-3"> CDOC</p>
-                <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
-              </div>
-            </div>
-            <!-- Column -->
-            <div class="col-md-4 on-hover">
-              <div class="card border-0 mb-4">
-                <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
-                <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
-                <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
-                <p class="mt-3"> CDOC</p>
-                <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
     </div>
     
@@ -363,10 +367,84 @@
         <i class="fas fa-align-left"></i>
         <span></span>
        </button>
-       <h2 style="font-weight: bold;">Schedule Appointments</h2>
-       <!--<p style="color: #8d97ad;">This section contains articles with our best recommendations on how to take care of your mental health.</p>-->
+       <h2 style="font-weight: bold;">Schedule Appointment Form</h2>
+       <p style="color: #8d97ad;">This section allows you to have consultations with your chosen mental health specialists.</p>
+       <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+          <form action="#" method="#">
+            <div class="formbold-mb-5">
+              <label for="name" class="formbold-form-label"> Full Name </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                class="formbold-form-input"
+              />
+            </div>
+            <div class="formbold-mb-5">
+              <label for="phone" class="formbold-form-label"> Phone Number </label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+                class="formbold-form-input"
+              />
+            </div>
+            <div class="formbold-mb-5">
+              <label for="email" class="formbold-form-label"> Email Address </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                class="formbold-form-input"
+              />
+            </div>
+            <div class="flex flex-wrap formbold--mx-3">
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5 w-full">
+                  <label for="date" class="formbold-form-label"> Date </label>
+                  <input
+                    type="date"
+                    name="date"
+                    id="date"
+                    class="formbold-form-input"
+                  />
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <label for="time" class="formbold-form-label"> Time </label>
+                  <input
+                    type="time"
+                    name="time"
+                    id="time"
+                    class="formbold-form-input"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="formbold-mb-5">
+            <label for="cars" class="formbold-form-label">Choose your consultant:</label>
+            <select id="users" name="users">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+            </select>
+            </div>
+            <div>
+              <button class="formbold-btn">Book Appointment</button>
+            </div>
+          </form>
+        </div>
+      </div>
 
-    </div>
+      
+      </div>
+
 
 </div> 
 
