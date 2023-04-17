@@ -40,6 +40,8 @@ Route::get('/home_user', 'JournalViewController@index');
 //retrieve data admin
 Route::get('/admin','admin_conController@index');
 
+Route::get('/therapist','TherapistController@index');
+
 //update and delete
 Route::get('edit/{id}', [JournalViewController::class, 'showData']);
 Route::post('edit', [JournalViewController::class, 'update']);

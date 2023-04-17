@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use DB;
-use Auth;
 use App\Http\Controllers\Controller;
 use App\Models\JournalView;
 
@@ -13,7 +11,7 @@ class JournalViewController extends Controller
         
         $users = JournalView::userr()->get();
         
-        return view('home_user')->withUsers($users); //do not edit\  
+        return view('home_user')->withUsers($users); //do not edit
     }  
     function delete($id) //delete
     {
