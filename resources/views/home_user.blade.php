@@ -445,9 +445,9 @@
             <option value="audi">Audi</option>-->
             <option value="{{ $post->name }}">{{ $post->name }}</option>
             
-            
-            </select>
             @endforeach
+            </select>
+           
             </div>
            
             <div>
