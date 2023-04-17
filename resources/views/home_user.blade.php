@@ -258,6 +258,7 @@
               </tr>
           </thead>
           <tbody>
+            @if(isset($users))
             @foreach ($users as $user)
               <tr>
                   <td>{{ $user->title }}</td>
@@ -268,7 +269,8 @@
                     <a style="text-decoration: underline;" href={{'delete/'.$user->id}}>Delete</a> 
                   </td>
               </tr>
-              @endforeach              
+              @endforeach 
+              @endif              
           </tbody>
       </table>                          
     </div>
@@ -429,18 +431,23 @@
             <div class="formbold-mb-5">
               <label for="mode" class="formbold-form-label">Mode of Consultation:</label>
               <input type="radio" id="f2f" name="mode" value="Face-to-Face">
-                <label for="f2f">Face-to-Face</label>
-                <input type="radio" id="online" name="mode" value="Online">
-                <label for="online">Online</label><br>
+               <label for="f2f">Face-to-Face</label>
+              <input type="radio" id="online" name="mode" value="Online">
+              <label for="online">Online</label><br>
             </div>
             <div class="formbold-mb-5">
             <label for="users" class="formbold-form-label">Choose your consultant:</label>
             <select id="users" name="users">
-            <option value="volvo">Volvo</option>
+            @foreach($posts as $post)
+            <!--<option value="volvo">Volvo</option>
             <option value="saab">Saab</option>
             <option value="fiat">Fiat</option>
-            <option value="audi">Audi</option>
+            <option value="audi">Audi</option>-->
+            <option value="{{ $post->name }}">{{ $post->name }}</option>
+            
+            
             </select>
+            @endforeach
             </div>
            
             <div>

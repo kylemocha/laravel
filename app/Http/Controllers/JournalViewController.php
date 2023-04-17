@@ -4,15 +4,23 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\JournalView;
+use App\Models\User;
 
 class JournalViewController extends Controller
 {
     public function index(){ //display data
         
         $users = JournalView::userr()->get();
+        $posts = User::orderBy('is_admin', 'ASC')->get();
+        //$posts = User::orderBy('is_admin', 'ASC')->get();
         
-        return view('home_user')->withUsers($users); //do not edit
+        //return view('home_user')->withUsers($users); //do not edit
+        //return view('home_user', compact('posts, users'));
+        return view('home_user')->with('users',$users)->with('posts',$posts);
+
     }  
+    //function viewTherapist(){ }
+
     function delete($id) //delete
     {
         $users = JournalView::find($id);

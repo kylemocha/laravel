@@ -40,7 +40,8 @@ Route::get('/home_user', 'JournalViewController@index');
 Route::get('/admin','admin_conController@index');
 
 //home-user features
-//Route::get('/home_user','user_therapistController@viewTherapist');
+//Route::get('/home_user','user_therapistController@index');
+
 
 //therapist
 Route::get('/therapist','TherapistController@index');
@@ -52,6 +53,8 @@ Route::put('update-therapist/{id}', [TherapistController::class, 'update']);
 Route::get('edit/{id}', [JournalViewController::class, 'showData']);
 Route::post('edit', [JournalViewController::class, 'update']);
 Route::get('delete/{id}', [JournalViewController::class, 'delete']);
+
+//Route::get('home_user', [JournalViewController::class, 'viewTherapist']);
 
 //forget password features
 Route::get('forget-password', [Forgot_PasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');

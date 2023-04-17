@@ -1334,7 +1334,7 @@ class Builder implements BuilderContract
 
         return $this->addDateBasedWhere('Date', $column, $operator, $value, $boolean);
     }
-
+    
     /**
      * Add an "or where date" statement to the query.
      *
