@@ -26,14 +26,14 @@
                             <label for="">Email</label>
                             <input type="text" name="email" value="{{$users->email}}" class="form-control">
                         </div>
-                        <!--<div class="form-group mb-3">
+                        <div class="form-group mb-3">
                             <label for="">Phone</label>
-                            <input type="text" name="course" value="{{$users->phonenumber}}" class="form-control">
+                            <input type="text" name="phonenumber" value="{{$users->phonenumber}}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
                             <label for="">Address</label>
-                            <input type="text" name="section" value="{{$users->address}}" class="form-control">
-                        </div>-->
+                            <input type="text" name="address" value="{{$users->address}}" class="form-control">
+                        </div>
                         <div class="form-group mb-3">
                             <button type="submit" class="btn btn-primary">Update Profile</button>
                         </div>
