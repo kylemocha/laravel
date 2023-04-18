@@ -388,8 +388,8 @@
               <label for="phone" class="formbold-form-label"> Phone Number </label>
               <input
                 type="text"
-                name="phone"
-                id="phone"
+                name="phonenumber"
+                id="phonenumber"
                 placeholder="Enter your phone number"
                 class="formbold-form-input"
               />
