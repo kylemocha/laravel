@@ -439,12 +439,7 @@
             <label for="users" class="formbold-form-label">Choose your consultant:</label>
             <select id="users" name="users">
             @foreach($posts as $post)
-            <!--<option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="fiat">Fiat</option>
-            <option value="audi">Audi</option>-->
             <option value="{{ $post->name }}">{{ $post->name }}</option>
-            
             @endforeach
             </select>
            
