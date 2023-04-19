@@ -577,6 +577,7 @@ class ComposerStaticInit475d29db86bb4184874fbeb04040646c
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\ApptController' => __DIR__ . '/../..' . '/app/Http/Controllers/ApptController.php',
         'App\\Http\\Controllers\\ContactUsFormController' => __DIR__ . '/../..' . '/app/Http/Controllers/ContactUsFormController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\CustomAuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/CustomAuthController.php',
@@ -600,6 +601,7 @@ class ComposerStaticInit475d29db86bb4184874fbeb04040646c
         'App\\Http\\Middleware\\ValidateSignature' => __DIR__ . '/../..' . '/app/Http/Middleware/ValidateSignature.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Mail\\contact' => __DIR__ . '/../..' . '/app/Mail/contact.php',
+        'App\\Models\\ApptModel' => __DIR__ . '/../..' . '/app/Models/ApptModel.php',
         'App\\Models\\Contact' => __DIR__ . '/../..' . '/app/Models/Contact.php',
         'App\\Models\\JournalView' => __DIR__ . '/../..' . '/app/Models/JournalView.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',

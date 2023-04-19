@@ -166,6 +166,36 @@
 
       <div class="page" id="page5" style="display:none">
         <h2 style="font-weight: bold;">&nbsp; Appointments Section</h2>
+        <table id="users">
+          <tr>
+            <th>ID</th>
+            <th>User ID</th>
+            <th>User Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Appointment Date</th>
+            <th>Appointment Time</th>
+            <th>Mode of Consultation</th>
+            <th>Therapist</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            @if(isset($appts))
+            @foreach ($appts as $appt)
+            <td>{{ $appt->id }}</td>
+            <td>{{ $appt->Client_id }}</td>
+            <td>{{ $appt->Name }}</td>
+            <td>{{ $appt->Phone_number }}</td>
+            <td>{{ $appt->Email }}</td>
+            <td>{{ $appt->Appt_date }}</td>
+            <td>{{ $appt->Appt_time }}</td>
+            <td>{{ $appt->Mode_of_consultation }}</td>
+            <td>{{ $appt->Therapist }}</td>
+            <td>{{ $appt->status }}</td>
+          </tr>
+          @endforeach
+          @endif 
+        </table>
 
         
       </div>

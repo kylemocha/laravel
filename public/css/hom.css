@@ -1218,45 +1218,28 @@ input[type=submit],input[type=reset]{
   margin-left: 1rem;
   margin-right: 1rem;
 }
-/*image gallery 
-.img-gal{
-  box-sizing: border-box; 
-}
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width:24.99999%;
-}
-div.gallery{
-  margin: 10px;
-  border: 1px solid #ccc;
-}
-div.gallery:hover {
-  border: 1px solid #777;
-}
-div.gallery img {
+/**/
+#users{
+  border-collapse: collapse;
   width: 100%;
-  height: auto;
-}  
-div.desc {
-  padding: 15px;
-  text-align: center;
+  margin: 15px;
 }
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
+
+#users td, #users th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
+
+#users tr:nth-child(even){background-color: #f2f2f2;}
+
+#users tr:hover {background-color: #ddd;}
+
+#users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #3b71ca;
+  color: white;
 }
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
 
 

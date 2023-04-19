@@ -13,10 +13,12 @@ class JournalViewController extends Controller
         
         $users = JournalView::userr()->get();
         $posts = User::orderBy('is_admin', 'ASC')->where('is_admin', 2)->get();
+        $apps = ApptModel::userr()->get();
+        //$apps = auth()->user();
         
         //return view('home_user')->withUsers($users); //do not edit
         //return view('home_user', compact('posts, users'));
-        return view('home_user')->with('users',$users)->with('posts',$posts);
+        return view('home_user')->with('users',$users)->with('posts',$posts)->with('apps',$apps);
     }  
 
     function delete($id) //delete

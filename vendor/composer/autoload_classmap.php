@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Http\\Controllers\\ApptController' => $baseDir . '/app/Http/Controllers/ApptController.php',
     'App\\Http\\Controllers\\ContactUsFormController' => $baseDir . '/app/Http/Controllers/ContactUsFormController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\CustomAuthController' => $baseDir . '/app/Http/Controllers/CustomAuthController.php',
@@ -31,6 +32,7 @@ return array(
     'App\\Http\\Middleware\\ValidateSignature' => $baseDir . '/app/Http/Middleware/ValidateSignature.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Mail\\contact' => $baseDir . '/app/Mail/contact.php',
+    'App\\Models\\ApptModel' => $baseDir . '/app/Models/ApptModel.php',
     'App\\Models\\Contact' => $baseDir . '/app/Models/Contact.php',
     'App\\Models\\JournalView' => $baseDir . '/app/Models/JournalView.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',

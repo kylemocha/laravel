@@ -127,132 +127,184 @@
          <span></span>
         </button> 
         <!--Modal Calendar-->
-        <button type="button" id="myCalendar" class="btn btn-primary btn-md float-end"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</button>
-        <h2 style="font-weight: bold;">Welcome, {{ Auth::user()->name }}!</h2>
-        <div id="myDiv" class="modal1">
-          <!-- Modal content -->
-          <div class="modal-content1">
-            <span class="close">&times;</span>
-            <!--<h4 style="font-weight: bold;">Calendar</h4>-->
-            <div class="calendar"></div> 
-          </div>
-        
-        </div> 
-        <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">Let's track your mental health today!</h6>
-        
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fas fa-user-plus"></i>
-          Set Appointment
+        <!--<button type="button" id="myCalendar" class="btn btn-primary btn-md float-end"><i class="fa fa-calendar" aria-hidden="true"></i> Appointments</button>-->
+
+        <button type="button" class="btn btn-primary btn-md float-end"  data-toggle="modal" data-target="#myAppt"><i class="fas fa-user-plus"></i>
+          Appointments
         </button>
 
-      <!-- Modal Appt Form -->
-      <div class="modal" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title"><b>Schedule Appointment Form</b></h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 style="font-weight: bold;">Welcome, {{ Auth::user()->name }}!</h2>
+  
+        <!-- The Appt Modal -->
+        <div class="modal" id="myAppt">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Appointments</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">Chosen Therapist</th>
+                      <th scope="col">Appointment Date</th>
+                      <th scope="col">Appointment Time</th>
+                      <th scope="col">Mode of Consultation</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      @foreach ($apps as $app)
+                      <th scope="row">{{ $app->id }}</th>
+                      <td>{{ $app->Therapist }}</td>
+                      <td>{{ $app->Appt_date }}</td>
+                      <td>{{ $app->Appt_time }}</td>
+                      <td>{{ $app->Mode_of_consultation }}</td>
+                      <td>{{ $app->status }}</td>
+                    </tr>
+                    @endforeach
+                  </tbody>
+                </table>
+              </div>
+        
+        
             </div>
+          </div>
+        </div>
+        <!-- The Appt Modal -->
 
-            <!-- Modal body -->
-            <div class="modal-body">
-              <p style="font-size: 16px; text-align:center;">NOTE: Refer to the meet our therapist section to see your chosen specialist's schedule.</p>
-                <!-- Success message -->
-            @if(Session::has('success'))
-            <div class="alert alert-success">
-                {{Session::get('success')}}
-            </div>
-            @endif
-              <div class="formbold-main-wrapper">
-                <div class="formbold-form-wrapper">
-                  <form action="/post" method="POST">
-                    @csrf
-                    <div class="formbold-mb-5">
-                      <label for="name" class="formbold-form-label"> Full Name </label>
-                      <input
-                        type="text"
-                        name="Name"
-                        id="Name"
-                        placeholder="Enter your full name"
-                        class="formbold-form-input"
-                        required
-                      />
-                    </div>
-                    <div class="formbold-mb-5">
-                      <label for="phone" class="formbold-form-label"> Phone Number </label>
-                      <input
-                        type="text"
-                        name="Phone_number"
-                        id="Phone_number"
-                        placeholder="Enter your phone number"
-                        class="formbold-form-input"
-                        required
-                      />
-                    </div>
-                    <div class="formbold-mb-5">
-                      <label for="email" class="formbold-form-label"> Email Address </label>
-                      <input
-                        type="email"
-                        name="Email"
-                        id="Email"
-                        placeholder="Enter your email"
-                        class="formbold-form-input"
-                        required
-                      />
-                    </div>
-                    <div class="flex flex-wrap formbold--mx-3">
-                      <div class="w-full sm:w-half formbold-px-3">
-                        <div class="formbold-mb-5 w-full">
-                          <label for="date" class="formbold-form-label"> Date </label>
-                          <input
-                            type="date"
-                            name="Appt_date"
-                            id="Appt_date"
-                            class="formbold-form-input"
-                            required
-                          />
-                        </div>
-                      </div>
-                      <div class="w-full sm:w-half formbold-px-3">
-                        <div class="formbold-mb-5">
-                          <label for="time" class="formbold-form-label"> Time </label>
-                          <input
-                            type="time"
-                            name="Appt_time"
-                            id="Appt_time"
-                            class="formbold-form-input"
-                            required
-                          />
-                        </div>
-                      </div>
-                    </div>
-                   
-                    <div class="formbold-mb-5">
-                      <label for="mode" class="formbold-form-label">Mode of Consultation:</label>
-                      <input type="radio" id="f2f" name="Mode_of_consultation" value="Face-to-Face">
-                       <label for="f2f">Face-to-Face</label><br>
-                      <input type="radio" id="online" name="Mode_of_consultation" value="Online">
-                      <label for="online">Online</label><br>
-                    </div>
-
-                    <div class="formbold-mb-5">
-                    <label for="Therapist" class="formbold-form-label">Choose your consultant:</label>
-                    <select id="Therapist" name="Therapist">
-                      @foreach($posts as $post)
-                      <option value="{{ $post->id }}, {{ $post->name }}">{{ $post->name }}</option>
-                      @endforeach
-                    </select>
-                    </div>  
-
-                    <div>
-                      <button class="formbold-btn" type="submit" value="Submit">Book Appointment</button>
-                    </div>
-
-                  </form>
-                </div>
-            </div>  
+        <!--<div class="calendar"></div> -->
+        <!--<div id="myDiv" class="modal1">
+          
+          <div class="modal-content1">
+            <span class="close">&times;</span>
+            <h4 style="font-weight: bold; font-size: 22px;">Appointments</h4>
             
+              
+    
+          </div>-->
+        <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">Let's track your mental health today!</h6>
+        
+        <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal"><i class="fas fa-user-plus"></i>
+          Set Appointment Here
+        </button>
+
+        <!-- Modal Appt Form -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title" style="font-size: 22px;"><b>Schedule Appointment Form</b></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p style="font-size: 16px; text-align:center;">NOTE: Refer to the meet our therapist section to see your chosen specialist's schedule.</p>
+                  <!-- Success message -->
+              @if(Session::has('success'))
+              <div class="alert alert-success">
+                  {{Session::get('success')}}
+              </div>
+              @endif
+                <div class="formbold-main-wrapper">
+                  <div class="formbold-form-wrapper">
+                    <form action="/post" method="POST">
+                      @csrf
+                      <div class="formbold-mb-5">
+                        <label for="name" class="formbold-form-label"> Full Name </label>
+                        <input
+                          type="text"
+                          name="Name"
+                          id="Name"
+                          placeholder="Enter your full name"
+                          class="formbold-form-input"
+                          required
+                        />
+                      </div>
+                      <div class="formbold-mb-5">
+                        <label for="phone" class="formbold-form-label"> Phone Number </label>
+                        <input
+                          type="text"
+                          name="Phone_number"
+                          id="Phone_number"
+                          placeholder="Enter your phone number"
+                          class="formbold-form-input"
+                          required
+                        />
+                      </div>
+                      <div class="formbold-mb-5">
+                        <label for="email" class="formbold-form-label"> Email Address </label>
+                        <input
+                          type="email"
+                          name="Email"
+                          id="Email"
+                          placeholder="Enter your email"
+                          class="formbold-form-input"
+                          required
+                        />
+                      </div>
+                      <div class="flex flex-wrap formbold--mx-3">
+                        <div class="w-full sm:w-half formbold-px-3">
+                          <div class="formbold-mb-5 w-full">
+                            <label for="date" class="formbold-form-label"> Date </label>
+                            <input
+                              type="date"
+                              name="Appt_date"
+                              id="Appt_date"
+                              class="formbold-form-input"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="w-full sm:w-half formbold-px-3">
+                          <div class="formbold-mb-5">
+                            <label for="time" class="formbold-form-label"> Time </label>
+                            <input
+                              type="time"
+                              name="Appt_time"
+                              id="Appt_time"
+                              class="formbold-form-input"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <div class="formbold-mb-5">
+                        <label for="mode" class="formbold-form-label">Mode of Consultation:</label>
+                        <input type="radio" id="f2f" name="Mode_of_consultation" value="Face-to-Face">
+                        <label for="f2f">Face-to-Face</label><br>
+                        <input type="radio" id="online" name="Mode_of_consultation" value="Online">
+                        <label for="online">Online</label><br>
+                      </div>
+
+                      <div class="formbold-mb-5">
+                      <label for="Therapist" class="formbold-form-label">Choose your consultant:</label>
+                      <select id="Therapist" name="Therapist">
+                        @foreach($posts as $post)
+                        <option value="{{ $post->id }}, {{ $post->name }}">{{ $post->name }}</option>
+                        @endforeach
+                      </select>
+                      </div>  
+
+                      <div>
+                        <button class="formbold-btn" type="submit" value="Submit">Book Appointment</button>
+                      </div>
+
+                    </form>
+                  </div>
+              </div>  
+              
       </div>
       </div>
       </div> 
@@ -327,6 +379,7 @@
     </div>
     <!--/.Carousel Wrapper-->
     <!--last div-->
+    
     </div>
      
    <!---->     
