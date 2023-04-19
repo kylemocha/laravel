@@ -159,12 +159,39 @@
       </div>
 
       <div class="page" id="page2" style="display:none">
-        <h5 style="font-weight: bold; margin:10px; ">&nbsp;Schedule Section</h5>
+        <h2 style="font-weight: bold; margin:10px; ">&nbsp;Schedule Section</h2>
         
       </div>
 
       <div class="page" id="page3" style="display:none">
-        <h2 style="font-weight: bold;">&nbsp;MEOW!!!!</h2>
+        <h2 style="font-weight: bold;">&nbsp;Appointments Section</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Client's Name</th>
+              <th scope="col">Appointment Date</th>
+              <th scope="col">Appointment Time</th>
+              <th scope="col">Mode of Consultation</th>
+              <th scope="col">Status</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              @foreach ($appts as $appt)
+              <th scope="row">{{ $appt->id }}</th>
+              <td>{{ $appt->Name }}</td>
+              <td>{{ $appt->Appt_date }}</td>
+              <td>{{ $appt->Appt_time  }}</td>
+              <td>{{ $appt->Mode_of_consultation }}</td>
+              <td>{{ $appt->status }}</td>
+              <td></td> <!--approved or rejected-->
+            </tr>
+            @endforeach
+          </tbody>
+        </table>
+
         
       </div>
 
