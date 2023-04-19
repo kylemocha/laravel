@@ -151,7 +151,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-              <h4 class="modal-title">Schedule Appointment Form</h4>
+              <h4 class="modal-title"><b>Schedule Appointment Form</b></h4>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
@@ -167,7 +167,7 @@
                         type="text"
                         name="name"
                         id="name"
-                        placeholder="Full Name"
+                        placeholder="Enter your full name"
                         class="formbold-form-input"
                       />
                     </div>
