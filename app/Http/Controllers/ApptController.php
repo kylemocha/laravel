@@ -27,8 +27,6 @@ class ApptController extends Controller
         $data=array('Name'=>$name,'Phone_number'=>$phonenumber,"Email"=>$Email,"Client_id"=>$userId,"Appt_date"=>$date, "Appt_time"=>$time, "Mode_of_consultation"=>$Mode,
         "Therapist"=>$T_id, "Status"=>$status);
         DB::table('appointments')->insert($data);
-        //echo "Record inserted successfully.<br/>";
-        //echo '<a href = "home_user">Click Here</a> to go back.';
         return redirect("home_user")->withSuccess('Successfully created an appointment.');
        
 
