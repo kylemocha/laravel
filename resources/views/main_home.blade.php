@@ -152,45 +152,55 @@
     </div>
   </div>
   
-  <!--image gallery-->
-  <div class="img-gal">
-  <h1 style="text-align: center; font-weight: bold; padding: 15px 10px; margin: 8px;">Meet our Therapists</h1>
-  <h5 style="padding: 5px 8px; font-size: 18px; text-align: center;">The assistance you need here for your mental health.</h5>
-  <div class="responsive">
-    <div class="gallery">
-      <a href="#">
-        <img src="https://i.ibb.co/my39KRW/Image-For-Article-23295-16680815010862881.png" alt="Cinque Terre" width="600" height="400">
-      </a>
-      <div class="desc">Add a description of the image here</div>
+  <div class="blog-home2 py-5">
+    <div class="container">
+      <!-- Row  -->
+      <div class="row justify-content-center">
+        <!-- Column -->
+        <!--<div class="col-md-8 text-center">
+          <h3 class="my-3">Upcoming Events</h3>
+          <h6 class="subtitle font-weight-normal">In order to stay up to date, you can view any upcoming events.</h6>
+        </div>-->
+        <!-- Column -->
+        <!-- Column -->
+      <h1 style="text-align: center; font-weight: bold; padding: 15px 10px; margin: 8px;">Upcoming Events</h1>
+      <h5 style="padding: 5px 8px; font-size: 18px; text-align: center;">In order to stay up to date, you can view any upcoming events.</h5>
+      </div>
+      <div class="row mt-4">
+        <!-- Column -->
+        <div class="col-md-4 on-hover">
+          <div class="card border-0 mb-4">
+            <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
+            <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
+            <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
+            <p class="mt-3"> CDOC</p>
+            <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
+          </div>
+        </div>
+        <!-- Column -->
+        <div class="col-md-4 on-hover">
+          <div class="card border-0 mb-4">
+            <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
+            <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
+            <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
+            <p class="mt-3"> CDOC</p>
+            <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
+          </div>
+        </div>
+        <!-- Column -->
+        <div class="col-md-4 on-hover">
+          <div class="card border-0 mb-4">
+            <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
+            <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
+            <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
+            <p class="mt-3"> CDOC</p>
+            <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="responsive">
-    <div class="gallery">
-      <a href="#">
-        <img src="https://i.ibb.co/my39KRW/Image-For-Article-23295-16680815010862881.png" alt="Cinque Terre" width="600" height="400">
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div>
-  </div>
-
-  <div class="responsive">
-    <div class="gallery">
-      <a href="#">
-        <img src="https://i.ibb.co/my39KRW/Image-For-Article-23295-16680815010862881.png" alt="Cinque Terre" width="600" height="400">
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div>
-  </div>
-
-  <div class="responsive">
-    <div class="gallery">
-      <a href="#">
-        <img src="https://i.ibb.co/my39KRW/Image-For-Article-23295-16680815010862881.png" alt="Cinque Terre" width="600" height="400">
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div>
-  </div>
+ 
  </div>
 
  

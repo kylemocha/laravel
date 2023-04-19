@@ -10,7 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    <script src="https://markcell.github.io/jquery-tabledit/assets/js/tabledit.min.js"></script>
     <script>
       function show(elementID) {
     var ele = document.getElementById(elementID);
@@ -82,16 +81,16 @@
         <!--<p>Features</p>-->
         <li class="active">
             <li>
-                <!--<a href="#" onclick="show('page1');"><b>Dashboard</b></a>-->
-                <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"  onclick="show('page1');"><b>Dashboard</b></a>
-                <ul class="collapse list-unstyled" id="dashboard">  
-                  <li>
+                <a href="#" onclick="show('page1');"><b>Dashboard</b></a>
+                <!--<a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"  onclick="show('page1');"><b>Dashboard</b></a>-->
+                <!--<<ul class="collapse list-unstyled" id="dashboard">  
+                  li>
                     <a href="#" onclick="show('page6');">Schedule Appointment</a>
                 </li>
                 <li>
                     <a href="#" onclick="show('page4');">Meet our Therapists</a>
                 </li>
-                </ul>
+                </ul>-->
             </li>
         </li>  
             <li>
@@ -128,74 +127,197 @@
          <span></span>
         </button> 
         <!--Modal Calendar-->
-        <button type="button" id="myCalendar" class="btn btn-primary btn-md float-end"><i class="fa fa-calendar" aria-hidden="true"></i> See your schedule</button>
+        <button type="button" id="myCalendar" class="btn btn-primary btn-md float-end"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</button>
         <h2 style="font-weight: bold;">Welcome, {{ Auth::user()->name }}!</h2>
         <div id="myDiv" class="modal1">
           <!-- Modal content -->
           <div class="modal-content1">
             <span class="close">&times;</span>
-            <h4 style="font-weight: bold;">See your schedule</h4>
+            <!--<h4 style="font-weight: bold;">Calendar</h4>-->
             <div class="calendar"></div> 
           </div>
         
-        </div>
-         
+        </div> 
         <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">Let's track your mental health today!</h6>
         
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fas fa-user-plus"></i>
+          Set Appointment
+        </button>
+
+      <!-- Modal Appt Form -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Schedule Appointment Form</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <p style="font-size: 16px; text-align:center;">NOTE: Refer to the meet our therapist section to see your chosen specialist's schedule.</p>
+              <div class="formbold-main-wrapper">
+                <div class="formbold-form-wrapper">
+                  <form action="#" method="#">
+                    <div class="formbold-mb-5">
+                      <label for="name" class="formbold-form-label"> Full Name </label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Full Name"
+                        class="formbold-form-input"
+                      />
+                    </div>
+                    <div class="formbold-mb-5">
+                      <label for="phone" class="formbold-form-label"> Phone Number </label>
+                      <input
+                        type="text"
+                        name="phonenumber"
+                        id="phonenumber"
+                        placeholder="Enter your phone number"
+                        class="formbold-form-input"
+                      />
+                    </div>
+                    <div class="formbold-mb-5">
+                      <label for="email" class="formbold-form-label"> Email Address </label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        class="formbold-form-input"
+                      />
+                    </div>
+                    <div class="flex flex-wrap formbold--mx-3">
+                      <div class="w-full sm:w-half formbold-px-3">
+                        <div class="formbold-mb-5 w-full">
+                          <label for="date" class="formbold-form-label"> Date </label>
+                          <input
+                            type="date"
+                            name="date"
+                            id="date"
+                            class="formbold-form-input"
+                          />
+                        </div>
+                      </div>
+                      <div class="w-full sm:w-half formbold-px-3">
+                        <div class="formbold-mb-5">
+                          <label for="time" class="formbold-form-label"> Time </label>
+                          <input
+                            type="time"
+                            name="time"
+                            id="time"
+                            class="formbold-form-input"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formbold-mb-5">
+                      <label for="mode" class="formbold-form-label">Mode of Consultation:</label>
+                      <input type="radio" id="f2f" name="mode" value="Face-to-Face">
+                       <label for="f2f">Face-to-Face</label>
+                      <input type="radio" id="online" name="mode" value="Online">
+                      <label for="online">Online</label><br>
+                    </div>
+                    <div class="formbold-mb-5">
+                    <label for="users" class="formbold-form-label">Choose your consultant:</label>
+                    <select id="users" name="users">
+                    @foreach($posts as $post)
+                    <option value="{{ $post->name }}">{{ $post->name }}</option>
+                    @endforeach
+                    </select>
+                   
+                    </div>
+                   
+                    <div>
+                      <button class="formbold-btn">Book Appointment</button>
+                    </div>
+                  </form>
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      </div>
+
         <!--<p style="font-size: 17px; color: #8d97ad;">Let's track your mental health today!</p>
         <div class="row justify-content-center">
         <div class="col-md-8 text-center">-->
         <!--<h3 class="my-3">Dashboard</h3>
         <h2 style="font-weight: bold;">Dashboard</h2>-->
-        
 
-        <div class="blog-home2 py-5">
-          <div class="container">
-            <!-- Row  -->
-            <div class="row justify-content-center">
-              <!-- Column -->
-              <div class="col-md-8 text-center">
-                <h3 class="my-3">Upcoming Events</h3>
-                <h6 class="subtitle font-weight-normal">In order to stay up to date, you can view any upcoming events.</h6>
-              </div>
-              <!-- Column -->
-              <!-- Column -->
-            </div>
-            <div class="row mt-4">
-              <!-- Column -->
-              <div class="col-md-4 on-hover">
-                <div class="card border-0 mb-4">
-                  <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
-                  <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
-                  <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
-                  <p class="mt-3"> CDOC</p>
-                  <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
-                </div>
-              </div>
-              <!-- Column -->
-              <div class="col-md-4 on-hover">
-                <div class="card border-0 mb-4">
-                  <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
-                  <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
-                  <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
-                  <p class="mt-3"> CDOC</p>
-                  <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
-                </div>
-              </div>
-              <!-- Column -->
-              <div class="col-md-4 on-hover">
-                <div class="card border-0 mb-4">
-                  <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
-                  <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
-                  <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
-                  <p class="mt-3"> CDOC</p>
-                  <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
-                </div>
-              </div>
-            </div>
+        <!-- Carousel wrapper -->
+        <h1 style="text-align: center; font-weight: bold; font-size: 28px;">Meet our Therapists</h1>
+       <!--Carousel Wrapper-->
+    <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-2" data-slide-to="1"></li>
+        <li data-target="#carousel-example-2" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="view">
+            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(105).webp" alt="First slide">
+            <div class="mask rgba-black-light"></div>
+          </div>
+          <div class="carousel-caption">
+            <h3 class="h3-responsive"  style="color: #006a89; text-shadow: 2px 2px 2px #ABCDEF; font-weight: bold;">This is the first title</h3>
+            <p style="color: #006a89;">First text</p>
+            <li class="list-inline-item">
+              <a href="#" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">See their schedule</a>
+            </li>
           </div>
         </div>
-       
+        <div class="carousel-item">
+          <!--Mask color-->
+          <div class="view">
+            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(115).webp" alt="Second slide">
+            <div class="mask rgba-black-light"></div>
+          </div>
+          <div class="carousel-caption">
+            <h3 class="h3-responsive"  style="color: #006a89; text-shadow: 2px 2px 2px #ABCDEF; font-weight: bold;">This is the second title</h3>
+            <p style="color: #006a89;">Secondary text</p>
+            <li class="list-inline-item">
+              <a href="#" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">See their schedule</a>
+            </li>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!--Mask color-->
+          <div class="view">
+            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(108).webp" alt="Third slide">
+            <div class="mask rgba-black-light"></div>
+          </div>
+          <div class="carousel-caption">
+            <h3 class="h3-responsive"  style="color: #006a89; text-shadow: 2px 2px 2px #ABCDEF; font-weight: bold;">This is the third title</h3>
+            <p style="color: #006a89;">Third text</p>
+            <li class="list-inline-item">
+              <a href="#" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">See their schedule</a>
+            </li>
+          </div>
+        </div>
+      </div>
+      <!--/.Slides-->
+      <!--Controls-->
+      <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+            
         
     </div>
      
@@ -275,7 +397,7 @@
       </table>                          
     </div>
 
-    <div class="page" id="page4" style="display:none">
+    <!--<div class="page" id="page4" style="display:none">
       <button type="button" id="sidebarCollapse4" class="btn btn-info">
         <i class="fas fa-align-left"></i>
         <span></span>
@@ -284,7 +406,7 @@
       
       
 
-    </div>
+    </div>-->
     
     <div class="page" id="page5" style="display:none">
       <button type="button" id="sidebarCollapse5" class="btn btn-info">
@@ -364,96 +486,16 @@
         </div>
     </div>
 
-    <div class="page" id="page6" style="display:none">
+    <!--<div class="page" id="page6" style="display:none">
       <button type="button" id="sidebarCollapse6" class="btn btn-info">
         <i class="fas fa-align-left"></i>
         <span></span>
        </button>
        <h2 style="font-weight: bold;">Schedule Appointment Form</h2>
        <p style="color: #8d97ad;">This section allows you to have consultations with your chosen mental health specialists.</p>
-       <div class="formbold-main-wrapper">
-        <div class="formbold-form-wrapper">
-          <form action="#" method="#">
-            <div class="formbold-mb-5">
-              <label for="name" class="formbold-form-label"> Full Name </label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Full Name"
-                class="formbold-form-input"
-              />
-            </div>
-            <div class="formbold-mb-5">
-              <label for="phone" class="formbold-form-label"> Phone Number </label>
-              <input
-                type="text"
-                name="phonenumber"
-                id="phonenumber"
-                placeholder="Enter your phone number"
-                class="formbold-form-input"
-              />
-            </div>
-            <div class="formbold-mb-5">
-              <label for="email" class="formbold-form-label"> Email Address </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email"
-                class="formbold-form-input"
-              />
-            </div>
-            <div class="flex flex-wrap formbold--mx-3">
-              <div class="w-full sm:w-half formbold-px-3">
-                <div class="formbold-mb-5 w-full">
-                  <label for="date" class="formbold-form-label"> Date </label>
-                  <input
-                    type="date"
-                    name="date"
-                    id="date"
-                    class="formbold-form-input"
-                  />
-                </div>
-              </div>
-              <div class="w-full sm:w-half formbold-px-3">
-                <div class="formbold-mb-5">
-                  <label for="time" class="formbold-form-label"> Time </label>
-                  <input
-                    type="time"
-                    name="time"
-                    id="time"
-                    class="formbold-form-input"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="formbold-mb-5">
-              <label for="mode" class="formbold-form-label">Mode of Consultation:</label>
-              <input type="radio" id="f2f" name="mode" value="Face-to-Face">
-               <label for="f2f">Face-to-Face</label>
-              <input type="radio" id="online" name="mode" value="Online">
-              <label for="online">Online</label><br>
-            </div>
-            <div class="formbold-mb-5">
-            <label for="users" class="formbold-form-label">Choose your consultant:</label>
-            <select id="users" name="users">
-            @foreach($posts as $post)
-            <option value="{{ $post->name }}">{{ $post->name }}</option>
-            @endforeach
-            </select>
-           
-            </div>
-           
-            <div>
-              <button class="formbold-btn">Book Appointment</button>
-            </div>
-          </form>
-        </div>
-      </div>
-
       
-      </div>
+      </div>-->
+
 
 
 </div> 
@@ -875,6 +917,7 @@
    
 
   <script  src="hom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
