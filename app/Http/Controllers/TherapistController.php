@@ -37,7 +37,6 @@ class TherapistController extends Controller
   }
   public function update(Request $request, $id)
   {   
-    
       $users = User::find($id);
       $users->name = $request->input('name');
       $users->email = $request->input('email');

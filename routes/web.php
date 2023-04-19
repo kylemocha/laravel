@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\ContactUsFormController;
 use App\Http\Controllers\Auth\Forgot_PasswordController;
-use App\Http\Controllers\JournalController;
+use App\Http\Controllers\admin_conController;
 use App\Http\Controllers\JournalViewController;
 use App\Http\Controllers\TherapistController;
 use App\Http\Controllers\ApptController;
@@ -79,3 +79,8 @@ Route::get('logout', [CustomAuthController::class, 'logout'])->name('logout');
 Auth::routes();
 Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
 Route::get('therapist/home', [HomeController::class, 'therapistHome'])->name('therapist.home')->middleware('is_admin');
+
+Route::get('edit-admin/{id}', [admin_conController::class, 'showUser']);
+Route::put('update-admin/{id}', [admin_conController::class, 'updateUser']);
+Route::get('delete-admin/{id}', [admin_conController::class, 'deleteUser']);
+

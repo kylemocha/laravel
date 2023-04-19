@@ -78,7 +78,11 @@
     <div class="home-content">
       <div class="page" id="page1">
         <h2 style="font-weight: bold;">&nbsp;Welcome, {{ Auth::user()->name }}!</h2>
-        
+
+        @if (session('success'))
+        <h3 class="alert alert-success">{{ session('success') }}</h3>
+        @endif
+
       </div>
        
       <div class="page" id="page2" style="display:none">
@@ -101,8 +105,8 @@
             <td>{{ $user->name}}</td>
             <td>{{ $user->email }}</td>
             <td>
-              <a style="text-decoration: underline;" href= "#">Edit</a> 
-              <a style="text-decoration: underline;" href= "#">Delete</a> 
+              <a style="text-decoration: underline;" href="{{ url('edit-admin/'.$user->id) }}">Edit</a> 
+              <a style="text-decoration: underline;" href="{{ url('delete-admin/'.$user->id) }}" >Delete</a> 
             </td>
           </tr>
           @endforeach
