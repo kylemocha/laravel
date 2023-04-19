@@ -586,6 +586,7 @@ class ComposerStaticInit475d29db86bb4184874fbeb04040646c
         'App\\Http\\Controllers\\RatingsController' => __DIR__ . '/../..' . '/app/Http/Controllers/RatingsController.php',
         'App\\Http\\Controllers\\TherapistController' => __DIR__ . '/../..' . '/app/Http/Controllers/TherapistController.php',
         'App\\Http\\Controllers\\admin_conController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin_conController.php',
+        'App\\Http\\Controllers\\user_therapistController' => __DIR__ . '/../..' . '/app/Http/Controllers/user_therapistController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',

@@ -17,6 +17,7 @@ return array(
     'App\\Http\\Controllers\\RatingsController' => $baseDir . '/app/Http/Controllers/RatingsController.php',
     'App\\Http\\Controllers\\TherapistController' => $baseDir . '/app/Http/Controllers/TherapistController.php',
     'App\\Http\\Controllers\\admin_conController' => $baseDir . '/app/Http/Controllers/admin_conController.php',
+    'App\\Http\\Controllers\\user_therapistController' => $baseDir . '/app/Http/Controllers/user_therapistController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',

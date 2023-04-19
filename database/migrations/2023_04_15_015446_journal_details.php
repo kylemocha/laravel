@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('title');
             $table->string('User_name');
             $table->date('JournalDate');
-            $table->string('message');
             $table->rememberToken();
             $table->timestamps();
         });
