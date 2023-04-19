@@ -218,7 +218,7 @@
                     <div class="formbold-mb-5">
                       <label for="mode" class="formbold-form-label">Mode of Consultation:</label>
                       <input type="radio" id="f2f" name="mode" value="Face-to-Face">
-                       <label for="f2f">Face-to-Face</label>
+                       <label for="f2f">Face-to-Face</label><br>
                       <input type="radio" id="online" name="mode" value="Online">
                       <label for="online">Online</label><br>
                     </div>
