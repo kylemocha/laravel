@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('Mode_of_consultation');
             $table->integer('T_id');
             $table->string('Therapist');
-            $table->timestamp('created')->nullable();
+            $table->string('Status');
             $table->timestamps();
         });
     }
@@ -37,5 +37,6 @@ return new class extends Migration
     public function down()
     {
         Schema::dropIfExists('appointments');
+      
     }
 };

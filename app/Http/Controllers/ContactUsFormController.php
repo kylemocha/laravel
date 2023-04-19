@@ -20,7 +20,7 @@ class ContactUsFormController extends Controller {
          ]);
         //  Store data in database
         Contact::create($request->all());
-        //  Send mail to admin
+        
         return back()->with('success', 'We would like to thank you for writing to us and we have received your message.');
     }
 }

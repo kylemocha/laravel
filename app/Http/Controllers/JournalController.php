@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 
 class JournalController extends Controller //insert data
 {
-    public function insertform() {
+    public function insertform(){
         return view('home_user');
     }
     public function insert(Request $request) {

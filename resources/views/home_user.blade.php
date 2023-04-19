@@ -158,37 +158,47 @@
             <!-- Modal body -->
             <div class="modal-body">
               <p style="font-size: 16px; text-align:center;">NOTE: Refer to the meet our therapist section to see your chosen specialist's schedule.</p>
+                <!-- Success message -->
+            @if(Session::has('success'))
+            <div class="alert alert-success">
+                {{Session::get('success')}}
+            </div>
+            @endif
               <div class="formbold-main-wrapper">
                 <div class="formbold-form-wrapper">
-                  <form action="#" method="#">
+                  <form action="/post" method="POST">
+                    @csrf
                     <div class="formbold-mb-5">
                       <label for="name" class="formbold-form-label"> Full Name </label>
                       <input
                         type="text"
-                        name="name"
-                        id="name"
+                        name="Name"
+                        id="Name"
                         placeholder="Enter your full name"
                         class="formbold-form-input"
+                        required
                       />
                     </div>
                     <div class="formbold-mb-5">
                       <label for="phone" class="formbold-form-label"> Phone Number </label>
                       <input
                         type="text"
-                        name="phonenumber"
-                        id="phonenumber"
+                        name="Phone_number"
+                        id="Phone_number"
                         placeholder="Enter your phone number"
                         class="formbold-form-input"
+                        required
                       />
                     </div>
                     <div class="formbold-mb-5">
                       <label for="email" class="formbold-form-label"> Email Address </label>
                       <input
                         type="email"
-                        name="email"
-                        id="email"
+                        name="Email"
+                        id="Email"
                         placeholder="Enter your email"
                         class="formbold-form-input"
+                        required
                       />
                     </div>
                     <div class="flex flex-wrap formbold--mx-3">
@@ -197,9 +207,10 @@
                           <label for="date" class="formbold-form-label"> Date </label>
                           <input
                             type="date"
-                            name="date"
-                            id="date"
+                            name="Appt_date"
+                            id="Appt_date"
                             class="formbold-form-input"
+                            required
                           />
                         </div>
                       </div>
@@ -208,51 +219,49 @@
                           <label for="time" class="formbold-form-label"> Time </label>
                           <input
                             type="time"
-                            name="time"
-                            id="time"
+                            name="Appt_time"
+                            id="Appt_time"
                             class="formbold-form-input"
+                            required
                           />
                         </div>
                       </div>
                     </div>
+                   
                     <div class="formbold-mb-5">
                       <label for="mode" class="formbold-form-label">Mode of Consultation:</label>
-                      <input type="radio" id="f2f" name="mode" value="Face-to-Face">
+                      <input type="radio" id="f2f" name="Mode_of_consultation" value="Face-to-Face">
                        <label for="f2f">Face-to-Face</label><br>
-                      <input type="radio" id="online" name="mode" value="Online">
+                      <input type="radio" id="online" name="Mode_of_consultation" value="Online">
                       <label for="online">Online</label><br>
                     </div>
+
                     <div class="formbold-mb-5">
-                    <label for="users" class="formbold-form-label">Choose your consultant:</label>
-                    <select id="users" name="users">
-                    @foreach($posts as $post)
-                    <option value="{{ $post->name }}">{{ $post->name }}</option>
-                    @endforeach
+                    <label for="Therapist" class="formbold-form-label">Choose your consultant:</label>
+                    <select id="Therapist" name="Therapist">
+                      @foreach($posts as $post)
+                      <option value="{{ $post->id }}, {{ $post->name }}">{{ $post->name }}</option>
+                      @endforeach
                     </select>
-                   
-                    </div>
-                   
+                    </div>  
+
                     <div>
-                      <button class="formbold-btn">Book Appointment</button>
+                      <button class="formbold-btn" type="submit" value="Submit">Book Appointment</button>
                     </div>
+
                   </form>
                 </div>
-            </div>
-            </div>
-        </div>
+            </div>  
+            
       </div>
       </div>
-
-        <!--<p style="font-size: 17px; color: #8d97ad;">Let's track your mental health today!</p>
-        <div class="row justify-content-center">
-        <div class="col-md-8 text-center">-->
-        <!--<h3 class="my-3">Dashboard</h3>
-        <h2 style="font-weight: bold;">Dashboard</h2>-->
-
-        <!-- Carousel wrapper -->
-        <h1 style="text-align: center; font-weight: bold; font-size: 28px;">Meet our Therapists</h1>
+      </div> 
+      </div>
+       
+      <!--Carousel wrapper -->
+      <h1 style="text-align: center; font-weight: bold; font-size: 28px;">Meet our Therapists</h1>
        <!--Carousel Wrapper-->
-    <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+      <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
       <!--Indicators-->
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
@@ -317,11 +326,10 @@
       <!--/.Controls-->
     </div>
     <!--/.Carousel Wrapper-->
-            
-        
+    <!--last div-->
     </div>
      
-        
+   <!---->     
     <div class="page" id="page2" style="display:none">
       <button type="button" id="sidebarCollapse1" class="btn btn-info">
         <i class="fas fa-align-left"></i>
@@ -361,7 +369,9 @@
           </div>
         </form>
     </div>
-
+    <!---->    
+    
+    <!---->    
     <div class="page" id="page3" style="display:none">
       <button type="button" id="sidebarCollapse2" class="btn btn-info">
         <i class="fas fa-align-left"></i>
@@ -396,6 +406,7 @@
           </tbody>
       </table>                          
     </div>
+    <!---->    
 
     <!--<div class="page" id="page4" style="display:none">
       <button type="button" id="sidebarCollapse4" class="btn btn-info">
@@ -407,7 +418,7 @@
       
 
     </div>-->
-    
+    <!---->    
     <div class="page" id="page5" style="display:none">
       <button type="button" id="sidebarCollapse5" class="btn btn-info">
         <i class="fas fa-align-left"></i>
@@ -485,6 +496,7 @@
           </a>
         </div>
     </div>
+    <!---->    
 
     <!--<div class="page" id="page6" style="display:none">
       <button type="button" id="sidebarCollapse6" class="btn btn-info">
@@ -497,7 +509,7 @@
       </div>-->
 
 
-
+<!---->    
 </div> 
 
   <!--appt-->

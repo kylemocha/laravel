@@ -48,6 +48,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
        
-    
+    public function scopeUserr($query){
+     return $query->where('user_id',Auth::user()->id); 
+    }
    
 }

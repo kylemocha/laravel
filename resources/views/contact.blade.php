@@ -25,7 +25,7 @@
                 {{Session::get('success')}}
             </div>
         @endif
-        <form action="" method="post" action="{{ route('contact.store') }}">
+        <form method="post" action="{{ route('contact.store') }}">
             @csrf
             <div class="form-group">
                 <!--<i class="fas fa-user prefix grey-text"></i>

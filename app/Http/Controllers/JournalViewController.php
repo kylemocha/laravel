@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\JournalView;
+use App\Models\ApptModel;
 use App\Models\User;
 
 class JournalViewController extends Controller
@@ -16,9 +17,7 @@ class JournalViewController extends Controller
         //return view('home_user')->withUsers($users); //do not edit
         //return view('home_user', compact('posts, users'));
         return view('home_user')->with('users',$users)->with('posts',$posts);
-
     }  
-    //function viewTherapist(){ }
 
     function delete($id) //delete
     {

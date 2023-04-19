@@ -7,7 +7,8 @@ use App\Http\Controllers\Auth\Forgot_PasswordController;
 use App\Http\Controllers\JournalController;
 use App\Http\Controllers\JournalViewController;
 use App\Http\Controllers\TherapistController;
-use App\Models\JournalView;
+use App\Http\Controllers\ApptController;
+
 
 Auth::routes();
 
@@ -40,8 +41,8 @@ Route::get('/home_user', 'JournalViewController@index');
 Route::get('/admin','admin_conController@index');
 
 //home-user features
-//Route::get('/home_user','user_therapistController@index');
-
+Route::get('/insert',[ApptController::class, 'showForm']);
+Route::post('/post',[ApptController::class, 'storeForm']);
 
 //therapist
 Route::get('/therapist','TherapistController@index');
@@ -49,7 +50,7 @@ Route::get('/therapist','TherapistController@index');
 Route::get('edit-therapist/{id}', [TherapistController::class, 'edit']);
 Route::put('update-therapist/{id}', [TherapistController::class, 'update']);
 
-//update and delete
+//update and delete home_user
 Route::get('edit/{id}', [JournalViewController::class, 'showData']);
 Route::post('edit', [JournalViewController::class, 'update']);
 Route::get('delete/{id}', [JournalViewController::class, 'delete']);
