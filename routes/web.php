@@ -8,6 +8,7 @@ use App\Http\Controllers\admin_conController;
 use App\Http\Controllers\JournalViewController;
 use App\Http\Controllers\TherapistController;
 use App\Http\Controllers\ApptController;
+use App\Http\Controllers\CalenderController;
 
 
 Auth::routes();
@@ -46,6 +47,10 @@ Route::post('/post',[ApptController::class, 'storeForm']);
 
 //therapist
 Route::get('/therapist','TherapistController@index');
+
+//therapist calendar
+Route::get('calendar-event', [CalenderController::class, 'index']);
+Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);
 
 Route::get('edit-therapist/{id}', [TherapistController::class, 'edit']);
 Route::put('update-therapist/{id}', [TherapistController::class, 'update']);
