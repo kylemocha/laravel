@@ -166,7 +166,7 @@
       <div class="page" id="page2" style="display:none">
         <h2 style="font-weight: bold; margin:10px; ">&nbsp;Schedule Section</h2>
         <p style="padding-left: 15px;">This section allows you to edit your schedule.</p>
-        
+         
      
 
       </div>
