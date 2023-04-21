@@ -9,16 +9,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
- 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script>
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
-   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Therapist Page</title>
@@ -173,33 +163,37 @@
         <h2 style="font-weight: bold; margin:10px; ">&nbsp;Schedule Section</h2>
         <p style="padding-left: 15px;">This section allows you to edit your schedule.</p>
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-          Create Event
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="margin-left:15px;">
+          Create Schedule
         </button>
 
-        <!-- The Modal -->
+         <!--The Modal -->
         <div class="modal" id="myModal">
           <div class="modal-dialog">
             <div class="modal-content">
 
-              <!-- Modal Header -->
+               <!--Modal Header -->
               <div class="modal-header">
-                <h4 class="modal-title">Create Event Form</h4>
+                <h4 class="modal-title">Create Schedule Form</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
 
-              <!-- Modal body -->
+               <!--Modal body -->
               <div class="modal-body">
-                 
+                <form action="#">
+                  <label for="schedule">Schedule:</label>
+                  <input type="date" id="schedule" name="schedule">
+                  <input type="submit">
+                </form>
                 
-              </div>
-
-             
+              </div>        
             </div>
           </div>
         </div>
+        <!--modal-->
+       
 
-        
+       
       </div>
 
       <div class="page" id="page3" style="display:none">

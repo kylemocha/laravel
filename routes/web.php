@@ -52,7 +52,7 @@ Route::get('/therapist','TherapistController@index');
 //Route::get('calendar-event', [CalenderController::class, 'index']);
 //Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);
 
-Route::resource('tasks', 'TasksController');
+//Route::resource('tasks', 'TasksController');
 
 Route::get('edit-therapist/{id}', [TherapistController::class, 'edit']);
 Route::put('update-therapist/{id}', [TherapistController::class, 'update']);
