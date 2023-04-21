@@ -48,6 +48,8 @@ Route::post('/post',[ApptController::class, 'storeForm']);
 //therapist
 Route::get('/therapist','TherapistController@index');
 
+Route::get('/insert',[TherapistController::class, 'seeForm']);
+Route::post('/createform',[TherapistController::class, 'insertSchedule']);
 //therapist calendar
 //Route::get('calendar-event', [CalenderController::class, 'index']);
 //Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);

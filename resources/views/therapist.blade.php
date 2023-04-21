@@ -180,7 +180,8 @@
 
                <!--Modal body -->
               <div class="modal-body">
-                <form action="#">
+                <form action="/createform" method="POST">
+                  @csrf
                   <label for="name">Event Name:</label>
                   <input type="text" id="name" name="name">
                   <br><label for="description">Event Description:</label>
@@ -190,7 +191,7 @@
                   <input type="date" id="date" name="date">
                   <br><label for="time">Select time:</label>
                   <input type="time" id="time" name="time">
-                  <br><input type="submit">
+                  <br><input type="submit" value="Submit">
                 </form>
                 
               </div>        

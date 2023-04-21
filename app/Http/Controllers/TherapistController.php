@@ -45,4 +45,19 @@ class TherapistController extends Controller
       $users->update();
       return redirect('therapist')->withSuccess('Successfully updated your profile.');
   }
+  public function seeForm(){
+    return view('therapist');
+  }
+  public function insertSchedule(Request $request) {
+    $userId = Auth::user()->id;
+    $name = $request->input('name');
+    $description = $request->input('description');
+    $date = $request->input('date');
+    $time = $request->input('time');
+    $data=array("user_id"=>$userId,'name'=>$name,'description'=>$description,"date"=>$date,"time"=>$time);
+    DB::table('events')->insert($data);
+    return redirect("therapist")->withSuccess('Great! You have created an event.');
+}
+
+  
 }
