@@ -164,7 +164,7 @@
         <p style="padding-left: 15px;">This section allows you to edit your schedule.</p>
 
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="margin-left:15px;">
-          Create Schedule
+          Create Event
         </button>
 
          <!--The Modal -->
@@ -174,16 +174,23 @@
 
                <!--Modal Header -->
               <div class="modal-header">
-                <h4 class="modal-title">Create Schedule Form</h4>
+                <h4 class="modal-title">Create Event Form</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
 
                <!--Modal body -->
               <div class="modal-body">
                 <form action="#">
-                  <label for="schedule">Schedule:</label>
-                  <input type="date" id="schedule" name="schedule">
-                  <input type="submit">
+                  <label for="name">Event Name:</label>
+                  <input type="text" id="name" name="name">
+                  <br><label for="description">Event Description:</label>
+                  <!-- <input type="textarea" id="description" name="description" rows="4" cols="50">-->
+                  <textarea id="description" name="description" rows="5" cols="50"></textarea>
+                  <br><label for="date">Select Date:</label>
+                  <input type="date" id="date" name="date">
+                  <br><label for="time">Select time:</label>
+                  <input type="time" id="time" name="time">
+                  <br><input type="submit">
                 </form>
                 
               </div>        
