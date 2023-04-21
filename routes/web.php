@@ -49,8 +49,10 @@ Route::post('/post',[ApptController::class, 'storeForm']);
 Route::get('/therapist','TherapistController@index');
 
 //therapist calendar
-Route::get('calendar-event', [CalenderController::class, 'index']);
-Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);
+//Route::get('calendar-event', [CalenderController::class, 'index']);
+//Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);
+
+Route::resource('tasks', 'TasksController');
 
 Route::get('edit-therapist/{id}', [TherapistController::class, 'edit']);
 Route::put('update-therapist/{id}', [TherapistController::class, 'update']);
