@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('appointments', function (Blueprint $table) {
-            $table->enum('status', ['Pending', 'Approved', 'Rejected'])->default('Pending')->after('Therapist');;
+            $table->enum('status', ['Pending', 'Approved', 'Rejected'])->default('Pending')->after('Therapist');
         });
     }
 

@@ -12,7 +12,7 @@ class ApptModel extends Model
 
     protected $table = 'appointments';
 
-    public $fillable = ['Client_id', 'Name', 'Phone_number', 'Email',  'Appt_date', 'Appt_time', 'Mode_of_consultation', 'T_id', 'Therapist', 'Status'];
+    public $fillable = ['Client_id', 'Name', 'Phone_number', 'Email',  'Appt_date', 'Appt_time', 'Mode_of_consultation', 'T_id', 'Therapist', 'status'];
 
     public function scopeUserr($query)
     {
