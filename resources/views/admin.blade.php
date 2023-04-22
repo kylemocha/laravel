@@ -206,7 +206,8 @@
       </div>
 
       <div class="page" id="page6" style="display:none">
-        <h2 style="font-weight: bold;">&nbsp; AAAAAAA</h2>
+        <h2 style="font-weight: bold;">&nbsp; </h2>
+        
         
       </div>
 

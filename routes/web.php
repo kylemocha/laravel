@@ -9,6 +9,7 @@ use App\Http\Controllers\JournalViewController;
 use App\Http\Controllers\TherapistController;
 use App\Http\Controllers\ApptController;
 use App\Http\Controllers\CalenderController;
+use App\Http\Controllers\MessagesController;
 
 
 Auth::routes();
@@ -53,6 +54,9 @@ Route::post('/createform',[TherapistController::class, 'insertSchedule']);
 
 Route::get('/approve/{id}', 'TherapistController@approve')->name('admin.approve');
 Route::post('/decline/{id}', 'TherapistController@decline')->name('admin.decline');
+
+//message
+
 //therapist calendar
 //Route::get('calendar-event', [CalenderController::class, 'index']);
 //Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);

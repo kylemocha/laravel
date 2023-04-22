@@ -466,16 +466,24 @@
     </div>
     <!---->    
 
-    <!--<div class="page" id="page4" style="display:none">
+    <div class="page" id="page4" style="display:none">
       <button type="button" id="sidebarCollapse4" class="btn btn-info">
         <i class="fas fa-align-left"></i>
         <span></span>
        </button>
-       <h2 style="font-weight: bold;">Meet our Therapists</h2>
-      
-      
+       <h2 style="font-weight: bold;">Messages</h2>
+       @include('messenger.partials.flash')
 
-    </div>-->
+        @each('messenger.partials.thread', $threads, 'thread', 'messenger.partials.no-threads')
+
+        <div class="col-md-6">
+          <h1>{{ $thread->subject }}</h1>
+          @each('messenger.partials.messages', $thread->messages, 'message')
+  
+          @include('messenger.partials.form-message')
+      </div>
+      
+    </div>
     <!---->    
     <div class="page" id="page5" style="display:none">
       <button type="button" id="sidebarCollapse5" class="btn btn-info">

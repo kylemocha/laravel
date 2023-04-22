@@ -250,6 +250,8 @@
 
       <div class="page" id="page5" style="display:none">
         <h2 style="font-weight: bold;">&nbsp;Message Section</h2>
+      
+       
         
       </div>
 
@@ -263,32 +265,32 @@
     </div>
   </section>
 
-  <script>
-   let sidebar = document.querySelector(".sidebar");
-let sidebarBtn = document.querySelector(".sidebarBtn");
-sidebarBtn.onclick = function() {
-  sidebar.classList.toggle("active");
-  if(sidebar.classList.contains("active")){
-  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
-}else
-  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-}
- </script>
+      <script>
+      let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".sidebarBtn");
+    sidebarBtn.onclick = function() {
+      sidebar.classList.toggle("active");
+      if(sidebar.classList.contains("active")){
+      sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+    }else
+      sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+    }
+    </script>
 
-<script>
-  function show(elementID) {
-var ele = document.getElementById(elementID);
-if (!ele) {
-    alert("no such element");
-    return;
-}
-var pages = document.getElementsByClassName('page');
-for(var i = 0; i < pages.length; i++) {
-    pages[i].style.display = 'none';
-}
-ele.style.display = 'block';
-}
-</script>
+    <script>
+      function show(elementID) {
+    var ele = document.getElementById(elementID);
+    if (!ele) {
+        alert("no such element");
+        return;
+    }
+    var pages = document.getElementsByClassName('page');
+    for(var i = 0; i < pages.length; i++) {
+        pages[i].style.display = 'none';
+    }
+    ele.style.display = 'block';
+    }
+    </script>
 
 </body>
 </html>
