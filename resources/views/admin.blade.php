@@ -88,14 +88,14 @@
       <div class="page" id="page2" style="display:none">
         <h2 style="font-weight: bold;">&nbsp;Users Section</h2>
         <p>&nbsp;Note for role '0=user, 1=admin, 3=therapist'</p>
-        <a style="text-decoration: underline; float:right;" href= "#">Add User</a> 
         <table id="users">
           <tr>
             <th>User ID</th>
             <th>Role</th>
             <th>User Name</th>
             <th>Email</th>
-            <th>Actions</th>
+            <th>Add User</th>
+            <th>Actions</th>  
           </tr>
           <tr>
             @if(isset($users))
@@ -104,6 +104,8 @@
             <td>{{ $user->is_admin }}</td>
             <td>{{ $user->name}}</td>
             <td>{{ $user->email }}</td>
+            <td><a style="text-decoration: underline;" href= "{{ url('add-user/'.$user->id) }}">Add User</a> 
+            </td>
             <td>
               <a style="text-decoration: underline;" href="{{ url('edit-admin/'.$user->id) }}">Edit</a> 
               <a style="text-decoration: underline;" href="{{ url('delete-admin/'.$user->id) }}" >Delete</a> 

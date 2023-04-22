@@ -39,8 +39,6 @@ Route::post('/create','JournalController@insert');
 
 //retrieve journal data
 Route::get('/home_user', 'JournalViewController@index');
-//retrieve data admin
-Route::get('/admin','admin_conController@index');
 
 //home-user features
 Route::get('/insert',[ApptController::class, 'showForm']);
@@ -99,4 +97,10 @@ Route::get('therapist/home', [HomeController::class, 'therapistHome'])->name('th
 Route::get('edit-admin/{id}', [admin_conController::class, 'showUser']);
 Route::put('update-admin/{id}', [admin_conController::class, 'updateUser']);
 Route::get('delete-admin/{id}', [admin_conController::class, 'deleteUser']);
+
+Route::get('add-user/{id}', [admin_conController::class, 'showAddUser']);
+Route::put('add_user/{id}', [admin_conController::class, 'addUser']);
+
+//retrieve data admin
+Route::get('/admin','admin_conController@index');
 
