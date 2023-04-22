@@ -40,6 +40,7 @@ class CustomAuthController extends Controller
                 return redirect('therapist')->withSuccess('Welcome therapist!');
             }
             else{
+                
                 return redirect('home_user')->withSuccess('You have successfully logged in!');
             }
         }else{
