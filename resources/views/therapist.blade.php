@@ -50,7 +50,7 @@
         <li>
           <a href="#" onclick="show('page5');">
             <i class='bx bx-message' ></i>
-            <span class="links_name">Messages</span>
+            <span class="links_name">Message</span>
           </a>
         </li>
         <!--<li>
@@ -249,7 +249,7 @@
       </div>
 
       <div class="page" id="page5" style="display:none">
-        <h2 style="font-weight: bold;">&nbsp;BLEH!!!!</h2>
+        <h2 style="font-weight: bold;">&nbsp;Message Section</h2>
         
       </div>
 

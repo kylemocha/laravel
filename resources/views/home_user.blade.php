@@ -51,10 +51,10 @@
                     <a href="contact" class="nav-item nav-link" style=" color: black;" target="_blank">Contact Us</a>
                 </div>
                 <div class="navbar-nav ms-auto">
-                  <a href="#" class="text-dark mx-3">
+                  <!--<a href="#" class="text-dark mx-3">
                     <i class="fas fa-envelope fa-2x"></i>
                     <span class="badge bg-danger badge-dot"></span>
-                  </a>
+                  </a>-->
                     <!--<a href="#" class="nav-item nav-link"><i class="fa-solid fa-user"></i></a>
                     <button style="font-size:22px; border: none; color: black;"><a href="#" class="nav-item nav-link"><i class="far fa-user"></i></a></button>-->
                     <button type="button" class="btn btn-danger dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
