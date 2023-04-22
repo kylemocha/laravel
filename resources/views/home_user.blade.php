@@ -153,10 +153,11 @@
               <!-- Modal body -->
               <div class="modal-body">
                 <table class="table">
+                  <p><b>Note for status: 0=pending, 1=approved, 2=rejected</b></p>
                   <thead>
                     <tr>
                       <th scope="col">ID</th>
-                      <th scope="col">Chosen Therapist</th>
+                      <th scope="col">Chosen Therapist with ID</th>
                       <th scope="col">Appointment Date</th>
                       <th scope="col">Appointment Time</th>
                       <th scope="col">Mode of Consultation</th>

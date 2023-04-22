@@ -171,6 +171,7 @@
       <div class="page" id="page5" style="display:none">
         <h2 style="font-weight: bold;">&nbsp; Appointments Section</h2>
         <table id="users">
+          <p style="padding-left: 8px;"><b>Note for Status: 0=pending, 1=approved, 2=declined.</b></p>
           <tr>
             <th>ID</th>
             <th>User ID</th>
