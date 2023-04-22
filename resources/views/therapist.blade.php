@@ -47,13 +47,13 @@
             <span class="links_name">Journal</span>
           </a>
         </li>
-        <li>
+        <!--<li>
           <a href="#" onclick="show('page5');">
             <i class='bx bx-message' ></i>
             <span class="links_name">Message</span>
           </a>
         </li>
-        <!--<li>
+        <li>
           <a href="#" onclick="show('page6');">
             <i class='bx bx-cog' ></i>
             <span class="links_name">Setting</span>
@@ -86,6 +86,37 @@
         <h6 class="alert alert-success">{{ session('success') }}</h6>
         @endif
         <h5 style="font-weight: bold; margin:10px; ">&nbsp;Profile Section</h5>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="margin-left: 10px;">
+          Message
+        </button>
+
+           <!--The Modal -->
+           <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+  
+                 <!--Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Create Message</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+  
+                 <!--Modal body -->
+                <div class="modal-body">
+                  <form action="#" >
+                    
+                    <label for="name">To:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="msg_description">Message:</label><br>
+                    <textarea id="msg_description" name="msg_description" rows="4" cols="50" style="margin-left:10px;" required></textarea><br>
+                    <input type="submit" value="Submit"><br>
+                  </form>
+                  
+                </div>        
+              </div>
+            </div>
+          </div>
+
         <div class="container">
           <div class="row gutters-sm">
             <div class="col-md-4 mb-3">
@@ -248,20 +279,20 @@
         
       </div>
 
-      <div class="page" id="page5" style="display:none">
+      <!--<div class="page" id="page5" style="display:none">
         <h2 style="font-weight: bold;">&nbsp;Message Section</h2>
         <form action="#" >
-          @csrf
+          
           <label for="name">To:</label>
           <input type="text" id="name" name="name" required><br>
-          <br><label for="msg_description">Message:</label>
-          <textarea id="msg_description" name="msg_description" rows="5" cols="50" required></textarea><br>
+          <label for="msg_description">Message:</label><br>
+          <textarea id="msg_description" name="msg_description" rows="4" cols="50" style="margin-left:10px;" required></textarea><br>
           <input type="submit" value="Submit"><br>
         </form>
       
        
         
-      </div>
+      </div>-->
 
       <!--<div class="page" id="page6" style="display:none">
         <h2 style="font-weight: bold;">&nbsp;MOOO!!!!</h2>
