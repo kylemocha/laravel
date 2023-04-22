@@ -250,6 +250,14 @@
 
       <div class="page" id="page5" style="display:none">
         <h2 style="font-weight: bold;">&nbsp;Message Section</h2>
+        <form action="#" >
+          @csrf
+          <label for="name">To:</label>
+          <input type="text" id="name" name="name" required><br>
+          <br><label for="msg_description">Message:</label>
+          <textarea id="msg_description" name="msg_description" rows="5" cols="50" required></textarea><br>
+          <input type="submit" value="Submit"><br>
+        </form>
       
        
         
