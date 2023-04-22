@@ -12,7 +12,7 @@ use Auth;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable, Messagable;
     /**
      * The attributes that are mass assignable.
      *
