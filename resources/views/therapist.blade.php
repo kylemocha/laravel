@@ -207,6 +207,7 @@
       <div class="page" id="page3" style="display:none">
         <h2 style="font-weight: bold;">&nbsp;Appointments Section</h2>
         <p style="padding-left: 8px;">This section allows you to see your pending appointments.</p>
+        <p style="padding-left: 8px;"><b>Note for Status: 0=pending, 1=approved, 2=declined.<b></p>
         <table class="table">
           <thead>
             <tr>
@@ -229,8 +230,8 @@
               <td>{{ $appt->Mode_of_consultation }}</td>
               <td>{{ $appt->status }}</td>
               <td>
-                <button type="button" class="btn btn-primary btn-sm" >Accept <i class="fas fa-chevron-right"></i></button></a>
-                <button type="button" class="btn btn-danger btn-sm">Decline <i class="fas fa-times"></i></button>
+                <a href="{{route('admin.approve', $appt->id)}}"><button type="button" class="btn btn-primary btn-sm" >Accept <i class="fas fa-chevron-right"></i></button></a>
+                <a href="{{route('admin.decline', $appt->id)}}"><button type="button" class="btn btn-danger btn-sm">Decline <i class="fas fa-times"></i></button></a>
                 <!--<a style="text-decoration: underline;" href="#">Approve</a>  
                 <a style="text-decoration: underline;" href="#">Reject</a>  -->  
               </td> <!--approved or rejected-->

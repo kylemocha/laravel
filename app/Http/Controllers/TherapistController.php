@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\ApptModel;
 use DB;
+use Config;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -57,7 +58,31 @@ class TherapistController extends Controller
     $data=array("user_id"=>$userId,'name'=>$name,'description'=>$description,"date"=>$date,"time"=>$time);
     DB::table('events')->insert($data);
     return redirect("therapist")->withSuccess('Great! You have created an event.');
+  }
+
+  const status = [
+    'Pending',
+    'Approved',
+    'Rejected'
+  ];
+
+  public function approve($id){
+    $appts = ApptModel::findOrFail($id);
+    //$appts = Config::get('Approved'); //Approved
+    //$appts = ApptModel::where('status' , Approved);//Approved
+    $appts->status = 1; 
+    $appts->save();
+    return redirect("therapist")->withSuccess('Great! You have approved this consultation.');//Redirect user somewhere
+ }
+ public function decline($id){
+  $appts = ApptModel::findOrFail($id);
+  //$appts->status = Declined; //Declined
+  // $appts = ApptModel::where('status' , Rejected);
+  $appts->status = 2; 
+  $appts->save();
+  return redirect("therapist")->withSuccess('You have declined this consultation.'); //Redirect user somewhere
 }
+
 
   
 }

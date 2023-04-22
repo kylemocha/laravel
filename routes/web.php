@@ -50,6 +50,9 @@ Route::get('/therapist','TherapistController@index');
 
 Route::get('/insert',[TherapistController::class, 'seeForm']);
 Route::post('/createform',[TherapistController::class, 'insertSchedule']);
+
+Route::get('/approve/{id}', 'TherapistController@approve')->name('admin.approve');
+Route::post('/decline/{id}', 'TherapistController@decline')->name('admin.decline');
 //therapist calendar
 //Route::get('calendar-event', [CalenderController::class, 'index']);
 //Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);
