@@ -183,14 +183,14 @@
                 <form action="/createform" method="POST">
                   @csrf
                   <label for="name">Event Name:</label>
-                  <input type="text" id="name" name="name">
+                  <input type="text" id="name" name="name" required>
                   <br><label for="description">Event Description:</label>
                   <!-- <input type="textarea" id="description" name="description" rows="4" cols="50">-->
-                  <textarea id="description" name="description" rows="5" cols="50"></textarea>
+                  <textarea id="description" name="description" rows="5" cols="50" required></textarea>
                   <br><label for="date">Select Date:</label>
-                  <input type="date" id="date" name="date">
+                  <input type="date" id="date" name="date" required>
                   <br><label for="time">Select time:</label>
-                  <input type="time" id="time" name="time">
+                  <input type="time" id="time" name="time" required>
                   <br><input type="submit" value="Submit">
                 </form>
                 
@@ -216,7 +216,7 @@
               <th scope="col">Appointment Time</th>
               <th scope="col">Mode of Consultation</th>
               <th scope="col">Status</th>
-              <th scope="col">Action</th>
+              <th scope="col">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -228,7 +228,12 @@
               <td>{{ $appt->Appt_time  }}</td>
               <td>{{ $appt->Mode_of_consultation }}</td>
               <td>{{ $appt->status }}</td>
-              <td></td> <!--approved or rejected-->
+              <td>
+                <button type="button" class="btn btn-primary btn-sm" >Accept <i class="fas fa-chevron-right"></i></button></a>
+                <button type="button" class="btn btn-danger btn-sm">Decline <i class="fas fa-times"></i></button>
+                <!--<a style="text-decoration: underline;" href="#">Approve</a>  
+                <a style="text-decoration: underline;" href="#">Reject</a>  -->  
+              </td> <!--approved or rejected-->
             </tr>
             @endforeach
           </tbody>
