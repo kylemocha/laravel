@@ -86,18 +86,18 @@
         <h6 class="alert alert-success">{{ session('success') }}</h6>
         @endif
         <h5 style="font-weight: bold; margin:10px; ">&nbsp;Profile Section</h5>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="margin-left: 10px;">
-          Message
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1" style="margin-left: 10px;">
+          Send Notification 
         </button>
 
            <!--The Modal -->
-           <div class="modal" id="myModal">
+           <div class="modal" id="myModal1">
             <div class="modal-dialog">
               <div class="modal-content">
   
                  <!--Modal Header -->
                 <div class="modal-header">
-                  <h4 class="modal-title">Create Message</h4>
+                  <h4 class="modal-title">Send Notification Form</h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
   
@@ -106,9 +106,12 @@
                   <form action="#" >
                     
                     <label for="name">To:</label>
-                    <input type="text" id="name" name="name" required><br>
+                    <!--<input type="text" id="name" name="name" required><br>-->
+                    <select id="user_name" name="user_name">
+                      <option value="">hehe</option>
+                    </select><br>
                     <label for="msg_description">Message:</label><br>
-                    <textarea id="msg_description" name="msg_description" rows="4" cols="50" style="margin-left:10px;" required></textarea><br>
+                    <textarea id="msg_description" name="msg_description" rows="4" cols="50" style="margin-left:5px;" required></textarea><br>
                     <input type="submit" value="Submit"><br>
                   </form>
                   
