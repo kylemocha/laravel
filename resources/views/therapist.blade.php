@@ -224,13 +224,18 @@
                   @csrf
                   <label for="name">Event Name:</label>
                   <input type="text" id="name" name="name" required>
-                  <br><label for="description">Event Description:</label>
-                  <!-- <input type="textarea" id="description" name="description" rows="4" cols="50">-->
-                  <textarea id="description" name="description" rows="5" cols="50" required></textarea>
+                  <!-- <br><label for="description">Event Description:</label>
+                  <input type="textarea" id="description" name="description" rows="4" cols="50">
+                  <textarea id="description" name="description" rows="5" cols="50" required></textarea>-->
+                  <!--<input type="date" id="date" name="date" required>
+                  <br><label for="time">Select time:</label>
+                  <input type="time" id="time" name="time" required>-->
                   <br><label for="date">Select Date:</label>
                   <input type="date" id="date" name="date" required>
-                  <br><label for="time">Select time:</label>
+                  <!--<input type="datetime-local" id="start_time" name="start_time">-->
+                  <br><label for="time">Select Time:</label>
                   <input type="time" id="time" name="time" required>
+                  <!--<input type="datetime-local" id="end_time" name="end_time">-->
                   <br><input type="submit" value="Submit">
                 </form>
                 

@@ -20,8 +20,7 @@ class TherapistController extends Controller
    //$user_id = Auth::user()->id;
    //$appts = ApptModel::where('Therapist', $user_id)->get(); 
 
-   $events = array();
-   $events = Events::all();
+  
 
     $id = Auth::user()->id;
 
@@ -31,12 +30,13 @@ class TherapistController extends Controller
 
 
     if(count ($users)>0){
+      $events = array();
+      $events = Events::all();
       foreach($events as $event){
         $events [] = [
-            'name' => $event->name,
-            'description' => $event->description,
-            'date' => $event->date,
-            'time' => $event->time,
+            'name' => $event['name'],
+            'date' =>  $event['date'],
+            'time' =>  $event['time'],
           ];
         }
       return view('therapist',compact('users', 'appts', 'events'));
