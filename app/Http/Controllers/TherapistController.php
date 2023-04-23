@@ -20,7 +20,6 @@ class TherapistController extends Controller
    //$user_id = Auth::user()->id;
    //$appts = ApptModel::where('Therapist', $user_id)->get(); 
 
-  
 
     $id = Auth::user()->id;
 
@@ -28,13 +27,12 @@ class TherapistController extends Controller
     $appts = ApptModel::where('Therapist', $id)->get();
     //$events = Events::all();
 
-
     if(count ($users)>0){
       $events = array();
       $events = Events::all();
       foreach($events as $event){
         $events [] = [
-            'name' => $event['name'],
+            'title' => $event['name'],
             'date' =>  $event['date'],
             'time' =>  $event['time'],
           ];
@@ -47,22 +45,6 @@ class TherapistController extends Controller
     }
     
     
-    }
-
-    function calendar(){
-      $events = array();
-      $events = Events::all();
-      foreach($events as $event){
-      $events[] = [
-          'name' => $event->name,
-          'desc' => $event->description,
-          'date' => $event->date,
-          'time' => $event->time,
-        ];
-      }
-      //return $events;
-
-      return view('therapist', ['events' => $events]);
     }
    
     // return view('therapist', ['events' => $events]);
@@ -88,10 +70,9 @@ class TherapistController extends Controller
   function insertSchedule(Request $request) {
     $userId = Auth::user()->id;
     $name = $request->input('name');
-    $description = $request->input('description');
     $date = $request->input('date');
     $time = $request->input('time');
-    $data=array("user_id"=>$userId,'name'=>$name,'description'=>$description,"date"=>$date,"time"=>$time);
+    $data=array("user_id"=>$userId,'name'=>$name,"date"=>$date,"time"=>$time);
     DB::table('events')->insert($data);
     return redirect("therapist")->withSuccess('Great! You have created an event.');
   }
