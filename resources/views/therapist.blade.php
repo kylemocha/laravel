@@ -251,7 +251,6 @@
                   <div class="col-md-11 offset-1 mt-5 mb-5">
   
                       <div id="calendar">
-  
                       </div>
               </div>
            </div>
@@ -271,6 +270,27 @@
             })
         });
       </script>
+        
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Event's Name</th>
+              <th>Date</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            @foreach ($appts as $appt)
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            @endforeach
+          </tbody>
+        </table>
       
       </div>
 
