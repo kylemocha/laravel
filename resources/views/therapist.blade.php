@@ -271,33 +271,59 @@
         });
       </script>
         
-        <table class="table">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Event's Name</th>
-              <th>Date</th>
-              <th>Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-            @foreach ($appts as $appt)
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            @endforeach
-          </tbody>
-        </table>
-      
+         
       </div>
 
       <div class="page" id="page3" style="display:none">
         <h2 style="font-weight: bold;">&nbsp;Appointments Section</h2>
         <p style="padding-left: 8px;">This section allows you to see your pending appointments.</p>
         <p style="padding-left: 8px;"><b>Note for Status: 0=pending, 1=approved, 2=declined.</b></p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2" style="margin-left: 15px;">
+          See Appointments
+        </button>
+  
+           <!--The Modal -->
+           <div class="modal" id="myModal2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+  
+                 <!--Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">See Appointments</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+  
+                 <!--Modal body -->
+                <div class="modal-body">
+  
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Event's Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                      @foreach ($lists as $list)
+                        <td>{{ $list->id }}</td>
+                        <td>{{ $list->name }}</td>
+                        <td>{{ $list->date }}</td>
+                        <td>{{ $list->time }}</td>
+                      </tr>
+                      @endforeach
+                    </tbody>
+                  </table>
+                  
+                </div>        
+              </div>
+            </div>
+          </div>
+          <!--modal-->
+
         <table class="table">
           <thead>
             <tr>

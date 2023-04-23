@@ -24,9 +24,9 @@ class TherapistController extends Controller
     $id = Auth::user()->id;
     $users['users'] = DB::table('users')->where('id','=', $id)->first();
     $appts = ApptModel::where('Therapist', $id)->get();
+    $lists = Events::where('user_id', $id)->get();
 
     if(count ($users)>0){
-     
       $events = array();
       $events = Events::all();
       //$events = auth()->id();
@@ -43,7 +43,7 @@ class TherapistController extends Controller
           ];
         }
         //return $events;
-      return view('therapist',compact('users', 'appts', 'events'));
+      return view('therapist',compact('users', 'appts', 'events', 'lists'));
     }
      else
     {
