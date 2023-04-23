@@ -32,9 +32,9 @@ class TherapistController extends Controller
       $events = Events::all();
       foreach($events as $event){
         $events [] = [
-            'title' => $event['name'],
-            'start' =>  $event['date'],
-            'time' =>  $event['time'],
+            'title' => $event->name,
+            'start' =>  $event->start_date,
+            'end' =>  $event->end_date,
           ];
         }
         //return $events;
