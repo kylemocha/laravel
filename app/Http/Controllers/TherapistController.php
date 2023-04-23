@@ -25,16 +25,18 @@ class TherapistController extends Controller
 
     $users['users'] = DB::table('users')->where('id','=', $id)->first();
     $appts = ApptModel::where('Therapist', $id)->get();
-    //$events = Events::all();
+    //$events = Events::all(); Events::pluck('user_id');
 
     if(count ($users)>0){
       $events = array();
+      //$events= Events::pluck('user_id'); 
+     // $events = Events::get(['user_id', 'name', 'date', 'time'])->toArray();
       $events = Events::all();
       foreach($events as $event){
         $events [] = [
-            'title' => $event->name,
-            'start' =>  $event->date,
-            'time' =>  $event->time,
+            'title' =>  $event['name'],
+            'start' =>   $event['date'],
+            'time' =>   $event['time'],
           ];
         }
         //return $events;
@@ -47,8 +49,6 @@ class TherapistController extends Controller
     
     
     }
-   
-    // return view('therapist', ['events' => $events]);
 
   function edit($id)
   {
@@ -73,7 +73,7 @@ class TherapistController extends Controller
     $name = $request->input('name');
     $date = $request->input('date');
     $time = $request->input('time');
-    $data=array("user_id"=>$userId,'name'=>$name,"date"=>$date,"time"=>$time);
+    $data=array("user_id"=>$userId,'name'=>$name,"date"=>$date, "time"=>$time);
     DB::table('events')->insert($data);
     return redirect("therapist")->withSuccess('Great! You have created an event.');
   }
