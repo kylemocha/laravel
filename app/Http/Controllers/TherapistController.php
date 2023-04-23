@@ -71,9 +71,9 @@ class TherapistController extends Controller
   function insertSchedule(Request $request) {
     $userId = Auth::user()->id;
     $name = $request->input('name');
-    $date = $request->input('date');
-    $time = $request->input('time');
-    $data=array("user_id"=>$userId,'name'=>$name,"date"=>$date,"time"=>$time);
+    $start_date = $request->input('start_date');
+    $end_date = $request->input('end_date');
+    $data=array("user_id"=>$userId,'name'=>$name,"start_date"=>$start_date,"end_date"=>$end_date);
     DB::table('events')->insert($data);
     return redirect("therapist")->withSuccess('Great! You have created an event.');
   }
