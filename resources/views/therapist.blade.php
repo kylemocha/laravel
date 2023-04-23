@@ -230,12 +230,12 @@
                   <!--<input type="date" id="date" name="date" required>
                   <br><label for="time">Select time:</label>
                   <input type="time" id="time" name="time" required>-->
-                  <br><label for="date">Select Date:</label>
-                  <input type="date" id="date" name="date" required>
-                  <!--<input type="datetime-local" id="start_time" name="start_time">-->
-                  <br><label for="time">Select Time:</label>
-                  <input type="time" id="time" name="time" required>
-                  <!--<input type="datetime-local" id="end_time" name="end_time">-->
+                  <br><label for="date">Select Start Time:</label>
+                  <!--<input type="date" id="date" name="date" required>-->
+                  <input type="datetime-local" id="start_time" name="start_time" required>
+                  <br><label for="time">Select End Time:</label>
+                  <!--<input type="time" id="time" name="time" required>-->
+                  <input type="datetime-local" id="end_time" name="end_time" required>
                   <br><input type="submit" value="Submit">
                 </form>
                 
