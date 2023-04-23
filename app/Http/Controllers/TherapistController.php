@@ -32,10 +32,11 @@ class TherapistController extends Controller
       $events = Events::all();
       foreach($events as $event){
         $events [] = [
-            'title' => $event['name'],
-            'start_time' =>  $event['start_time'],
+            'title' => $event->name,
+            'start' =>  $event->start_time,
           ];
         }
+        //return $events;
       return view('therapist',compact('users', 'appts', 'events'));
     }
      else
@@ -70,8 +71,7 @@ class TherapistController extends Controller
     $userId = Auth::user()->id;
     $name = $request->input('name');
     $date = $request->input('start_time');
-    $time = $request->input('');
-    $data=array("user_id"=>$userId,'name'=>$name,"start_time"=>$date,"end_time"=>$time);
+    $data=array("user_id"=>$userId,'name'=>$name,"start_time"=>$date);
     DB::table('events')->insert($data);
     return redirect("therapist")->withSuccess('Great! You have created an event.');
   }
