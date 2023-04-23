@@ -256,16 +256,16 @@
   
      <script>
       $(document).ready(function() {
-     
+        var booking = @json($events);
             $('#calendar').fullCalendar({
               header: {
                     left: 'prev, next today',
                     center: 'title',
                     right: 'month, agendaWeek, agendaDay',
               }
-              
+              events : booking
             })
-        })
+        });
       </script>
       
       </div>

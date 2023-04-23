@@ -55,7 +55,7 @@ Route::post('/decline/{id}', 'TherapistController@decline')->name('admin.decline
 
 
 //therapist calendar
-//Route::get('therapist/',[CalenderController::class, 'calendar']);
+Route::get('/',[TherapistController::class, 'calendar']);
 //Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);
 
 //Route::resource('tasks', 'TasksController');

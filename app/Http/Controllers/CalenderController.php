@@ -8,21 +8,21 @@ use Illuminate\Http\Request;
 
 class CalenderController extends Controller
 {    
-    function calendar(){  
+    public function calendar(){  
         $events = array();
         $events = Events::all();
         foreach($events as $event){
         $events[] = [
             'name' => $event->name,
-            'description'=> $event->description,
-            'date'=> $event->date,
-            'time'=> $event->time,
-        ];
+            'desc' => $event->description,
+            'date' => $event->date,
+            'time' => $event->time,
+          ];
         }
-        return $events;
+        //return $events;
     
         return view('therapist', ['events' => $events]);
-     }
+    }
 
    
 }
