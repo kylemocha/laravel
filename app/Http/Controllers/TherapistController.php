@@ -33,8 +33,8 @@ class TherapistController extends Controller
       foreach($events as $event){
         $events [] = [
             'Title' => $event->name,
-            'Date' =>  $event->Date,
-            'Time' =>  $event->Time,
+            'Date' =>  $event->date,
+            'Time' =>  $event->time,
           ];
         }
         //return $events;
@@ -71,9 +71,9 @@ class TherapistController extends Controller
   function insertSchedule(Request $request) {
     $userId = Auth::user()->id;
     $name = $request->input('name');
-    $date = $request->input('Date');
-    $time = $request->input('Time');
-    $data=array("user_id"=>$userId,'name'=>$name,"Date"=>$date,"Time"=>$time);
+    $date = $request->input('date');
+    $time = $request->input('time');
+    $data=array("user_id"=>$userId,'name'=>$name,"date"=>$date,"time"=>$time);
     DB::table('events')->insert($data);
     return redirect("therapist")->withSuccess('Great! You have created an event.');
   }
