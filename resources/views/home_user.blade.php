@@ -46,7 +46,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <a href="home_user" class="nav-item nav-link active" style=" color: black;">Home</a>
-                    <a href="#" class="nav-item nav-link" style=" color: black;" >Take Test</a>
+                    <a href="https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9" target="_blank" class="nav-item nav-link" style=" color: black;" >Take PHQ-9 Test</a>
                     <a href="#" class="nav-item nav-link" style="color: black;">Our Center</a>
                     <a href="contact" class="nav-item nav-link" style=" color: black;" target="_blank">Contact Us</a>
                 </div>
@@ -294,7 +294,7 @@
                       </div>
 
                       <div class="formbold-mb-5">
-                      <label for="Therapist" class="formbold-form-label">Choose your consultant:</label>
+                      <label for="Therapist" class="formbold-form-label">Choose your mental health professional:</label>
                       <select id="Therapist" name="Therapist">
                         @foreach($posts as $post)
                         <option value="{{ $post->id }}, {{ $post->name }}">{{ $post->name }}</option>
@@ -457,6 +457,7 @@
                   <td>
                     <a style="text-decoration: underline;" href={{'edit/'.$user->id}}>Edit</a>  
                     <a style="text-decoration: underline;" href={{'delete/'.$user->id}}>Delete</a> 
+                    <a style="text-decoration: underline;" href="#">Share</a> 
                   </td>
               </tr>
               @endforeach 
