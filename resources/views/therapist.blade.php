@@ -264,6 +264,7 @@
                     right: 'month, agendaWeek, agendaDay',
               },
               events : booking
+              
             })
         });
       </script>
