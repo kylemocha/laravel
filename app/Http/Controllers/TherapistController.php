@@ -22,16 +22,20 @@ class TherapistController extends Controller
 
 
     $id = Auth::user()->id;
-
     $users['users'] = DB::table('users')->where('id','=', $id)->first();
     $appts = ApptModel::where('Therapist', $id)->get();
-    //$events = Events::all(); Events::pluck('user_id');
 
     if(count ($users)>0){
-      $events = array();
+     
       //$events= Events::pluck('user_id'); 
      // $events = Events::get(['user_id', 'name', 'date', 'time'])->toArray();
+          // $events = Events::where('user_id', $id)->first();
+      //$events = Events::all();
+      $events = array();
       $events = Events::all();
+      //$events = Events::find(1);
+ 
+      //$events = Events::whereIn('user_id', array(1, 2, 3))->get();
       foreach($events as $event){
         $events [] = [
             'title' =>  $event['name'],
