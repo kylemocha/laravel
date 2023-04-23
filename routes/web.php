@@ -53,10 +53,9 @@ Route::post('/createform',[TherapistController::class, 'insertSchedule']);
 Route::get('/approve/{id}', 'TherapistController@approve')->name('admin.approve');
 Route::post('/decline/{id}', 'TherapistController@decline')->name('admin.decline');
 
-//message
 
 //therapist calendar
-//Route::get('calendar-event', [CalenderController::class, 'index']);
+//Route::get('therapist/',[CalenderController::class, 'calendar']);
 //Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);
 
 //Route::resource('tasks', 'TasksController');

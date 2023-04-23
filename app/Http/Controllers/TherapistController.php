@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\ApptModel;
+use App\Models\Events;
 use DB;
 use Config;
 use Illuminate\Support\Facades\Auth;
@@ -20,23 +21,30 @@ class TherapistController extends Controller
    //$appts = ApptModel::where('Therapist', $user_id)->get(); 
 
     $id = Auth::user()->id;
-    //
+
     $users['users'] = DB::table('users')->where('id','=', $id)->first();
     $appts = ApptModel::where('Therapist', $id)->get();
+
     if(count ($users)>0){
+      
       return view('therapist',compact('users', 'appts'));
     }
      else
     {
         return view('therapist');
     }
-  }
-  public function edit($id)
+
+    
+    }
+   
+    // return view('therapist', ['events' => $events]);
+
+  function edit($id)
   {
       $users = User::find($id);
       return view('edit_therapist', ['users'=>$users]);
   }
-  public function update(Request $request, $id)
+  function update(Request $request, $id)
   {   
       $users = User::find($id);
       $users->name = $request->input('name');
@@ -46,10 +54,10 @@ class TherapistController extends Controller
       $users->update();
       return redirect('therapist')->withSuccess('Successfully updated your profile.');
   }
-  public function seeForm(){
+  function seeForm(){
     return view('therapist');
   }
-  public function insertSchedule(Request $request) {
+  function insertSchedule(Request $request) {
     $userId = Auth::user()->id;
     $name = $request->input('name');
     $description = $request->input('description');
@@ -60,29 +68,24 @@ class TherapistController extends Controller
     return redirect("therapist")->withSuccess('Great! You have created an event.');
   }
 
-  const status = [
-    'Pending',
-    'Approved',
-    'Rejected'
-  ];
-
-  public function approve($id){
+  function approve($id){
     $appts = ApptModel::findOrFail($id);
     //$appts = Config::get('Approved'); //Approved
     //$appts = ApptModel::where('status' , Approved);//Approved
     $appts->status = 1; 
     $appts->save();
     return redirect("therapist")->withSuccess('Great! You have approved this consultation.');//Redirect user somewhere
- }
- public function decline($id){
+  }
+ function decline($id){
   $appts = ApptModel::findOrFail($id);
   //$appts->status = Declined; //Declined
   // $appts = ApptModel::where('status' , Rejected);
   $appts->status = 2; 
   $appts->save();
   return redirect("therapist")->withSuccess('You have declined this consultation.'); //Redirect user somewhere
-}
+ } 
 
 
-  
 }
+ 
+
