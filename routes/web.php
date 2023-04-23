@@ -44,7 +44,7 @@ Route::get('/home_user', 'JournalViewController@index');
 Route::get('/insert',[ApptController::class, 'showForm']);
 Route::post('/post',[ApptController::class, 'storeForm']);
 
-//therapist
+//therapist and calendar
 Route::get('/therapist','TherapistController@index');
 
 Route::get('/insert',[TherapistController::class, 'seeForm']);
