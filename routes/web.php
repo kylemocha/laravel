@@ -120,7 +120,7 @@ Route::get('/admin','admin_conController@index');
 
 Route::group(['prefix' => 'messages'], function () {
     Route::get('/', ['as' => 'messages', 'uses' => 'JournalViewController@message']);
-    Route::post('/create', ['as' => 'messages.create', 'uses' => 'JournalViewController@createMessage']); //get
+    Route::post('create', ['as' => 'messages.create', 'uses' => 'JournalViewController@createMessage']); //get
     Route::post('/', ['as' => 'messages.store', 'uses' => 'JournalViewController@store']);
     Route::get('{id}', ['as' => 'messages.show', 'uses' => 'JournalViewController@show']);
     Route::put('{id}', ['as' => 'messages.update', 'uses' => 'JournalViewController@updateMessage']);
