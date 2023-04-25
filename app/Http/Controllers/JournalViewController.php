@@ -168,7 +168,7 @@ class JournalViewController extends Controller
             $thread->addParticipant(\Illuminate\Support\Facades\Request::input('recipients'));
         }
 
-        return redirect()->route('show', $id); //message.show
+        return redirect()->route('message.show', $id); //message.show
     }
     
 }
