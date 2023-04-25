@@ -78,7 +78,7 @@ class JournalViewController extends Controller
 
         $thread->markAsRead($userId);
 
-        return view('home_user', compact('thread', 'users'));
+        return view('show', compact('thread', 'users'));
     }
 
     /**
@@ -90,7 +90,7 @@ class JournalViewController extends Controller
     {
         $users = User::where('id', '!=', Auth::id())->get();
 
-        return view('create_message', compact('users'));
+        return view('create', compact('users'));
     }
 
     /**
@@ -166,7 +166,7 @@ class JournalViewController extends Controller
             $thread->addParticipant(\Illuminate\Support\Facades\Request::input('recipients'));
         }
 
-        return redirect()->route('therapist', $id);
+        return redirect()->route('messages.show', $id);
     }
     
 }
