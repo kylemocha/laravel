@@ -37,6 +37,9 @@ Route::get('wmhd', function () {
     return view('wmhd');
 });
 
+Route::get('covid', function () {
+    return view('covid');
+});
 //insert journal
 Route::get('/insert','App\Http\Controllers\JournalController@insertform');
 Route::post('/create','JournalController@insert');
