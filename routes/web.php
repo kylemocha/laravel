@@ -99,10 +99,10 @@ Route::post('contact', [ContactUsFormController::class, 'ContactUsForm'])->name(
 //login and registration
 Route::get('login', [CustomAuthController::class, 'index'])->name('login');
 Route::post('post-login', [CustomAuthController::class, 'postLogin'])->name('login.post'); 
-Route::get('registration', [CustomAuthController::class, 'registration'])->name('register');
+Route::get('registration', [CustomAuthController::class, 'registration']);
 Route::post('post-registration', [CustomAuthController::class, 'postRegistration'])->name('register.post'); 
 Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
-Route::get('logout', [CustomAuthController::class, 'logout'])->name('logout');
+Route::get('logout', [CustomAuthController::class, 'logout']);
 
 //for admin 
 Auth::routes();
