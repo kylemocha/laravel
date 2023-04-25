@@ -88,7 +88,7 @@ class JournalViewController extends Controller
      *
      * @return mixed
      */
-    public function createMessage()
+    public function create()
     {
         $users = User::where('id', '!=', Auth::id())->get();
 
