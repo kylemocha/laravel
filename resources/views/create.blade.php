@@ -1,6 +1,6 @@
 
 <h1>Create a new message</h1>
-    <form action="{{ route('messages.store') }}" method="POST">
+    <form method="POST" action="{{ route('messages.store') }}" >
         @csrf
         @method('PUT')
 
