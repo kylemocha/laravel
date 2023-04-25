@@ -33,6 +33,10 @@ Route::get('therapist', function () {
     return view('therapist');
 });
 
+Route::get('wmhd', function () {
+    return view('wmhd');
+});
+
 //insert journal
 Route::get('/insert','App\Http\Controllers\JournalController@insertform');
 Route::post('/create','JournalController@insert');

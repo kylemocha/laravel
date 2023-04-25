@@ -170,9 +170,9 @@
         <!-- Column -->
         <div class="col-md-4 on-hover">
           <div class="card border-0 mb-4">
-            <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
+            <a href="#"><img class="card-img-top" src="https://i.ibb.co/RDntnQR/mental-health-1.jpg" alt="mental-health-1"></a>
             <!--<div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>-->
-            <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">World Mental Health Day 2022</a></h5>
+            <h5 class="font-weight-medium mt-3"><a href="wmhd" target="_blank" class="text-decoration-none link">World Mental Health Day 2022</a></h5>
             <!--<p class="mt-3"> CDOC</p>-->
             <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
           </div>
@@ -241,7 +241,7 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-brain"></i>  CSWD Mental Health Counseling
+            <i class="fas fa-brain"></i>  CSWD Mental Health Web Counseling
           </h6>
           <p>
             Making mental health services accessible.
@@ -259,7 +259,7 @@
             <a href="main_home" class="text-reset">Home</a>
           </p>
           <p>
-            <a href="#" class="text-reset">Take Test</a>
+            <a href="https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire" class="text-reset" target="_blank">Take PHQ-9 Test</a>
           </p>
           <p>
             <a href="#" class="text-reset">Our Center</a>
@@ -292,7 +292,7 @@
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2023 Copyright:
-    <a class="text-reset fw-bold" href="#">CSWD Mental Health Counseling.com</a>
+    <a class="text-reset fw-bold" href="#">CSWD Mental Health Web Counseling.com</a>
   </div>
   <!-- Copyright -->
 </footer>
