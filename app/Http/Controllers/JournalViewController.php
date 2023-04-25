@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Models\JournalView;
 use App\Models\ApptModel;
 use App\Models\User;
+
 use Carbon\Carbon;
 use Cmgmyr\Messenger\Models\Message;
 use Cmgmyr\Messenger\Models\Participant;
