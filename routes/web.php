@@ -126,3 +126,5 @@ Route::group(['prefix' => 'messages'], function () {
     Route::put('{id}', ['as' => 'messages.update', 'uses' => 'JournalViewController@updateMessage']);
 });
 
+
+
