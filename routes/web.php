@@ -40,6 +40,10 @@ Route::get('wmhd', function () {
 Route::get('covid', function () {
     return view('covid');
 });
+
+Route::get('mental', function () {
+    return view('mental');
+});
 //insert journal
 Route::get('/insert','App\Http\Controllers\JournalController@insertform');
 Route::post('/create','JournalController@insert');
