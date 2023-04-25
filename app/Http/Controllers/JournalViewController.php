@@ -90,7 +90,7 @@ class JournalViewController extends Controller
     {
         $users = User::where('id', '!=', Auth::id())->get();
 
-        return view('home_user', compact('users'));
+        return view('create_message', compact('users'));
     }
 
     /**

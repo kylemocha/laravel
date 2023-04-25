@@ -115,7 +115,7 @@
                       <a href="/messages">Messages @include('unread-count')</a>
                   </li>
                   <li>
-                      <a href="/create_message" >Create New Message</a>
+                      <a href="/create_message">Create New Message</a>
                   </li>
               </ul>
               </li>
