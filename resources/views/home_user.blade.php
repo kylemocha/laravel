@@ -457,7 +457,7 @@
                   <td>
                     <a style="text-decoration: underline;" href={{'edit/'.$user->id}}>Edit</a>  
                     <a style="text-decoration: underline;" href={{'delete/'.$user->id}}>Delete</a> 
-                    <a style="text-decoration: underline;" href="#">Share</a> 
+                    <!--<a style="text-decoration: underline;" href="#">Share</a> -->
                   </td>
               </tr>
               @endforeach 

@@ -97,7 +97,7 @@
         </button>
 
            <!--The Modal -->
-           <div class="modal" id="myModal1">
+           <div class="modal" id="myModal1" style="width: 100%">
             <div class="modal-dialog">
               <div class="modal-content">
   
@@ -110,14 +110,17 @@
                  <!--Modal body -->
                 <div class="modal-body">
                   <form action="#" >
-                    
-                    <label for="name">To:</label>
-                    <!--<input type="text" id="name" name="name" required><br>-->
-                    <select id="user_name" name="user_name">
-                      <option value="">hehe</option>
-                    </select><br>
+                
+                    <label for="users">To:</label><br>
+                    <select id="users" name="userlist" form="carform" style="margin: 10px;">
+                      @foreach($names as $name)
+                      <option value="{{ $name->id }}, {{ $name->name }}">{{ $name->name }}</option>
+                      @endforeach
+                    </select>
+
+
                     <label for="msg_description">Message:</label><br>
-                    <textarea id="msg_description" name="msg_description" rows="4" cols="50" style="margin-left:5px;" required></textarea><br>
+                    <textarea id="msg_description" name="msg_description" rows="4" cols="50" required></textarea><br>
                     <input type="submit" value="Submit"><br>
                   </form>
                   
@@ -125,6 +128,53 @@
               </div>
             </div>
           </div>
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2" style="margin-left: 15px;">
+            Approved Appointments
+          </button>
+    
+             <!--The Modal -->
+             <div class="modal" id="myModal2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+    
+                   <!--Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Approved Appointments</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+    
+                   <!--Modal body -->
+                  <div class="modal-body">
+    
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Event's Name</th>
+                          <th>Date</th>
+                          <th>Time</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                        @foreach ($lists as $list)
+                          <td>{{ $list->id }}</td>
+                          <td>{{ $list->name }}</td>
+                          <td>{{ $list->date }}</td>
+                          <td>{{ $list->time }}</td>
+                          <td><a class="btn btn-info " href="#">Delete</a></td>
+                        </tr>
+                        @endforeach
+                      </tbody>
+                    </table>
+                    
+                  </div>        
+                </div>
+              </div>
+            </div>
+            <!--modal-->
 
         <div class="container">
           <div class="row gutters-sm">
@@ -278,51 +328,6 @@
         <h2 style="font-weight: bold;">&nbsp;Appointments Section</h2>
         <p style="padding-left: 8px;">This section allows you to see your pending appointments.</p>
         <p style="padding-left: 8px;"><b>Note for Status: 0=pending, 1=approved, 2=declined.</b></p>
-
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2" style="margin-left: 15px;">
-          See Appointments
-        </button>
-  
-           <!--The Modal -->
-           <div class="modal" id="myModal2">
-            <div class="modal-dialog">
-              <div class="modal-content">
-  
-                 <!--Modal Header -->
-                <div class="modal-header">
-                  <h4 class="modal-title">See Appointments</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-  
-                 <!--Modal body -->
-                <div class="modal-body">
-  
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>ID</th>
-                        <th>Event's Name</th>
-                        <th>Date</th>
-                        <th>Time</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                      @foreach ($lists as $list)
-                        <td>{{ $list->id }}</td>
-                        <td>{{ $list->name }}</td>
-                        <td>{{ $list->date }}</td>
-                        <td>{{ $list->time }}</td>
-                      </tr>
-                      @endforeach
-                    </tbody>
-                  </table>
-                  
-                </div>        
-              </div>
-            </div>
-          </div>
-          <!--modal-->
 
         <table class="table">
           <thead>

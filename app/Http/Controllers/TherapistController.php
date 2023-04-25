@@ -17,15 +17,15 @@ class TherapistController extends Controller
     $appts = ApptModel::where('Therapist', $id)->get();
     $lists = Events::where('user_id', $id)->get();
 
+    $names = User::orderBy('is_admin', 'ASC')->where('is_admin', 0)->get();
+
     if(count ($users)>0){
       $events = array();
-      $events = Events::all();
-      //$events = auth()->id();
-      //$events = DB::table('events')->where('user_id')->get();
-      //$events= Events::pluck('user_id'); 
-      //$events = Events::all();
-      //$events = Events::whereIn('user_id', array(1, 2, 3))->get(); if (is_array($events) || is_object($events)){
-      
+ 
+     $events = Events::all();
+     //$events->pluck('user_id')->toArray();
+     //$events = Events::all()->pluck(['user_id']);
+        
       foreach($events as $event){
         $events [] = [
             'title' =>  $event['name'],
@@ -34,7 +34,7 @@ class TherapistController extends Controller
           ];
         }
         //return $events;
-      return view('therapist',compact('users', 'appts', 'events', 'lists'));
+      return view('therapist',compact('users', 'appts', 'events', 'lists', 'names'));
     }
      else
     {
@@ -42,7 +42,7 @@ class TherapistController extends Controller
     }
     
     
-    }
+  }
 
   function edit($id)
   {

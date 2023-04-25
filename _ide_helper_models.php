@@ -23,7 +23,7 @@ namespace App\Models{
  * @property string $Appt_time
  * @property string $Mode_of_consultation
  * @property string $Therapist
- * @property int $status 0=pending, 1=approved, 2=declined
+ * @property int $status
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|ApptModel newModelQuery()
@@ -80,7 +80,6 @@ namespace App\Models{
  * @property int $id
  * @property int $user_id
  * @property string $name
- * @property string|null $description
  * @property string $date
  * @property string $time
  * @property \Illuminate\Support\Carbon|null $created_at
@@ -90,7 +89,6 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|Events query()
  * @method static \Illuminate\Database\Eloquent\Builder|Events whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Events whereDate($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Events whereDescription($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Events whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Events whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Events whereTime($value)
