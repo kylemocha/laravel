@@ -163,8 +163,8 @@
         </div>-->
         <!-- Column -->
         <!-- Column -->
-      <h1 style="text-align: center; font-weight: bold; padding: 15px 10px; margin: 8px;">Upcoming Events</h1>
-      <h5 style="padding: 5px 8px; font-size: 18px; text-align: center;">In order to stay up to date, you can view any upcoming events.</h5>
+      <h1 style="text-align: center; font-weight: bold; padding: 15px 10px; margin: 8px;">Articles</h1>
+      <h5 style="padding: 5px 8px; font-size: 18px; text-align: center;">This section features mental health articles.</h5>
       </div>
       <div class="row mt-4">
         <!-- Column -->
