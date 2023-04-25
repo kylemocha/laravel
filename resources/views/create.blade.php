@@ -2,7 +2,6 @@
 <h1>Create a new message</h1>
     <form method="POST" action="{{ route('messages.store') }}" >
         @csrf
-        @method('PUT')
 
         <div class="col-md-6">
             <!-- Subject Form Input -->
