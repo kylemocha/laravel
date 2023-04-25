@@ -157,7 +157,7 @@
         
               <!-- Modal Header -->
               <div class="modal-header">
-                <h4 class="modal-title">Appointments</h4>
+                <h4 class="modal-title" style="font-size: 22px;"><b>Appointments</b></h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
         
@@ -209,7 +209,7 @@
         <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">Let's track your mental health today!</h6>
         
         <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal"><i class="fas fa-user-plus"></i>
-          Set Appointment Here
+          Appointment Form
         </button>
 
         <!-- Modal Appt Form -->
