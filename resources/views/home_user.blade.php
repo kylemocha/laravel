@@ -109,8 +109,19 @@
             </ul>
             </li>
             <li>
+              <a href="#message" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><b>Message</b></a>
+              <ul class="collapse list-unstyled" id="message">
+                  <li>
+                      <a href="/messages">Messages @include('unread-count')</a>
+                  </li>
+                  <li>
+                      <a href="/create" >Create New Message</a>
+                  </li>
+              </ul>
+              </li>
+            <!--<li>
                 <a href="#" onclick="show('page4');"><b>Message</b></a>
-            </li>
+            </li>-->
             <li>
                 <a href="#" onclick="show('page5');"><b>Recommendations</b></a>
             </li>  
