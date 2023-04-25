@@ -70,7 +70,7 @@ class MessagesController extends Controller
     {
         $users = User::where('id', '!=', Auth::id())->get();
 
-        return view('therapist', compact('users'));
+        return view('home_user', compact('users'));
     }
 
     /**

@@ -1,5 +1,5 @@
 <h1>Create a new message</h1>
-    <form action="{{ route('store') }}" method="post">
+    <form action="{{ route('store') }}" method="POST">
         {{ csrf_field() }}
         <div class="col-md-6">
             <!-- Subject Form Input -->

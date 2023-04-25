@@ -119,10 +119,10 @@ Route::put('add_user/{id}', [admin_conController::class, 'addUser']);
 Route::get('/admin','admin_conController@index');
 
 Route::group(['prefix' => 'messages'], function () {
-    Route::get('/', ['as' => 'messages', 'uses' => 'MessagesController@index']);
-    Route::get('create', ['as' => 'create', 'uses' => 'MessagesController@create']);
-    Route::post('/', ['as' => 'messages.store', 'uses' => 'MessagesController@store']);
-    Route::get('{id}', ['as' => 'messages.show', 'uses' => 'MessagesController@show']);
-    Route::put('{id}', ['as' => 'messages.update', 'uses' => 'MessagesController@update']);
+    Route::get('/', ['as' => 'messages', 'uses' => 'JournalViewController@message']);
+    Route::get('create', ['as' => 'messages.create_message', 'uses' => 'JournalViewController@create']);
+    Route::post('/', ['as' => 'messages.store', 'uses' => 'JournalViewController@store']);
+    Route::get('{id}', ['as' => 'messages.show', 'uses' => 'JournalViewController@show']);
+    Route::put('{id}', ['as' => 'messages.update', 'uses' => 'JournalViewController@updateMessage']);
 });
 
