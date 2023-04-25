@@ -15,14 +15,14 @@ class TherapistController extends Controller
     $id = Auth::user()->id;
     $users['users'] = DB::table('users')->where('id','=', $id)->first();
     $appts = ApptModel::where('Therapist', $id)->get();
-    $lists = Events::where('user_id', $id)->get();
+    //$lists =  ApptModel::orderBy('status', 'ASC')->where('status', 1)->get();
+    //$lists = ApptModel::where('status', $id)->get(); ApptModel::orderBy('status', 'ASC')->where('status', 1)->get();
 
-    $names = User::orderBy('is_admin', 'ASC')->where('is_admin', 0)->get();
+    $apps = User::orderBy('is_admin', 'ASC')->where('is_admin', 0)->get(); //user
 
     if(count ($users)>0){
       $events = array();
- 
-     $events = Events::all();
+      $events = Events::all();
      //$events->pluck('user_id')->toArray();
      //$events = Events::all()->pluck(['user_id']);
         
@@ -34,7 +34,7 @@ class TherapistController extends Controller
           ];
         }
         //return $events;
-      return view('therapist',compact('users', 'appts', 'events', 'lists', 'names'));
+      return view('therapist',compact('users', 'appts', 'events', 'apps'));
     }
      else
     {
@@ -88,6 +88,19 @@ class TherapistController extends Controller
   $appts->save();
   return redirect("therapist")->withSuccess('You have declined this consultation.'); //Redirect user somewhere
  } 
+ function seeNotif(){
+  return view('therapist');
+}
+ function storeNotif(Request $request){
+  $userId = Auth::user()->id;
+  $therapist = $request->input('therapist');
+  $name = $request->get('client_name');
+  $message = $request->input('message');
+  $data=array("user_id"=>$userId,'client_name'=>$name, "therapist"=>$therapist, "message"=>$message);
+  DB::table('notifs')->insert($data);
+  return redirect("therapist")->withSuccess('Great! You have sent an notification.');
+}
+
 
 
 }

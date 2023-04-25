@@ -97,7 +97,7 @@
         </button>
 
            <!--The Modal -->
-           <div class="modal" id="myModal1" style="width: 100%">
+           <div class="modal" id="myModal1">
             <div class="modal-dialog">
               <div class="modal-content">
   
@@ -109,18 +109,19 @@
   
                  <!--Modal body -->
                 <div class="modal-body">
-                  <form action="#" >
-                
-                    <label for="users">To:</label><br>
-                    <select id="users" name="userlist" form="carform" style="margin: 10px;">
-                      @foreach($names as $name)
-                      <option value="{{ $name->id }}, {{ $name->name }}">{{ $name->name }}</option>
+                  <form action="/post" method="POST">
+                    @csrf
+                    <label for="therapist">From:</label>
+                    <input type="text" name="therapist" id="therapist"><br>
+                    <label for="client_name">To:</label>
+                    <select id="client_name" name="client_name" style="margin: 10px;">
+                      @foreach($apps as $app)
+                      <option value="{{ $app->id }}, {{ $app->name }}">{{ $app->name }}</option>
                       @endforeach
-                    </select>
+                    </select><br>
 
-
-                    <label for="msg_description">Message:</label><br>
-                    <textarea id="msg_description" name="msg_description" rows="4" cols="50" required></textarea><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
                     <input type="submit" value="Submit"><br>
                   </form>
                   
@@ -129,52 +130,6 @@
             </div>
           </div>
 
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2" style="margin-left: 15px;">
-            Approved Appointments
-          </button>
-    
-             <!--The Modal -->
-             <div class="modal" id="myModal2">
-              <div class="modal-dialog">
-                <div class="modal-content">
-    
-                   <!--Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title">Approved Appointments</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-    
-                   <!--Modal body -->
-                  <div class="modal-body">
-    
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>ID</th>
-                          <th>Event's Name</th>
-                          <th>Date</th>
-                          <th>Time</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                        @foreach ($lists as $list)
-                          <td>{{ $list->id }}</td>
-                          <td>{{ $list->name }}</td>
-                          <td>{{ $list->date }}</td>
-                          <td>{{ $list->time }}</td>
-                          <td><a class="btn btn-info " href="#">Delete</a></td>
-                        </tr>
-                        @endforeach
-                      </tbody>
-                    </table>
-                    
-                  </div>        
-                </div>
-              </div>
-            </div>
-            <!--modal-->
 
         <div class="container">
           <div class="row gutters-sm">

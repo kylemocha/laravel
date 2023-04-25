@@ -59,10 +59,14 @@ Route::post('/post',[ApptController::class, 'storeForm']);
 Route::get('/therapist','TherapistController@index');
 
 Route::get('/insert',[TherapistController::class, 'seeForm']);
-Route::post('/createform',[TherapistController::class, 'insertSchedule']);
+Route::post('/createform',[TherapistController::class, 'insertSchedule']); 
+
+Route::get('/insert',[TherapistController::class, 'seeNotif']);
+Route::post('/post',[TherapistController::class, 'storeNotif']);
+
 
 Route::get('/approve/{id}', 'TherapistController@approve')->name('admin.approve');
-Route::post('/decline/{id}', 'TherapistController@decline')->name('admin.decline');
+Route::get('/decline/{id}', 'TherapistController@decline')->name('admin.decline');
 
 
 //therapist calendar
