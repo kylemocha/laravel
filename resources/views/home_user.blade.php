@@ -477,6 +477,7 @@
       
     </div>
     <!---->    
+    
     <div class="page" id="page5" style="display:none">
       <button type="button" id="sidebarCollapse5" class="btn btn-info">
         <i class="fas fa-align-left"></i>
