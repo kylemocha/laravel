@@ -108,9 +108,9 @@
                 </li>
             </ul>
             </li>
-            <!--<li>
-                <a href="#" onclick="show('page4');"><b>Upcoming Events</b></a>
-            </li>-->
+            <li>
+                <a href="#" onclick="show('page4');"><b>Message</b></a>
+            </li>
             <li>
                 <a href="#" onclick="show('page5');"><b>Recommendations</b></a>
             </li>  
@@ -472,12 +472,12 @@
         <i class="fas fa-align-left"></i>
         <span></span>
        </button>
-       <h2 style="font-weight: bold;">Messages</h2>
+       <h2 style="font-weight: bold;">Message</h2>
        
       
     </div>
     <!---->    
-    
+
     <div class="page" id="page5" style="display:none">
       <button type="button" id="sidebarCollapse5" class="btn btn-info">
         <i class="fas fa-align-left"></i>
