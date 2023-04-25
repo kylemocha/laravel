@@ -171,9 +171,9 @@
         <div class="col-md-4 on-hover">
           <div class="card border-0 mb-4">
             <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
-            <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
-            <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
-            <p class="mt-3"> CDOC</p>
+            <!--<div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>-->
+            <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">World Mental Health Day 2022</a></h5>
+            <!--<p class="mt-3"> CDOC</p>-->
             <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
           </div>
         </div>
@@ -181,9 +181,9 @@
         <div class="col-md-4 on-hover">
           <div class="card border-0 mb-4">
             <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
-            <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
+            <!--<div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>-->
             <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
-            <p class="mt-3"> CDOC</p>
+            <!--<p class="mt-3"> CDOC</p>-->
             <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
           </div>
         </div>
@@ -191,9 +191,9 @@
         <div class="col-md-4 on-hover">
           <div class="card border-0 mb-4">
             <a href="#"><img class="card-img-top" src="https://i.ibb.co/mH6ty5W/get-the-most-out-of-mental-health-therapy.jpg" alt="wrappixel kit"></a>
-            <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>
+            <!--<div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">23</span></div>-->
             <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Session with Dr. Ester Dean</a></h5>
-            <p class="mt-3"> CDOC</p>
+            <!--<p class="mt-3"> CDOC</p>-->
             <!--<a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>-->
           </div>
         </div>
