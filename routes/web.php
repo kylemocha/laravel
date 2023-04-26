@@ -84,6 +84,7 @@ Route::get('edit/{id}', [JournalViewController::class, 'showData']);
 Route::post('edit', [JournalViewController::class, 'update']);
 Route::get('delete/{id}', [JournalViewController::class, 'delete']);
 
+Route::get('view/{id}', [JournalViewController::class, 'showJournal']);
 //Route::get('home_user', [JournalViewController::class, 'viewTherapist']);
 
 //forget password features

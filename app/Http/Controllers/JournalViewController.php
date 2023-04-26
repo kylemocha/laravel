@@ -49,6 +49,11 @@ class JournalViewController extends Controller
        return redirect('home_user')->withSuccess('Successfully updated your journal entry.');   
     }
 
+    function showJournal($id){
+        $users= JournalView::find($id);
+        return view ('view', ['user'=>$users]);
+    }
+
     /**
      * Shows a message thread.
      *
