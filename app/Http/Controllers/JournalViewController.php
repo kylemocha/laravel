@@ -56,6 +56,13 @@ class JournalViewController extends Controller
         return view ('view', ['user'=>$users]);
     }
 
+    function deleteNotif($id) //delete
+    {
+        $notifs = Notif::find($id);
+        $notifs->delete();
+        return redirect('home_user')->withSuccess('Successfully deleted a notification.');	
+    }
+
     /**
      * Shows a message thread.
      *

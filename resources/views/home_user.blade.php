@@ -504,7 +504,7 @@
                 <td>{{ $notif->client_name }}</td> 
                 <td>{{ $notif->message }}</td> 
                 <td> 
-                  <a style="text-decoration: underline;" href="">Delete</a> 
+                  <a style="text-decoration: underline;" href={{'delete_notif/'.$notif->id}}>Delete</a> 
                 </td>
           @endforeach 
             </tr>              
