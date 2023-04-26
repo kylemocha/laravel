@@ -10,6 +10,9 @@
      
      <label name="msg">Message</label><br>
      <input type="text" name="message" value={{$user['message']}} readonly><br>
+
+     <label name="date">Date created</label><br>
+     <input type="text" name="date" value={{$user['JournalDate']}} readonly><br>
     
     
      <label name="therapist">Share to:</label><br>
