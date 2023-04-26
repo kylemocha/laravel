@@ -484,7 +484,32 @@
         <span></span>
        </button>
        <h2 style="font-weight: bold;">Notification</h2>
-       <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">See your notifications and be updated.</h6>
+       <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">View your notifications and stay up to date.</h6>
+
+       <table class="table table-striped" id="editable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Sent by</th>
+                <th>Sent to</th>
+                <th>Message</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+          @foreach ($notifs as $notif)
+            <tr>
+                <td>{{ $notif->id }}</td>
+                <td>{{ $notif->therapist }}</td> 
+                <td>{{ $notif->client_name }}</td> 
+                <td>{{ $notif->message }}</td> 
+                <td> 
+                  <a style="text-decoration: underline;" href="">Delete</a> 
+                </td>
+          @endforeach 
+            </tr>              
+        </tbody>
+    </table>             
        
       
     </div>
