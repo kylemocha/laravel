@@ -108,20 +108,20 @@
                 </li>
             </ul>
             </li>
-            <li>
+            <!--<li>
               <a href="#message" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><b>Message</b></a>
               <ul class="collapse list-unstyled" id="message">
                   <li>
-                      <a href="/messages">Messages @include('unread-count')</a>
+                      <a href="/messages">Messages</a>
                   </li>
                   <li>
                       <a href="/messages/create">Create New Message</a>
                   </li>
               </ul>
-              </li>
-            <!--<li>
-                <a href="#" onclick="show('page4');"><b>Message</b></a>
-            </li>-->
+              </li>-->
+            <li>
+                <a href="#" onclick="show('page4');"><b>Notification</b></a>
+            </li>
             <li>
                 <a href="#" onclick="show('page5');"><b>Recommendations</b></a>
             </li>  
@@ -483,7 +483,8 @@
         <i class="fas fa-align-left"></i>
         <span></span>
        </button>
-       <h2 style="font-weight: bold;">Message</h2>
+       <h2 style="font-weight: bold;">Notification</h2>
+       <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">See your notifications and be updated.</h6>
        
       
     </div>
