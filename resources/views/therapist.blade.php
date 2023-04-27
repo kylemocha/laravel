@@ -345,9 +345,7 @@
             @endforeach
           </tbody>
         </table>
-
-
-        
+      
       </div>
 
       <!--<div class="page" id="page5" style="display:none">
