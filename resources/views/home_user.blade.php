@@ -332,7 +332,6 @@
           <thead>
               <tr>
                 <th>Name</th>
-                <th>Image</th>
                 <th>Address</th>
                 <th>Email</th>
                 <th>Action</th>
@@ -342,7 +341,6 @@
             @foreach($specialists as $specialist)
               <tr>
                 <td>{{ $specialist->name}}</td>
-                <td>MEEP</td>
                 <td>{{ $specialist->address }}</td>
                 <td>{{ $specialist->email }}</td>
                 <td>MEEP</td>

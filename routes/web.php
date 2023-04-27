@@ -76,6 +76,7 @@ Route::get('/decline/{id}', 'TherapistController@decline')->name('admin.decline'
 
 //Route::resource('tasks', 'TasksController');
 
+
 Route::get('edit-therapist/{id}', [TherapistController::class, 'edit']);
 Route::put('update-therapist/{id}', [TherapistController::class, 'update']);
 
@@ -127,6 +128,7 @@ Route::group(['prefix' => 'messages'], function () {
     Route::get('{id}', ['as' => 'messages.show', 'uses' => 'JournalViewController@show']);
     Route::put('{id}', ['as' => 'messages.update', 'uses' => 'JournalViewController@updateMessage']);
 });
+
 
 
 
