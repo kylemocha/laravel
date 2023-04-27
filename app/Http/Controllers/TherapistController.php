@@ -78,7 +78,7 @@ class TherapistController extends Controller
     $appts = ApptModel::findOrFail($id);
     //$appts = Config::get('Approved'); //Approved
     //$appts = ApptModel::where('status' , Approved);//Approved
-    $appts->status = 1; 
+    $appts->status = ('Approved'); 
     $appts->save();
     return redirect("therapist")->withSuccess('Great! You have approved this consultation.');//Redirect user somewhere
   }
@@ -86,7 +86,7 @@ class TherapistController extends Controller
   $appts = ApptModel::findOrFail($id);
   //$appts->status = Declined; //Declined
   // $appts = ApptModel::where('status' , Rejected);
-  $appts->status = 2; 
+  $appts->status = ('Rejected'); 
   $appts->save();
   return redirect("therapist")->withSuccess('You have declined this consultation.'); //Redirect user somewhere
  } 
