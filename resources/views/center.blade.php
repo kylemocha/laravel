@@ -73,7 +73,7 @@
          <h3 class="h3-responsive"  style="color: #006a89; text-shadow: 2px 2px 2px #ABCDEF; font-weight: bold;">BAHAY PAG-ASA FOR GIRLS</h3>
          <!--<p style="color: #006a89;">First text</p>-->
          <li class="list-inline-item">
-           <a href="#" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Learn More</a>
+           <a href="#bahay_girls " class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Learn More</a>
          </li>
        </div>
      </div>
@@ -87,7 +87,7 @@
          <h3 class="h3-responsive"  style="color: #006a89; text-shadow: 2px 2px 2px #ABCDEF; font-weight: bold;">BAHAY PAG-ASA: TAHANAN NG KABATAAN</h3>
           <!--<p style="color: #006a89;">Secondary text</p>-->
          <li class="list-inline-item">
-           <a href="#" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Learn More</a>
+           <a href="#bahay_pag-asa" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Learn More</a>
          </li>
        </div>
      </div>
@@ -101,7 +101,7 @@
          <h3 class="h3-responsive"  style="color: #006a89; text-shadow: 2px 2px 2px #ABCDEF; font-weight: bold;">BOYS TOWN OF CDO</h3>
          <!--<p style="color: #006a89;">Third text</p>-->
          <li class="list-inline-item">
-           <a href="#" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Learn More</a>
+           <a href="#bahay_boys" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Learn More</a>
          </li>
        </div>
      </div>
@@ -115,7 +115,7 @@
           <h3 class="h3-responsive"  style="color: #006a89; text-shadow: 2px 2px 2px #ABCDEF; font-weight: bold;">GOLDEN HOME CARE FOR THE ELDERLY</h3>
           <!--<p style="color: #006a89;">Third text</p>-->
           <li class="list-inline-item">
-            <a href="#" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Learn More</a>
+            <a href="#bahay_elders" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Learn More</a>
           </li>
         </div>
       </div>
@@ -129,7 +129,7 @@
           <h3 class="h3-responsive"  style="color: #006a89; text-shadow: 2px 2px 2px #ABCDEF; font-weight: bold;">SOCIAL DEVELOPMENT CENTER - HOME CARE FOR GIRLS</h3>
           <!--<p style="color: #006a89;">Third text</p>-->
           <li class="list-inline-item">
-            <a href="#" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Learn More</a>
+            <a href="#bahay_care" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Learn More</a>
           </li>
         </div>
       </div>
@@ -148,6 +148,89 @@
  </div>
  <!--/.Carousel Wrapper-->
 </div>
+
+<section class="firstsection">
+    <div class="box-main" id="#bahay_girls">
+        <div class="firstHalf">
+            <h1 class="text-big" id="web">BAHAY PAG-ASA FOR GIRLS</h1>
+            <p class="text-small">
+                It admits 15 - 17 years old female children-in-conflict with the Law (CICL) 
+                committed by the court for temporary shelter and intervention program.
+            </p>
+            <p><b>Address:</b> Macanhan, Carmen, Cagayan de Oro City</p>
+            <!--<p><b>Center Head:</b> Rowena G. Palarca, RSW</p>
+            <p><b>Address:</b> Macanhan, Carmen, Cagayan de Oro City</p>-->
+
+        </div>
+    </div>
+</section>
+
+<section class="firstsection">
+    <div class="box-main" id="#bahay_pag-asa">
+        <div class="firstHalf">
+            <h1 class="text-big" id="web">BAHAY PAG-ASA: TAHANAN NG KABATAAN</h1>
+            <p class="text-small">
+                This center temporarily houses: <br> male Children in Conflict with the Law (CICL) 
+                ages from 15 - 18 years old committed by the court for temporary shelter and intervention program
+            </p>
+            <p><b>Address:</b> Bahay Pag-Asa Tahanan ng Kabataan, Lumbia, Cagayan De Oro, Philippines</p>
+            <!--<p><b>Center Head:</b> Rowena G. Palarca, RSW</p>
+            <p><b>Address:</b> Macanhan, Carmen, Cagayan de Oro City</p>-->
+
+        </div>
+    </div>
+</section>
+
+<section class="firstsection">
+    <div class="box-main" id="#bahay_boys">
+        <div class="firstHalf">
+            <h1 class="text-big" id="web">BOYS TOWN OF CDO</h1>
+            <p class="text-small">
+                This center provides temporary shelter to those 7 to 17 years old boys who experienced abuse, abandonment, and neglect.<br> 
+                They accept male youngsters who are regarded as dependents and who required the support of the center since their relatives were unable or <br>unable to provide it.
+            </p>
+            <p><b>Address:</b> Lumbia, Cagayan de Oro City</p>
+            <!--<p><b>Center Head:</b> Rowena G. Palarca, RSW</p>
+            <p><b>Address:</b> Macanhan, Carmen, Cagayan de Oro City</p>-->
+
+        </div>
+    </div>
+</section>
+
+<section class="firstsection">
+    <div class="box-main" id="#bahay_elders">
+        <div class="firstHalf">
+            <h1 class="text-big" id="web">GOLDEN HOME CARE FOR THE ELDERLY</h1>
+            <p class="text-small">
+                This center temporarily houses the elderly in the city who 
+                experienced abandonment and neglect while undergoing rehabilitation and preparing <br>them for possible family reintegration
+            </p>
+            <p><b>Address:</b> Maitum, Upper Puerto, Cagayan de Oro City</p>
+            <!--<p><b>Center Head:</b> Rowena G. Palarca, RSW</p>
+            <p><b>Address:</b> Macanhan, Carmen, Cagayan de Oro City</p>-->
+
+        </div>
+    </div>
+</section>
+
+<section class="firstsection">
+    <div class="box-main" id="#bahay_care">
+        <div class="firstHalf">
+            <h1 class="text-big" id="web">SOCIAL DEVELOPMENT CENTER - HOME CARE FOR GIRLS</h1>
+            <p class="text-small">
+                This center temporarily houses 7 to 17 years old girls who experienced abuse and exploitation that need immediate treatment and rehabilitation.<br>
+                They also cater to those girls considered to be as Children in Conflict with the Law (CICL) committed by the court<br> for temporary shelter and intervention program
+            </p>
+            <p><b>Address:</b> Macanhan, Carmen, Cagayan de Oro City</p>
+            <!--<p><b>Center Head:</b> Rowena G. Palarca, RSW</p>
+            <p><b>Address:</b> Macanhan, Carmen, Cagayan de Oro City</p>-->
+
+        </div>
+    </div>
+</section>
+
+
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

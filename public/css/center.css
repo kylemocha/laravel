@@ -46,3 +46,22 @@ body{
         top: 100%; 
     }
 }
+.firstsection {
+    height: 400px;
+}
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    max-width: 80%;
+    margin: auto;
+    height: 80%;
+}
+.firsthalf {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
