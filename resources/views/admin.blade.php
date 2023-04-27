@@ -21,15 +21,15 @@
         <li>
           <a href="#" class="active" onclick="show('page1');">
             <i class='bx bx-grid-alt' ></i>
-            <span class="links_name">Dashboard</span>
+            <span class="links_name">Users</span>
           </a>
         </li>
-        <li>
+        <!--<li>
           <a href="#" onclick="show('page2');">
             <i class='bx bx-box' ></i>
             <span class="links_name">Users</span>
           </a>
-        </li>
+        </li>-->
         <li>
           <a href="#" onclick="show('page3');">
             <i class='bx bx-list-ul' ></i>
@@ -48,12 +48,12 @@
             <span class="links_name">Appointments</span>
           </a>
         </li>
-        <li>
+        <!--<li>
           <a href="#" onclick="show('page6');">
             <i class='bx bx-cog' ></i>
             <span class="links_name">Setting</span>
           </a>
-        </li>
+        </li>-->
         <li class="log_out">
           <a href="{{ route('logout') }}">
             <i class='bx bx-log-out'></i>
@@ -68,10 +68,7 @@
         <i class='bx bx-menu sidebarBtn'></i>
         <span class="dashboard">Dashboard</span>
       </div>
-      <div class="search-box">
-        <input type="text" placeholder="Search...">
-        <i class='bx bx-search' ></i>
-      </div>
+      
     </nav>
     <!--end of navbar-->
 
@@ -83,9 +80,6 @@
         <h3 class="alert alert-success">{{ session('success') }}</h3>
         @endif
 
-      </div>
-       
-      <div class="page" id="page2" style="display:none">
         <h2 style="font-weight: bold;">&nbsp;Users Section</h2>
         <p>&nbsp;Note for role '0=user, 1=admin, 3=therapist'</p>
         <table id="users">
@@ -114,8 +108,13 @@
           @endforeach
           @endif 
         </table>
-        
+
       </div>
+       
+      <!--div class="page" id="page2" style="display:none">
+        
+        
+      </div>-->
 
       <div class="page" id="page3" style="display:none">
         <h2 style="font-weight: bold;">&nbsp;Contact Us Section</h2>
