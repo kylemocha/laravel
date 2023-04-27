@@ -45,6 +45,10 @@ Route::get('covid', function () {
 Route::get('mental', function () {
     return view('mental');
 });
+
+Route::get('center', function () {
+    return view('center');
+});
 //insert journal
 Route::get('/insert','App\Http\Controllers\JournalController@insertform');
 Route::post('/create','JournalController@insert');

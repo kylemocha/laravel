@@ -1,0 +1,48 @@
+@import "https://fonts.googleapis.com/css?family=Assistant:400,700";
+body{
+    font-family: Assistant, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7e7e7;
+}
+/*navbar shadow*/
+.navbar {
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+}
+.navbar-nav a{
+    font-size: 17px;
+}
+.navbar-nav a:hover{
+  color: darkgray !important;
+}
+.dropdown-menu{
+    position: absolute;
+    top: 90%; 
+    right: 0;
+    margin-left: -100px; 
+}
+.btn:hover{
+    background-color: #006a89 !important;
+}
+@media (max-width: 768px) {
+    .dropdown-menu{
+        margin-left: 2px; 
+        top: 100%; 
+ }
+}
+@media (max-width: 800px) {
+    .dropdown-menu{
+        position: relative;
+        margin-left: 2px; 
+        top: 100%; 
+    }
+}
+@media (max-width: 985px) {
+    .dropdown-menu{
+        position: relative;
+        margin-left: 5px; 
+        top: 100%; 
+    }
+}
