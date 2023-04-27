@@ -150,7 +150,7 @@
 </div>
 
 <section class="firstsection">
-    <div class="box-main" id="#bahay_girls">
+    <div class="box-main" id="bahay_girls">
         <div class="firstHalf">
             <h1 class="text-big" id="web">BAHAY PAG-ASA FOR GIRLS</h1>
             <p class="text-small">
@@ -166,7 +166,7 @@
 </section>
 
 <section class="firstsection">
-    <div class="box-main" id="#bahay_pag-asa">
+    <div class="box-main" id="bahay_pag-asa">
         <div class="firstHalf">
             <h1 class="text-big" id="web">BAHAY PAG-ASA: TAHANAN NG KABATAAN</h1>
             <p class="text-small">
@@ -182,7 +182,7 @@
 </section>
 
 <section class="firstsection">
-    <div class="box-main" id="#bahay_boys">
+    <div class="box-main" id="bahay_boys">
         <div class="firstHalf">
             <h1 class="text-big" id="web">BOYS TOWN OF CDO</h1>
             <p class="text-small">
@@ -198,7 +198,7 @@
 </section>
 
 <section class="firstsection">
-    <div class="box-main" id="#bahay_elders">
+    <div class="box-main" id="bahay_elders">
         <div class="firstHalf">
             <h1 class="text-big" id="web">GOLDEN HOME CARE FOR THE ELDERLY</h1>
             <p class="text-small">
@@ -214,7 +214,7 @@
 </section>
 
 <section class="firstsection">
-    <div class="box-main" id="#bahay_care">
+    <div class="box-main" id="bahay_care">
         <div class="firstHalf">
             <h1 class="text-big" id="web">SOCIAL DEVELOPMENT CENTER - HOME CARE FOR GIRLS</h1>
             <p class="text-small">
