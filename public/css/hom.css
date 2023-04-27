@@ -1242,5 +1242,31 @@ input[type=submit],input[type=reset]{
   color: white;
 }
 
+/*image gallery*/
+div.img {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+}
+
+div.img:hover {
+  border: 1px solid #777;
+}
+
+div.img img {
+  /*width: 100%;
+  height: auto;*/
+  display: inline;
+  margin: 5px;
+  border: 1px solid #ffffff;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  margin: 5px;
+}
 
 

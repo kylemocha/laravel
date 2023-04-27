@@ -206,6 +206,7 @@
               
     
           </div>-->
+
         <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">Let's track your mental health today!</h6>
         
         <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal"><i class="fas fa-user-plus"></i>
@@ -325,75 +326,45 @@
       </div>
       </div> 
       </div>
-       
-      <!--Carousel wrapper -->
-      <h1 style="text-align: center; font-weight: bold; font-size: 28px;">Meet our Therapists</h1>
-       <!--Carousel Wrapper-->
-      <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
-      <!--Indicators-->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-2" data-slide-to="1"></li>
-        <li data-target="#carousel-example-2" data-slide-to="2"></li>
-      </ol>
-      <!--/.Indicators-->
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <div class="view">
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(105).webp" alt="First slide">
-            <div class="mask rgba-black-light"></div>
-          </div>
-          <div class="carousel-caption">
-            <h3 class="h3-responsive"  style="color: #006a89; text-shadow: 2px 2px 2px #ABCDEF; font-weight: bold;">This is the first title</h3>
-            <p style="color: #006a89;">First text</p>
-            <li class="list-inline-item">
-              <a href="#" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">See their schedule</a>
-            </li>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <!--Mask color-->
-          <div class="view">
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(115).webp" alt="Second slide">
-            <div class="mask rgba-black-light"></div>
-          </div>
-          <div class="carousel-caption">
-            <h3 class="h3-responsive"  style="color: #006a89; text-shadow: 2px 2px 2px #ABCDEF; font-weight: bold;">This is the second title</h3>
-            <p style="color: #006a89;">Secondary text</p>
-            <li class="list-inline-item">
-              <a href="#" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">See their schedule</a>
-            </li>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <!--Mask color-->
-          <div class="view">
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(108).webp" alt="Third slide">
-            <div class="mask rgba-black-light"></div>
-          </div>
-          <div class="carousel-caption">
-            <h3 class="h3-responsive"  style="color: #006a89; text-shadow: 2px 2px 2px #ABCDEF; font-weight: bold;">This is the third title</h3>
-            <p style="color: #006a89;">Third text</p>
-            <li class="list-inline-item">
-              <a href="#" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">See their schedule</a>
-            </li>
-          </div>
-        </div>
+        
+      <div id="container">
+      <div class="img">
+        <a target="_blank" href="fjords.jpg">
+          <img src="https://i.ibb.co/my39KRW/Image-For-Article-23295-16680815010862881.png" alt="Fjords" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
       </div>
-      <!--/.Slides-->
-      <!--Controls-->
-      <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-      <!--/.Controls-->
-    </div>
-    <!--/.Carousel Wrapper-->
+      
+      <div class="img">
+        <a target="_blank" href="forest.jpg">
+          <img src="https://i.ibb.co/my39KRW/Image-For-Article-23295-16680815010862881.png" alt="Forest" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="img">
+        <a target="_blank" href="lights.jpg">
+          <img src="https://i.ibb.co/my39KRW/Image-For-Article-23295-16680815010862881.png" alt="Northern Lights" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="img">
+        <a target="_blank" href="mountains.jpg">
+          <img src="https://i.ibb.co/my39KRW/Image-For-Article-23295-16680815010862881.png" alt="Mountains" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+
+      
+
+
+      </div>
+      
+      
+     
+       
+      
     <!--last div-->
     
     </div>
