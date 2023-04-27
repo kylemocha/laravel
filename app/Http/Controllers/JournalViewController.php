@@ -8,7 +8,7 @@ use App\Models\JournalView;
 use App\Models\ApptModel;
 use App\Models\Notif;
 use App\Models\User;
-
+use DB;
 use Carbon\Carbon;
 use Cmgmyr\Messenger\Models\Message;
 use Cmgmyr\Messenger\Models\Participant;
@@ -27,6 +27,7 @@ class JournalViewController extends Controller
         $apps = ApptModel::userr()->get();
         $notifs = Notif::userr()->get();
         $specialists = User::orderBy('is_admin', 'ASC')->where('is_admin', 2)->get();
+        //$meeps = User::orderBy('is_admin', 'ASC')->where('is_admin', 2)->get();
         //$apps = auth()->user();
         
         //return view('home_user')->withUsers($users); //do not edit
@@ -52,16 +53,28 @@ class JournalViewController extends Controller
        return redirect('home_user')->withSuccess('Successfully updated your journal entry.');   
     }
 
-    function showJournal($id){
-        $users= JournalView::find($id);
-        return view ('view', ['user'=>$users]);
-    }
-
     function deleteNotif($id) //delete
     {
         $notifs = Notif::find($id);
         $notifs->delete();
         return redirect('home_user')->withSuccess('Successfully deleted a notification.');	
+    }
+
+    function showJournal($id){
+        $users= JournalView::find($id);
+        $meeps = User::orderBy('is_admin', 'ASC')->where('is_admin', 2)->get();
+        return view ('view', compact('users', 'meeps'));
+    }
+
+    function insertJournal(Request $request){
+        $userId = Auth::user()->id;
+        $title = $request->input('title');
+        $message = $request->input('message');
+        $JournalDate = $request->input('JournalDate');
+        $T_id = $request->get('therapist');
+        $data=array("user_id"=>$userId, "title"=>$title, "message"=>$message,"JournalDate"=>$JournalDate, "therapist"=>$T_id);
+        DB::table('share')->insert($data);
+        return redirect("home_user")->withSuccess('Successfully shared your journal to your chosen specialist.');
     }
 
     /**
@@ -90,7 +103,7 @@ class JournalViewController extends Controller
         // $users = User::whereNotIn('id', $thread->participantsUserIds())->get();
 
         // don't show the current user in list
-        $userId = Auth::id();
+        $userId = Auth::id(); 
         $users = User::whereNotIn('id', $thread->participantsUserIds($userId))->get();
 
         $thread->markAsRead($userId);

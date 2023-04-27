@@ -132,7 +132,7 @@
 
 
         <div class="container">
-          <div class="row gutters-sm">
+          <!--<div class="row gutters-sm">
             <div class="col-md-4 mb-3">
               <div class="card">
                 <div class="card-body">
@@ -142,14 +142,13 @@
                     <div class="mt-3">
                       @foreach($users as $user)
                       <h4>{{ $user->name }}</h4>
-                      <!--<p class="text-secondary mb-1">Full Stack Developer</p>-->
-                      <!--<p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>-->
+                      
                     </div>
                   </div>
                 </div>
               </div>
              </div>
-          </div>
+          </div>-->
 
           <div class="col-md-8">
             <div class="card mb-3">
@@ -322,6 +321,31 @@
 
       <div class="page" id="page4" style="display:none">
         <h2 style="font-weight: bold;">&nbsp;Journal Section</h2>
+        <p style="padding-left: 8px;">This section allows you to see user's journal entries.</p>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Client's Name</th>
+              <th scope="col">Date Created</th>
+              <th scope="col">Message</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              @foreach ($appts as $appt)
+              <th scope="row">{{ $appt->id }}</th>
+              <td>{{ $appt->Name }}</td>
+              <td>{{ $appt->Appt_date }}</td>
+              <td>{{ $appt->Appt_time  }}</td>
+            
+            </tr>
+            @endforeach
+          </tbody>
+        </table>
+
+
         
       </div>
 

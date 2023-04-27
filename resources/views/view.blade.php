@@ -1,25 +1,24 @@
 <div class="update-box">
     <h1>Share Journal</h1>
-     <form action="/view" method="POST">
-        @csrf
+    
         <a href="{{ url('home_user') }}" class="btn btn-danger float-end">BACK</a><br>
-     
+
+      <form action="{{ url('insertjournal/'.$users->id) }}" method="POST">
+         @csrf
      <label name="title">Title</label><br>
-     <input type="text" name="title" value={{$user['title']}} readonly><br>
-     
-     
+     <input type="text" name="title" value={{$users['title']}} readonly><br>
+  
      <label name="msg">Message</label><br>
-     <input type="text" name="message" value={{$user['message']}} readonly><br>
+     <input type="text" name="message" value={{$users['message']}} readonly><br>
 
      <label name="date">Date created</label><br>
-     <input type="text" name="date" value={{$user['JournalDate']}} readonly><br>
-    
+     <input type="text" name="JournalDate" value={{$users['JournalDate']}} readonly><br>
     
      <label name="therapist">Share to:</label><br>
      <select id="therapist" name="therapist"><br>
-        
-        <option value="">Meep</option>
-       
+      @foreach ($meeps as $meep)  
+        <option value="{{ $meep->id }}, {{ $meep->name }}">{{ $meep->name }}</option>
+      @endforeach 
     </select><br>
 
      <button type="submit">Share</button>

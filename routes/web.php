@@ -90,6 +90,8 @@ Route::post('edit', [JournalViewController::class, 'update']);
 Route::get('delete/{id}', [JournalViewController::class, 'delete']);
 
 Route::get('view/{id}', [JournalViewController::class, 'showJournal']);
+Route::post('insertjournal/{id}', [JournalViewController::class, 'insertJournal']);
+
 Route::get('delete_notif/{id}', [JournalViewController::class, 'deleteNotif']);
 
 //forget password features

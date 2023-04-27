@@ -14,9 +14,9 @@ use HasFactory;
 
 public function scopeUserr($query)
 {
-     return $query->where('user_id',Auth::user()->id);
-      
+     return $query->where('user_id',Auth::user()->id);     
 }
+
     
 }
  
