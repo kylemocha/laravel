@@ -328,18 +328,19 @@
             <tr>
               <th scope="col">ID</th>
               <th scope="col">Client's Name</th>
+              <th scope="col">Journal Title</th>
               <th scope="col">Date Created</th>
-              <th scope="col">Message</th>
+              <th scope="col">Journal Content</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              @foreach ($appts as $appt)
-              <th scope="row">{{ $appt->id }}</th>
-              <td>{{ $appt->Name }}</td>
-              <td>{{ $appt->Appt_date }}</td>
-              <td>{{ $appt->Appt_time  }}</td>
-            
+              @foreach ($meeps as $meep)
+              <th scope="row">{{ $meep->id }}</th>
+              <td>{{ $meep->User_name }}</td>
+              <td>{{ $meep->title}}</td>
+              <td>{{ $meep->JournalDate  }}</td>
+              <td>{{ $meep->message }}</td>  
             </tr>
             @endforeach
           </tbody>

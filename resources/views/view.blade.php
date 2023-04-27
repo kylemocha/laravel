@@ -7,6 +7,9 @@
          @csrf
      <label name="title">Title</label><br>
      <input type="text" name="title" value={{$users['title']}} readonly><br>
+
+     <label name="msg">Name</label><br>
+     <input type="text" name="User_name" value={{$users['User_name']}} readonly><br>
   
      <label name="msg">Message</label><br>
      <input type="text" name="message" value={{$users['message']}} readonly><br>

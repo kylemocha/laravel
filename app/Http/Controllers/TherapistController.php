@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\ApptModel;
 use App\Models\Events;
+use App\Models\Share;
 use DB;
 use Config;
 use Illuminate\Support\Facades\Auth;
@@ -17,6 +18,7 @@ class TherapistController extends Controller
     $appts = ApptModel::where('Therapist', $id)->get();
     //$lists =  ApptModel::orderBy('status', 'ASC')->where('status', 1)->get();
     //$lists = ApptModel::where('status', $id)->get(); ApptModel::orderBy('status', 'ASC')->where('status', 1)->get();
+    $meeps = Share::userr()->get();
 
     $apps = User::orderBy('is_admin', 'ASC')->where('is_admin', 0)->get(); //user
 
@@ -34,7 +36,7 @@ class TherapistController extends Controller
           ];
         }
         //return $events;
-      return view('therapist',compact('users', 'appts', 'events', 'apps'));
+      return view('therapist',compact('users', 'appts', 'events', 'apps', 'meeps'));
     }
      else
     {

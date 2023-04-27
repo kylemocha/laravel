@@ -69,10 +69,11 @@ class JournalViewController extends Controller
     function insertJournal(Request $request){
         $userId = Auth::user()->id;
         $title = $request->input('title');
+        $name = $request->input('User_name');
         $message = $request->input('message');
         $JournalDate = $request->input('JournalDate');
         $T_id = $request->get('therapist');
-        $data=array("user_id"=>$userId, "title"=>$title, "message"=>$message,"JournalDate"=>$JournalDate, "therapist"=>$T_id);
+        $data=array("user_id"=>$userId, "title"=>$title, "User_name"=>$name, "message"=>$message,"JournalDate"=>$JournalDate, "therapist"=>$T_id);
         DB::table('share')->insert($data);
         return redirect("home_user")->withSuccess('Successfully shared your journal to your chosen specialist.');
     }
