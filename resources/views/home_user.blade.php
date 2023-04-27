@@ -326,25 +326,32 @@
       </div>
       </div> 
       </div>
-        
-      <table style="width:100%">
-        <h3 style="font-weight: bold;">Meet our Specialists</h3>
-        <tr>
-          <th>Name</th>
-          <th>Address</th>
-          <th>Email</th>
-          <th>Action</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>MEEP</td>
-        </tr>
-       
-      </table>
-
-      </div>
+          
+        <table style="width:100%">
+          <h3 style="font-weight: bold;">Meet our Specialists</h3>
+          <thead>
+              <tr>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Action</th>
+              </tr>
+          </thead>
+          <tbody>
+            @foreach($specialists as $specialist)
+              <tr>
+                <td>{{ $specialist->name}}</td>
+                <td>MEEP</td>
+                <td>{{ $specialist->address }}</td>
+                <td>{{ $specialist->email }}</td>
+                <td>MEEP</td>
+              </tr>
+              @endforeach 
+                        
+          </tbody>
+      </table>       
+    
       
       
      
