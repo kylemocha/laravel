@@ -159,7 +159,17 @@
             </p>
             <p><b>Address:</b> Macanhan, Carmen, Cagayan de Oro City</p>
             <!--<p><b>Center Head:</b> Rowena G. Palarca, RSW</p>
+
             <p><b>Address:</b> Macanhan, Carmen, Cagayan de Oro City</p>-->
+            <div class="gallery">
+                  <img src="https://i.ibb.co/vkXLfG7/download.jpg" alt="Cinque Terre" width="600" height="500">
+                </a>
+              </div>
+              
+             <!-- <div class="gallery">
+                  <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+                </a>
+              </div>-->
 
         </div>
     </div>
@@ -177,6 +187,11 @@
             <!--<p><b>Center Head:</b> Rowena G. Palarca, RSW</p>
             <p><b>Address:</b> Macanhan, Carmen, Cagayan de Oro City</p>-->
 
+            <div class="gallery">
+                <img src="https://i.ibb.co/j5dmBqZ/TNK.jpg"  alt="Cinque Terre" width="600" height="500">
+              </a>
+            </div>
+
         </div>
     </div>
 </section>
@@ -192,6 +207,11 @@
             <p><b>Address:</b> Lumbia, Cagayan de Oro City</p>
             <!--<p><b>Center Head:</b> Rowena G. Palarca, RSW</p>
             <p><b>Address:</b> Macanhan, Carmen, Cagayan de Oro City</p>-->
+
+            <div class="gallery">
+                <img src="https://i.ibb.co/7KJcks5/BT.jpg" alt="Cinque Terre" width="600" height="500">
+              </a>
+            </div>
 
         </div>
     </div>
@@ -209,6 +229,11 @@
             <!--<p><b>Center Head:</b> Rowena G. Palarca, RSW</p>
             <p><b>Address:</b> Macanhan, Carmen, Cagayan de Oro City</p>-->
 
+            <div class="gallery">
+                <img src="https://i.ibb.co/d4yw6x5/image-2023-04-27-191051881.png" alt="Cinque Terre" width="600" height="500">
+              </a>
+            </div>
+
         </div>
     </div>
 </section>
@@ -224,6 +249,11 @@
             <p><b>Address:</b> Macanhan, Carmen, Cagayan de Oro City</p>
             <!--<p><b>Center Head:</b> Rowena G. Palarca, RSW</p>
             <p><b>Address:</b> Macanhan, Carmen, Cagayan de Oro City</p>-->
+
+            <div class="gallery">
+                <img src="https://i.ibb.co/4STNp7s/image-2023-04-27-191140410.png" alt="Cinque Terre" width="600" height="500">
+              </a>
+            </div>
 
         </div>
     </div>
