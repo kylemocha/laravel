@@ -1243,8 +1243,12 @@ input[type=submit],input[type=reset]{
 }
 
 /*image gallery*/
+#container{
+  margin: 0 auto;
+  text-align: center;
+}
 div.img {
-    margin: 5px;
+    margin: 25px;
     padding: 5px;
     border: 1px solid black;
     float: left;
@@ -1269,4 +1273,20 @@ div.desc {
   margin: 5px;
 }
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 5px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 

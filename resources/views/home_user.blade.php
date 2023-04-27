@@ -209,7 +209,7 @@
 
         <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">Let's track your mental health today!</h6>
         
-        <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal"><i class="fas fa-user-plus"></i>
+        <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal" style="margin-bottom: 10px;"><i class="fas fa-user-plus"></i>
           Appointment Form
         </button>
 
@@ -226,7 +226,7 @@
 
               <!-- Modal body -->
               <div class="modal-body">
-                <p style="font-size: 16px; text-align:center;">NOTE: Refer to the meet our therapist section to see your chosen specialist's schedule.</p>
+                <p style="font-size: 16px; text-align:center;">NOTE: Refer to the meet our specialist section to see your chosen specialist's schedule.</p>
                   <!-- Success message -->
               @if(Session::has('success'))
               <div class="alert alert-success">
@@ -327,37 +327,22 @@
       </div> 
       </div>
         
-      <div id="container">
-      <div class="img">
-        <a target="_blank" href="fjords.jpg">
-          <img src="https://i.ibb.co/my39KRW/Image-For-Article-23295-16680815010862881.png" alt="Fjords" width="300" height="200">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-      
-      <div class="img">
-        <a target="_blank" href="forest.jpg">
-          <img src="https://i.ibb.co/my39KRW/Image-For-Article-23295-16680815010862881.png" alt="Forest" width="300" height="200">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-      
-      <div class="img">
-        <a target="_blank" href="lights.jpg">
-          <img src="https://i.ibb.co/my39KRW/Image-For-Article-23295-16680815010862881.png" alt="Northern Lights" width="300" height="200">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-      
-      <div class="img">
-        <a target="_blank" href="mountains.jpg">
-          <img src="https://i.ibb.co/my39KRW/Image-For-Article-23295-16680815010862881.png" alt="Mountains" width="300" height="200">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-
-      
-
+      <table style="width:100%">
+        <h3 style="font-weight: bold;">Meet our Specialists</h3>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>MEEP</td>
+        </tr>
+       
+      </table>
 
       </div>
       
