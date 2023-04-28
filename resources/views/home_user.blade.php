@@ -170,7 +170,7 @@
               <!-- Modal body -->
               <div class="modal-body">
                 <table class="table">
-                  <p><b>Note for status: 0=pending, 1=approved, 2=rejected</b></p>
+                  <!--<p><b>Note for status: 0=pending, 1=approved, 2=rejected</b></p>-->
                   <thead>
                     <tr>
                       <th scope="col">ID</th>
