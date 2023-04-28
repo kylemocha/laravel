@@ -15,10 +15,10 @@ class admin_conController extends Controller
     public function index(){     
         $users = User::all();
         $cons = Contact::all();
-        $journals = JournalView::all();
+        //$journals = JournalView::all();
         $appts = ApptModel::all();
 
-        return view('admin', compact('users', 'cons', 'journals', 'appts'));
+        return view('admin', compact('users', 'cons', 'appts'));
     } 
     
     function showAddUser($id){

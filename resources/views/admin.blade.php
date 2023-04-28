@@ -36,12 +36,12 @@
             <span class="links_name">Contact Us</span>
           </a>
         </li>
-        <li>
+        <!--<li>
           <a href="#" onclick="show('page4');">
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">Journal Details</span>
           </a>
-        </li>
+        </li>-->
        <li>
           <a href="#" onclick="show('page5');">
             <i class='bx bx-coin-stack' ></i>
@@ -142,7 +142,7 @@
         </table>
       </div>
 
-      <div class="page" id="page4" style="display:none">
+      <!--<div class="page" id="page4" style="display:none">
         <h2 style="font-weight: bold;">&nbsp; Journal Section</h2>
         <table id="users">
           <tr>
@@ -154,20 +154,10 @@
             <th>Message</th>
           </tr>
           <tr>
-          @if(isset($journals))
-          @foreach ($journals as $journal)
-            <td>{{ $journal->id }}</td>
-            <td>{{ $journal->user_id }}</td>
-            <td>{{ $journal->User_name }}</td>
-            <td>{{ $journal->title }}</td>
-            <td>{{ $journal->JournalDate }}</td>
-            <td>{{ $journal->message }}</td>
-          </tr>
-          @endforeach
-          @endif 
+       
         </table>
         
-      </div>
+      </div>-->
 
       <div class="page" id="page5" style="display:none">
         <h2 style="font-weight: bold;">&nbsp; Appointments Section</h2>
