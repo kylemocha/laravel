@@ -28,11 +28,12 @@ class JournalViewController extends Controller
         $apps = ApptModel::userr()->get();
         $notifs = Notif::userr()->get();
         $specialists = User::orderBy('is_admin', 'ASC')->where('is_admin', 2)->get();
+        $ratings = Ratings::userr()->get();
         //$meeps = User::orderBy('is_admin', 'ASC')->where('is_admin', 2)->get();
         //$apps = auth()->user();
         
         //return view('home_user')->withUsers($users); //do not edit
-        return view('home_user', compact('posts', 'users', 'apps', 'notifs', 'specialists'));
+        return view('home_user', compact('posts', 'users', 'apps', 'notifs', 'specialists', 'ratings'));
         //return view('home_user')->with('users',$users)->with('posts',$posts)->with('apps',$apps);
     }  
 

@@ -58,7 +58,7 @@ Route::get('/home_user', 'JournalViewController@index');
 
 //home-user features
 Route::get('/insert',[ApptController::class, 'showForm']);
-Route::post('/post',[ApptController::class, 'storeForm']);
+Route::post('/Post',[ApptController::class, 'storeForm']);
 
 //therapist and calendar
 Route::get('/therapist','TherapistController@index');

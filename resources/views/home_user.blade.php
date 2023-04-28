@@ -241,7 +241,7 @@
               @endif
                 <div class="formbold-main-wrapper">
                   <div class="formbold-form-wrapper">
-                    <form action="/post" method="POST">
+                    <form action="/Post" method="POST">
                       @csrf
                       <div class="formbold-mb-5">
                         <label for="name" class="formbold-form-label"> Full Name </label>
@@ -447,6 +447,49 @@
        </button>
        <h2 style="font-weight: bold;">Rate your Mood</h2>
        <p style="color: #8d97ad;">This section allows you to record your emotions on a daily basis.</p>
+
+       <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myRating"><i class="fas fa-user-plus"></i>
+       See your rating entries
+      </button>
+
+       <!-- The Appt Modal -->
+       <div class="modal" id="myRating">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title" style="font-size: 22px;"><b>Rate your Mood</b></h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Ratings</th>
+                    <th scope="col">Comment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    @foreach ($ratings as $rating)
+                    <th scope="row">{{ $rating->id }}</th>
+                    <td>{{ $rating->rating }}</td>
+                    <td>{{ $rating->comment }}</td>
+                  </tr>
+                  @endforeach
+                </tbody>
+              </table>
+            </div>
+      
+      
+          </div>
+        </div>
+      </div>
+      <!-- The Rate Modal -->
 
        <form class="form-horizontal" action="/ratings"  method="POST">
         @csrf
