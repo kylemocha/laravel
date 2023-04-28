@@ -94,6 +94,8 @@ Route::post('insertjournal/{id}', [JournalViewController::class, 'insertJournal'
 
 Route::get('delete_notif/{id}', [JournalViewController::class, 'deleteNotif']);
 
+Route::post('ratings', [JournalViewController::class, 'ratingsMood']);
+
 //forget password features
 Route::get('forget-password', [Forgot_PasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
 Route::post('forget-password', [Forgot_PasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post'); 

@@ -8,6 +8,7 @@ use App\Models\JournalView;
 use App\Models\ApptModel;
 use App\Models\Notif;
 use App\Models\User;
+use App\Models\Ratings;
 use DB;
 use Carbon\Carbon;
 use Cmgmyr\Messenger\Models\Message;
@@ -78,7 +79,14 @@ class JournalViewController extends Controller
         return redirect("home_user")->withSuccess('Successfully shared your journal to your chosen specialist.');
     }
 
-    
+    public function ratingsMood(Request $request){
+        $userId = Auth::user()->id;
+        $rating = $request->input('rating');
+        $comment = $request->input('comment');
+        $data=array("user_id"=>$userId, "rating"=>$rating, "comment"=>$comment);
+        DB::table('ratings')->insert($data);
+        return redirect("home_user")->withSuccess('Your rating has been submitted successfully.');
+    }
 
     /**
      * Shows a message thread.

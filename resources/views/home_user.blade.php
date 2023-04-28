@@ -448,19 +448,19 @@
        <h2 style="font-weight: bold;">Rate your Mood</h2>
        <p style="color: #8d97ad;">This section allows you to record your emotions on a daily basis.</p>
 
-       <form class="form-horizontal" action="#" method="#">
-         
+       <form class="form-horizontal" action="/ratings"  method="POST">
+        @csrf
         <div class="col">
           <div class="rate">
-             <input type="radio" id="star5" class="rate" name="rating" value="5"/>
+             <input type="radio" id="star5" class="rated" name="rating" value="5"/>
              <label for="star5" title="text">5 stars</label>
-             <input type="radio" checked id="star4" class="rate" name="rating" value="4"/>
+             <input type="radio" checked id="star4" class="rated" name="rating" value="4"/>
              <label for="star4" title="text">4 stars</label>
-             <input type="radio" id="star3" class="rate" name="rating" value="3"/>
+             <input type="radio" id="star3" class="rated" name="rating" value="3"/>
              <label for="star3" title="text">3 stars</label>
-             <input type="radio" id="star2" class="rate" name="rating" value="2">
+             <input type="radio" id="star2" class="rated" name="rating" value="2">
              <label for="star2" title="text">2 stars</label>
-             <input type="radio" id="star1" class="rate" name="rating" value="1"/>
+             <input type="radio" id="star1" class="rated" name="rating" value="1"/>
              <label for="star1" title="text">1 star</label>
           </div>
         </div>
@@ -468,7 +468,7 @@
         <div class="col">
           <textarea class="form-control" name="comment" rows="6 " placeholder="Comment here" maxlength="200"></textarea>
        </div>
-        </div>
+    
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="button-5" style="margin: 4px; float: left;">Submit</button>
