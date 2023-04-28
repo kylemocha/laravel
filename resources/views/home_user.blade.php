@@ -106,6 +106,9 @@
                 <li>
                     <a href="#" onclick="show('page3');">View Journal</a>
                 </li>
+                <li>
+                  <a href="#" onclick="show('page4');">Rate your mood</a>
+              </li>
             </ul>
             </li>
             <!--<li>
@@ -120,10 +123,10 @@
               </ul>
               </li>-->
             <li>
-                <a href="#" onclick="show('page4');"><b>Notification</b></a>
+                <a href="#" onclick="show('page5');"><b>Notification</b></a>
             </li>
             <li>
-                <a href="#" onclick="show('page5');"><b>Recommendations</b></a>
+                <a href="#" onclick="show('page6');"><b>Recommendations</b></a>
             </li>  
     </ul>
     </nav>
@@ -432,9 +435,21 @@
           </tbody>
       </table>                          
     </div>
-    <!---->    
-
+    <!----> 
+    
     <div class="page" id="page4" style="display:none">
+      <button type="button" id="sidebarCollapse6" class="btn btn-info">
+        <i class="fas fa-align-left"></i>
+        <span></span>
+       </button>
+       <h2 style="font-weight: bold;">Rate your Mood</h2>
+       <p style="color: #8d97ad;">This section allows you to record your emotions on a daily basis.</p>
+
+       
+      
+      </div>
+
+    <div class="page" id="page5" style="display:none">
       <button type="button" id="sidebarCollapse4" class="btn btn-info">
         <i class="fas fa-align-left"></i>
         <span></span>
@@ -471,7 +486,7 @@
     </div>
     <!---->    
 
-    <div class="page" id="page5" style="display:none">
+    <div class="page" id="page6" style="display:none">
       <button type="button" id="sidebarCollapse5" class="btn btn-info">
         <i class="fas fa-align-left"></i>
         <span></span>
