@@ -24,7 +24,8 @@ class TherapistController extends Controller
 
     if(count ($users)>0){
       $events = array();
-      $events = Events::all();
+      //$events = Events::all();
+      $events = Events::userr()->get();
      //$events->pluck('user_id')->toArray();
      //$events = Events::all()->pluck(['user_id']);
         
