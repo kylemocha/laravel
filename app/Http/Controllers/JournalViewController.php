@@ -78,6 +78,8 @@ class JournalViewController extends Controller
         return redirect("home_user")->withSuccess('Successfully shared your journal to your chosen specialist.');
     }
 
+    
+
     /**
      * Shows a message thread.
      *
