@@ -509,7 +509,7 @@
         </div>
           
         <div class="col">
-          <textarea class="form-control" name="comment" rows="6 " placeholder="Comment here" maxlength="200"></textarea>
+          <textarea class="form-control" name="comment" rows="6 " placeholder="Comment here" maxlength="200" required></textarea>
        </div>
     
         <div class="form-group">
