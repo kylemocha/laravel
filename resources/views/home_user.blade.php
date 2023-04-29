@@ -474,7 +474,6 @@
               <table class="table">
                 <thead>
                   <tr>
-                    <th scope="col">ID</th>
                     <th scope="col">Ratings</th>
                     <th scope="col">Date Created</th>
                     <th scope="col">Comment</th>
@@ -483,8 +482,7 @@
                 <tbody>
                   <tr>
                     @foreach ($ratings as $rating)
-                    <th scope="row">{{ $rating->id }}</th>
-                    <td>{{ $rating->rating }}</td>
+                    <td scope="row">{{ $rating->rating }}</td>
                     <td>{{ $rating->date }}</td>
                     <td>{{ $rating->comment }}</td>
                   </tr>
