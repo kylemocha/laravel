@@ -417,7 +417,9 @@
                   <th>Title</th>
                   <th>Date Created</th>
                   <th>Content</th>
-                  <th>Actions</th>
+                  <th>Edit</th>
+                  <th>Share</th>
+                  <th>Delete</th>
               </tr>
           </thead>
           <tbody>
@@ -429,8 +431,12 @@
                   <td>{{ $user->message }}</td> 
                   <td>
                     <a style="text-decoration: underline;" href={{'edit/'.$user->id}}>Edit</a>  
-                    <a style="text-decoration: underline;" href={{'delete/'.$user->id}}>Delete</a> 
-                    <a style="text-decoration: underline;" href={{'view/'.$user->id}}>Share</a>
+                  </td>
+                  <td>
+                  <a style="text-decoration: underline;" onclick="return confirm('Are you sure?')" href={{'delete/'.$user->id}}>Delete</a> 
+                  </td>
+                  <td>
+                  <a style="text-decoration: underline;" href={{'view/'.$user->id}}>Share</a>
                   </td>
               </tr>
               @endforeach 
@@ -470,6 +476,7 @@
                   <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Ratings</th>
+                    <th scope="col">Date Created</th>
                     <th scope="col">Comment</th>
                   </tr>
                 </thead>
@@ -478,6 +485,7 @@
                     @foreach ($ratings as $rating)
                     <th scope="row">{{ $rating->id }}</th>
                     <td>{{ $rating->rating }}</td>
+                    <td>{{ $rating->date }}</td>
                     <td>{{ $rating->comment }}</td>
                   </tr>
                   @endforeach
@@ -494,7 +502,7 @@
        <form class="form-horizontal" action="/ratings"  method="POST">
         @csrf
         <div class="col">
-          <div class="rate">
+          <div class="rate" style="margin:10px;">
              <input type="radio" id="star5" class="rated" name="rating" value="5"/>
              <label for="star5" title="text">5 stars</label>
              <input type="radio" checked id="star4" class="rated" name="rating" value="4"/>
@@ -506,7 +514,12 @@
              <input type="radio" id="star1" class="rated" name="rating" value="1"/>
              <label for="star1" title="text">1 star</label>
           </div>
-        </div>
+        </div><br>
+
+    
+          <div class="col">
+            <input type="date" class="form-control" name="date" id="date" placeholder="Enter date"  required>
+          </div><br>
           
         <div class="col">
           <textarea class="form-control" name="comment" rows="6 " placeholder="Comment here" maxlength="200" required></textarea>

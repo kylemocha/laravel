@@ -102,7 +102,7 @@
             </td>
             <td>
               <a style="text-decoration: underline;" href="{{ url('edit-admin/'.$user->id) }}">Edit</a> 
-              <a style="text-decoration: underline;" href="{{ url('delete-admin/'.$user->id) }}" >Delete</a> 
+              <a style="text-decoration: underline;" onclick="return confirm('Are you sure?')" href="{{ url('delete-admin/'.$user->id) }}" >Delete</a> 
             </td>
           </tr>
           @endforeach

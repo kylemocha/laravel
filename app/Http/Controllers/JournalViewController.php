@@ -83,8 +83,9 @@ class JournalViewController extends Controller
     public function ratingsMood(Request $request){
         $userId = Auth::user()->id;
         $rating = $request->input('rating');
+        $date = $request->input('date');
         $comment = $request->input('comment');
-        $data=array("user_id"=>$userId, "rating"=>$rating, "comment"=>$comment);
+        $data=array("user_id"=>$userId, "rating"=>$rating, "date"=>$date, "comment"=>$comment);
         DB::table('ratings')->insert($data);
         return redirect("home_user")->withSuccess('Your rating has been submitted successfully.');
     }
