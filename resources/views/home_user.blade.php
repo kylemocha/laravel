@@ -496,7 +496,8 @@
         </div>
       </div>
       <!-- The Rate Modal -->
-
+      <p style="margin:5px;">Please rate your mood on a scale of 1-5 stars.</p>
+      <p style="margin:5px; font-weight:bold;">5=highest, 1=lowest.</p>
        <form class="form-horizontal" action="/ratings"  method="POST">
         @csrf
         <div class="col">
