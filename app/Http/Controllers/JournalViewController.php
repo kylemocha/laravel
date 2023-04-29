@@ -45,11 +45,9 @@ class JournalViewController extends Controller
               ];
             }
 
-     
     
-      
         
-        return view('home_user', compact('posts', 'users', 'apps', 'notifs', 'specialists', 'ratings', 'events', 'meeps', 'roses'));
+        return view('home_user', compact('posts', 'users', 'apps', 'notifs', 'specialists', 'ratings', 'events'));
        
     }  
 
