@@ -28,9 +28,11 @@
 <body>
 
 <div class="container">
-    <h1>Share Journal</h1>
+    <h1>Share Journal
     
-        <a href="{{ url('home_user') }}" class="btn btn-primary" style="margin:5px;">BACK</a><br>
+        <a href="{{ url('home_user') }}" class="btn btn-primary float-end">BACK</a><br>
+
+    </h1>
 
       <form action="{{ url('insertjournal/'.$users->id) }}" method="POST">
          @csrf

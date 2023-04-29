@@ -1,3 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!--<link href="css/admin.css" rel="stylesheet" type="text/css">-->
+
+     <title>Add User Page</title>
+   </head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+  
+</style>
+</head>
+
+<body>
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -5,7 +34,7 @@
             <div class="card">
                 <div class="card-header">
                     <h4>Add User
-                        <a href="{{ url('admin') }}" class="btn btn-danger float-end">BACK</a>
+                        <a href="{{ url('admin') }}" class="btn btn-primary float-end">BACK</a>
                     </h4>
                 </div>
                 <div class="card-body">
@@ -41,3 +70,6 @@
         </div>
     </div>
 </div>
+
+</body>
+</html>

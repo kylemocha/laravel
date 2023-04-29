@@ -29,9 +29,11 @@
  
 
 <div class="container">
-<h1>Update Journal</h1>
+<h1>Update Journal
 
-<a href="{{ url('home_user') }}" class="btn btn-primary" style="margin:10px;">BACK</a>
+<a href="{{ url('home_user') }}" class="btn btn-primary float-end">BACK</a>
+
+</h1>
 
  <form action="/edit" method="POST">
     @csrf
