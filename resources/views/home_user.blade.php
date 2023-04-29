@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
     <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
-    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>   
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
     <script>
       function show(elementID) {
     var ele = document.getElementById(elementID);
@@ -340,7 +345,7 @@
                 <th>Name</th>
                 <th>Address</th>
                 <th>Email</th>
-                <th>Action</th>
+                <!--<th>View Schedule</th>-->
               </tr>
           </thead>
           <tbody>
@@ -349,15 +354,107 @@
                 <td>{{ $specialist->name}}</td>
                 <td>{{ $specialist->address }}</td>
                 <td>{{ $specialist->email }}</td>
-                <td>MEEP</td>
+                <!--<td>
+                  <a style="text-decoration: underline;" href="#">View</a> 
+                </td>-->
               </tr>
               @endforeach 
                         
           </tbody>
-      </table>       
+      </table>   
       
-    <!--last div-->
-    
+      <br>
+      <h3 style="font-weight: bold; margin:5px;">Ana Maas Schedule's</h3>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="col-md-11 offset-1 mt-5 mb-5">
+
+                    <div id="calendar">
+                    </div>
+            </div>
+         </div>
+      </div>
+    </div>
+
+      <script>
+        $(document).ready(function() {
+          var booking = @json($events);
+              $('#calendar').fullCalendar({
+                header: {
+                      left: 'prev, next today',
+                      center: 'title',
+                      right: 'month, agendaWeek, agendaDay',
+                },
+               events : booking   
+              })
+          });
+        </script>
+
+      <br>
+      <h3 style="font-weight: bold;">Juan Dela Cruz Schedule's</h3>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="col-md-11 offset-1 mt-5 mb-5">
+
+                    <div id="calendar1">
+                    </div>
+            </div>
+         </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        var booking = @json($meeps);
+            $('#calendar1').fullCalendar({
+              header: {
+                    left: 'prev, next today',
+                    center: 'title',
+                    right: 'month, agendaWeek, agendaDay',
+              },
+             meeps : booking 
+            })
+        });
+      </script>
+
+    <br>
+    <h3 style="font-weight: bold;">Rose Lee Schedule's</h3>
+
+    <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="col-md-11 offset-1 mt-5 mb-5">
+
+                  <div id="calendar2">
+                  </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <script>
+    $(document).ready(function() {
+      var bookings = @json($roses);
+          $('#calendar2').fullCalendar({
+            header: {
+                  left: 'prev, next today',
+                  center: 'title',
+                  right: 'month, agendaWeek, agendaDay',
+            },
+          roses : bookings   
+          })
+      });
+    </script>
+
+
+      
+      
+   
+     <!--last div-->
     </div>
      
    <!---->     

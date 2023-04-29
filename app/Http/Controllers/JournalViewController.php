@@ -9,6 +9,7 @@ use App\Models\ApptModel;
 use App\Models\Notif;
 use App\Models\User;
 use App\Models\Ratings;
+use App\Models\Events;
 use DB;
 use Carbon\Carbon;
 use Cmgmyr\Messenger\Models\Message;
@@ -21,20 +22,50 @@ use Illuminate\Support\Facades\Session;
 class JournalViewController extends Controller
 {
     public function index(){ //display data
-        
-        //$threads = Thread::getAllLatest()->get();
+
         $users = JournalView::userr()->get();
         $posts = User::orderBy('is_admin', 'ASC')->where('is_admin', 2)->get();
         $apps = ApptModel::userr()->get();
         $notifs = Notif::userr()->get();
         $specialists = User::orderBy('is_admin', 'ASC')->where('is_admin', 2)->get();
         $ratings = Ratings::userr()->get();
-        //$meeps = User::orderBy('is_admin', 'ASC')->where('is_admin', 2)->get();
-        //$apps = auth()->user();
+
+        //calendar
+        $events = array();
+        $events = Events::orderBy('user_id', 'ASC')->where('user_id', 3)->get();
+
+        foreach($events as $event){
+            $events [] = [
+                'title' =>  $event['name'],
+                'start' =>   $event['date'],
+                'time' =>   $event['time'],
+              ];
+            }
+
+        $meeps = array();
+        $meeps = Events::orderBy('user_id', 'ASC')->where('user_id', 4)->get();
+
+        foreach($meeps as $meep){
+            $meeps [] = [
+                'title' =>  $meep['name'],
+                'start' =>   $meep['date'],
+                'time' =>   $meep['time'],
+              ];
+            }
+
+        $roses = array();
+        $roses = Events::orderBy('user_id', 'ASC')->where('user_id', 5)->get();
+
+        foreach($roses as $rose){
+            $roses [] = [
+                'title' =>  $rose['name'],
+                'start' =>   $rose['date'],
+                'time' =>   $rose['time'],
+              ];
+            }
         
-        //return view('home_user')->withUsers($users); //do not edit
-        return view('home_user', compact('posts', 'users', 'apps', 'notifs', 'specialists', 'ratings'));
-        //return view('home_user')->with('users',$users)->with('posts',$posts)->with('apps',$apps);
+        return view('home_user', compact('posts', 'users', 'apps', 'notifs', 'specialists', 'ratings', 'events', 'meeps', 'roses'));
+       
     }  
 
     function delete($id) //delete
