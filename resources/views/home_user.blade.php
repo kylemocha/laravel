@@ -449,7 +449,7 @@
        <p style="color: #8d97ad;">This section allows you to record your emotions on a daily basis.</p>
 
        <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myRating"><i class="fas fa-user-plus"></i>
-       See your rating entries
+       See your entries
       </button>
 
        <!-- The Appt Modal -->
