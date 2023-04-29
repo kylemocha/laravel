@@ -409,14 +409,14 @@
 
     <script>
       $(document).ready(function() {
-        
+        var booking = @json($rivers);
             $('#calendar1').fullCalendar({
               header: {
                     left: 'prev, next today',
                     center: 'title',
                     right: 'month, agendaWeek, agendaDay',
-              }
-          
+              },
+              rivers : booking   
             })
         });
       </script>
@@ -438,14 +438,14 @@
 
     <script>
     $(document).ready(function() {
-    
+      var booking = @json($roses);
           $('#calendar2').fullCalendar({
             header: {
                   left: 'prev, next today',
                   center: 'title',
                   right: 'month, agendaWeek, agendaDay',
-            }
-     
+            }, 
+            roses : booking    
           })
       });
     </script>

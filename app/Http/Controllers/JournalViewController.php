@@ -32,9 +32,6 @@ class JournalViewController extends Controller
 
         //calendar
         $events = array();
-      
-        $roses = array();
-
         $events = Events::orderBy('user_id', 'ASC')->where('user_id', 3)->get();
       
         foreach($events as $event){
@@ -45,9 +42,29 @@ class JournalViewController extends Controller
               ];
             }
 
+        $rivers = array();
+        $rivers = Events::orderBy('user_id', 'ASC')->where('user_id', 4)->get();
+
+        foreach($rivers as $river){
+            $rivers [] = [
+                'title' =>  $river['name'],
+                'start' =>   $river['date'],
+                'time' =>   $river['time'],
+              ];
+            }
+
+            $roses = array();
+            $roses = Events::orderBy('user_id', 'ASC')->where('user_id', 5)->get();
     
-        
-        return view('home_user', compact('posts', 'users', 'apps', 'notifs', 'specialists', 'ratings', 'events'));
+            foreach($roses as $rose){
+                $roses [] = [
+                    'title' =>  $rose['name'],
+                    'start' =>   $rose['date'],
+                    'time' =>   $rose['time'],
+                  ];
+                }
+       
+        return view('home_user', compact('posts', 'users', 'apps', 'notifs', 'specialists', 'ratings', 'events', 'rivers', 'roses'));
        
     }  
 
