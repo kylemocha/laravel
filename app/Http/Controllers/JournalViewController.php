@@ -49,8 +49,8 @@ class JournalViewController extends Controller
     }
     function update(Request $req){
        $users=JournalView::find($req->id);
-       $users->title=$req->title;
-       $users->message=$req->message;
+       $users->title =$req->input('title');
+       $users->message =$req->input('message');
        $users->save();
        return redirect('home_user')->withSuccess('Successfully updated your journal entry.');   
     }
