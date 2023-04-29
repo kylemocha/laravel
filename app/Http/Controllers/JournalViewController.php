@@ -32,8 +32,11 @@ class JournalViewController extends Controller
 
         //calendar
         $events = array();
-        $events = Events::orderBy('user_id', 'ASC')->where('user_id', 3)->get();
+      
+        $roses = array();
 
+        $events = Events::orderBy('user_id', 'ASC')->where('user_id', 3)->get();
+      
         foreach($events as $event){
             $events [] = [
                 'title' =>  $event['name'],
@@ -42,27 +45,9 @@ class JournalViewController extends Controller
               ];
             }
 
-        $meeps = array();
-        $meeps = Events::orderBy('user_id', 'ASC')->where('user_id', 4)->get();
-
-        foreach($meeps as $meep){
-            $meeps [] = [
-                'title' =>  $meep['name'],
-                'start' =>   $meep['date'],
-                'time' =>   $meep['time'],
-              ];
-            }
-
-        $roses = array();
-        $roses = Events::orderBy('user_id', 'ASC')->where('user_id', 5)->get();
-
-        foreach($roses as $rose){
-            $roses [] = [
-                'title' =>  $rose['name'],
-                'start' =>   $rose['date'],
-                'time' =>   $rose['time'],
-              ];
-            }
+     
+    
+      
         
         return view('home_user', compact('posts', 'users', 'apps', 'notifs', 'specialists', 'ratings', 'events', 'meeps', 'roses'));
        

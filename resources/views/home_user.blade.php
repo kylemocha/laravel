@@ -450,9 +450,7 @@
       });
     </script>
 
-
-      
-      
+   
    
      <!--last div-->
     </div>
