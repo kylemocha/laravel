@@ -14,45 +14,10 @@
     <title>Our Centers</title>
 </head>
 <body>
-    <div class="m-4">
-        <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
-            <div class="container-fluid">
-                <a href="main_home" class="navbar-brand">
-                    <img src="https://i.ibb.co/MVz8Mnw/MENTAL-HELPLINE-LOGO.png" alt="MENTAL-HELPLINE-LOGO" border="0" width="50">
-                    <!--<span class="font-weight-bold" style="font-weight: bold; color: black; font-size: 22px;">Mental Health Counseling Application</span>-->
-                </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="main_home" class="nav-item nav-link active" style=" color: black;">Home</a>
-                        <a href="https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9" target="_blank" class="nav-item nav-link" style=" color: black;" >Take PHQ-9 Test</a>
-                        <a href="center" class="nav-item nav-link" style="color: black;">Our Centers</a>
-                        <a href="contact" class="nav-item nav-link" style=" color: black;" target="_blank">Contact Us</a>
-                    </div>
-                    <div class="navbar-nav ms-auto">
-                      <!--<a href="#" class="text-dark mx-3">
-                        <i class="fas fa-envelope fa-2x"></i>
-                        <span class="badge bg-danger badge-dot"></span>
-                      </a>-->
-                        <!--<a href="#" class="nav-item nav-link"><i class="fa-solid fa-user"></i></a>
-                        <button style="font-size:22px; border: none; color: black;"><a href="#" class="nav-item nav-link"><i class="far fa-user"></i></a></button>-->
-                        <button type="button" class="btn btn-danger dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false" style="font-size:20px; border: none; color: black; background-color: aqua;"><i class="far fa-user"></i></button>
-                        <div class="dropdown-menu">
-                            <!--<a class="dropdown-item" href="#">Profile</a>-->
-                            <a class="dropdown-item" href="{{ route('login') }}">Login</a>  
-                        </div>   
-                    </div>   
-                </div>
-            </div>
-        </nav>
-    </div>
+   
 
     <div class="wrapper">
     <!--Carousel wrapper -->
-    <h1 style="text-align: center; font-weight: bold; font-size: 28px;">Our Centers</h1>
     <!--Carousel Wrapper-->
    <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
    <!--Indicators-->
@@ -147,6 +112,7 @@
    <!--/.Controls-->
  </div>
  <!--/.Carousel Wrapper-->
+ <h1 style="text-align: center; font-weight: bold; margin:20px;">Our Centers</h1>
 </div>
 
 <section class="firstsection">
