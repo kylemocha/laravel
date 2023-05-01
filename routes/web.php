@@ -16,7 +16,7 @@ use App\Http\Controllers\MessagesController;
 Auth::routes();
 
 Route::get('/', function(){
- return view('main_home');
+ return view('welcome');
 });
 
 Route::get('admin', function () {

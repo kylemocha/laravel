@@ -26,7 +26,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="main_home" class="nav-item nav-link active" style=" color: black;">Home</a>
+                        <a href="welcome" class="nav-item nav-link active" style=" color: black;">Home</a>
                         <a href="https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9" target="_blank" class="nav-item nav-link" style=" color: black;" >Take PHQ-9 Test</a>
                         <a href="center" class="nav-item nav-link" style="color: black;" target="_blank">Our Centers</a>
                         <a href="contact" class="nav-item nav-link" style="color: black;" target="_blank">Contact Us</a>
