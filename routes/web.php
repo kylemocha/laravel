@@ -15,7 +15,9 @@ use App\Http\Controllers\MessagesController;
 
 Auth::routes();
 
-Route::view('/', 'welcome'); 
+Route::get('/', function(){
+ return view('main_home');
+});
 
 Route::get('admin', function () {
     return view('admin');
@@ -27,9 +29,7 @@ Route::get('main_home', function () {
 Route::get('home_user', function () {
     return view('home_user');
 });
-Route::get('profile', function () {
-    return view('profile');
-});
+
 Route::get('therapist', function () {
     return view('therapist');
 });
@@ -49,6 +49,7 @@ Route::get('mental', function () {
 Route::get('center', function () {
     return view('center');
 });
+
 //insert journal
 Route::get('/insert','App\Http\Controllers\JournalController@insertform');
 Route::post('/create','JournalController@insert');
