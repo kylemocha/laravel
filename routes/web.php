@@ -15,6 +15,11 @@ use App\Http\Controllers\MessagesController;
 
 Auth::routes();
 
+Route::get('/', function(){
+    return view('welcome');
+   });
+   
+
 Route::get('welcome', function(){
  return view('welcome');
 });
