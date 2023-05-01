@@ -17,7 +17,7 @@ Auth::routes();
 
 Route::get('/', function(){
     return view('welcome');
-   });
+});
    
 
 Route::get('welcome', function(){
@@ -30,7 +30,7 @@ Route::get('admin', function () {
 
 //Route::get('main_home', function () {
     //return view('main_home');});
-    
+
 Route::get('home_user', function () {
     return view('home_user');
 });
