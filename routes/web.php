@@ -28,9 +28,9 @@ Route::get('admin', function () {
     return view('admin');
 });
 
-Route::get('main_home', function () {
-    return view('main_home');
-});
+//Route::get('main_home', function () {
+    //return view('main_home');});
+    
 Route::get('home_user', function () {
     return view('home_user');
 });
