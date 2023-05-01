@@ -13,7 +13,7 @@
   <div class="container">
     <div class="wrapper">
       <div class="exit">
-      <a href="main_home" class="btn btn-info" role="button" style="color: white; cursor: pointer;"><i class="fas fa-times"></i></a> 
+      <a href="welcome" class="btn btn-info" role="button" style="color: white; cursor: pointer;"><i class="fas fa-times"></i></a> 
       <div class="title"><span>Login</span> 
       </div>
     </div>
