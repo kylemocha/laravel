@@ -216,10 +216,10 @@
 
     <!-- Right -->
     <div>
-      <a href="#" class="me-4 text-reset">
+      <a href="https://www.facebook.com/CswdCdoPsychosocial" target="_blank" class="me-4 text-reset">
         <i class="fab fa-facebook-f" style="color: #4267B2;"></i>
       </a>
-      <a href="#" class="me-4 text-reset">
+      <!--<a href="#" class="me-4 text-reset">
         <i class="fab fa-twitter" style="color: #1DA1F2;"></i>
       </a>
       <a href="#" class="me-4 text-reset">
@@ -227,7 +227,7 @@
       </a>
       <a href="#" class="me-4 text-reset">
         <i class="fab fa-instagram" style="color: #E1306C;"></i>
-      </a>
+      </a>-->
     </div>
     <!-- Right -->
   </section>
@@ -241,7 +241,7 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-brain"></i>  CSWD Mental Health Web Counseling
+            <i class="fas fa-brain"></i>  CSWD Mental Health Web Application
           </h6>
           <p>
             Making mental health services accessible.
@@ -262,7 +262,7 @@
             <a href="https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire" class="text-reset" target="_blank">Take PHQ-9 Test</a>
           </p>
           <p>
-            <a href="#" class="text-reset">Our Center</a>
+            <a href="center" target="_blank" class="text-reset">Our Centers</a>
           </p>
           <p>
             <a href="contact" class="text-reset" target="_blank">Contact Us</a>
@@ -274,12 +274,12 @@
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i>CDOC</p>
+          <p><i class="fas fa-home me-3"></i>Ground Floor, Legislative Building, City Hall, Capistrano-Hayes, Cagayan de Oro, Philippines</p>
           <p>
             <i class="fas fa-envelope me-3"></i>
-            1234@example.com
+            cswdpsychosocial@gmail.com
           </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-phone me-3"></i>0970 039 2709</p>
           <!--<p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>-->
         </div>
         <!-- Grid column -->
@@ -291,8 +291,8 @@
 
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2023 Copyright:
-    <a class="text-reset fw-bold" href="#">CSWD Mental Health Web Counseling.com</a>
+    © 2023 Copyright : CSWD Mental Health Web Application
+    <!--<a class="text-reset fw-bold" href="#"></a>-->
   </div>
   <!-- Copyright -->
 </footer>
