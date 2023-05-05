@@ -276,7 +276,7 @@
       <div class="page" id="page3" style="display:none">
         <h2 style="font-weight: bold;">&nbsp;Appointments Section</h2>
         <p style="padding-left: 8px;">This section allows you to see your pending appointments.</p>
-        <p style="padding-left: 8px;"><b>Note for Status: 0=pending, 1=approved, 2=declined.</b></p>
+       
 
         <table class="table">
           <thead>
