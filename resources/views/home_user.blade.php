@@ -320,7 +320,7 @@
                       <label for="Therapist" class="formbold-form-label">Choose your mental health professional:</label>
                       <select id="Therapist" name="Therapist">
                         @foreach($posts as $post)
-                        <option value="{{ $post->id }}, {{ $post->name }}">{{ $post->name }}</option>
+                        <option value="{{ $post->id }}, {{ $post->name }}, {{ $post->type }}">{{ $post->name }}, {{ $post->type }}</option>
                         @endforeach
                       </select>
                       </div>  
@@ -343,6 +343,7 @@
           <thead>
               <tr>
                 <th>Name</th>
+                <th>Job Title</th>
                 <th>Address</th>
                 <th>Email</th>
                 <!--<th>View Schedule</th>-->
@@ -352,6 +353,7 @@
             @foreach($specialists as $specialist)
               <tr>
                 <td>{{ $specialist->name}}</td>
+                <td>{{ $specialist->type}}</td>
                 <td>{{ $specialist->address }}</td>       
                 <td>{{ $specialist->email }}</td>
 
