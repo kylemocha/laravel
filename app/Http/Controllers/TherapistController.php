@@ -57,6 +57,7 @@ class TherapistController extends Controller
       $users = User::find($id);
       $users->name = $request->input('name');
       $users->email = $request->input('email');
+      $users->type = $request->input('type'); 
       $users->phonenumber = $request->input('phonenumber'); 
       $users->address = $request->input('address');
       $users->update();
