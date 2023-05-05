@@ -52,7 +52,7 @@
                             <input type="text" name="name" class="form-control" required>
                         </div>
                         <div class="form-group mb-3">
-                            <label for="">Job Title (for Mental Health Specialist)</label>
+                            <label for="">Job Title for Therapist</label>
                             <input type="text" name="type" class="form-control" required>
                         </div>
                         <div class="form-group mb-3">
@@ -61,7 +61,7 @@
                         </div>
                         <div class="form-group mb-3">
                             <label for="">Password</label>
-                            <input type="text" name="password"  class="form-control" required>
+                            <input type="password" name="password"  class="form-control" required>
                         </div>
                         <div class="form-group mb-3">
                             <button type="submit" class="btn btn-primary">Add User</button>
