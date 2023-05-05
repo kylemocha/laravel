@@ -27,7 +27,6 @@ class User extends Authenticatable
         'email',
         'phonenumber',
         'address',
-        'type',
         'password',
         'is_admin',
     ];
@@ -51,11 +50,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
       
-    public function setPasswordAttribute($value)
-    {
-    $this->attributes['password'] = Hash::make($value);
-    }
-
     public function scopeUserr($query){
      return $query->where('user_id',Auth::user()->id); 
     }
