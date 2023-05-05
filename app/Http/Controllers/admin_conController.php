@@ -52,6 +52,7 @@ class admin_conController extends Controller
       $users->is_admin = $request->input('is_admin');
       $users->name = $request->input('name');
       $users->email = $request->input('email');
+      $users->type = $request->input('type');
       $users->phonenumber = $request->input('phonenumber'); 
       $users->address = $request->input('address');
       $users->update();
