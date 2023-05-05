@@ -96,7 +96,7 @@
           <h3 class="h3-responsive" style="color: #006a89; text-shadow: 2px 2px 2px #ABCDEF; font-weight: bold;">Mental Health Test</h3>
           <p style="color: #006a89;">To assess your mental health requirements</p>
           <li class="list-inline-item">
-            <a href="#" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Take a Test</a>
+            <a href="https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9" target="_blank" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Take a Test</a>
           </li>
         </div>
       </div>
@@ -111,7 +111,7 @@
           <h3 class="h3-responsive" style="color: #006a89; text-shadow: 2px 2px 2px #ABCDEF; font-weight: bold;">Mental health is important</h3>
           <p style="color: #006a89;">How to care for our mental health</p>
           <li class="list-inline-item">
-            <a href="#" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Read More</a>
+            <a href="https://www.health.harvard.edu/topics/mental-health/all" target="_blank" class="btn btn-primary d-flex justify-content-center d-md-table mx-auto">Read More</a>
           </li>
         </div>
       </div>
