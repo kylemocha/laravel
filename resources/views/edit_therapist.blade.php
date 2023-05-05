@@ -52,6 +52,10 @@
                             <input type="text" name="email" value="{{$users->email}}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
+                            <label for="">Job Title</label>
+                            <input type="text" name="type" value="{{$users->type}}" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
                             <label for="">Phone</label>
                             <input type="text" name="phonenumber" value="{{$users->phonenumber}}" class="form-control">
                         </div>

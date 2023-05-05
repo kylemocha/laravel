@@ -52,6 +52,10 @@
                             <input type="text" name="name" class="form-control" required>
                         </div>
                         <div class="form-group mb-3">
+                            <label for="">Job Title for Therapist</label>
+                            <input type="text" name="type" class="form-control" required>
+                        </div>
+                        <div class="form-group mb-3">
                             <label for="">Email</label>
                             <input type="text" name="email" class="form-control" required>
                         </div>

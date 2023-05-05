@@ -87,7 +87,7 @@
             <th>User ID</th>
             <th>Role</th>
             <th>User Name</th>
-            <!--<th>Therapist Job Title</th>-->
+            <th>Therapist Job Title</th>
             <th>Email</th>
             <th>Add User</th>
             <th>Actions</th>  
@@ -98,7 +98,7 @@
             <td>{{ $user->id }}</td>
             <td>{{ $user->is_admin }}</td>
             <td>{{ $user->name}}</td>
-           
+            <td>{{ $user->type}}</td>
             <td>{{ $user->email }}</td>
             <td><a style="text-decoration: underline;" href= "{{ url('add-user/'.$user->id) }}">Add User</a> 
             </td>
