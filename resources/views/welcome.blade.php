@@ -256,7 +256,7 @@
             Links
           </h6>
           <p>
-            <a href="main_home" class="text-reset">Home</a>
+            <a href="welcome" class="text-reset">Home</a>
           </p>
           <p>
             <a href="https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire" class="text-reset" target="_blank">Take PHQ-9 Test</a>
