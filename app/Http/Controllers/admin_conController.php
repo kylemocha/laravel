@@ -34,6 +34,20 @@ class admin_conController extends Controller
         return redirect('admin')->withSuccess('Successfully added a user.');
     }
 
+    function loginUser(Request $request)
+    {    
+        $request->validate([
+            'email' => 'required',
+            'password' => 'required',
+        ]);
+   
+        $credentials = $request->only('email', 'password');
+        if (Auth::attempt($credentials)) {
+            return redirect()->intended('home_user')
+                        ->withSuccess('Signed in');
+        }
+    }
+
 
     function deleteUser($id) //delete
     {
