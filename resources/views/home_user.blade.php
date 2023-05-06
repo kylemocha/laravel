@@ -516,8 +516,8 @@
                   <th>Date Created</th>
                   <th>Content</th>
                   <th>Edit</th>
-                  <th>Share</th>
                   <th>Delete</th>
+                  <th>Share</th>
               </tr>
           </thead>
           <tbody>
