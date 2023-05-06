@@ -637,7 +637,7 @@
         <i class="fas fa-align-left"></i>
         <span></span>
        </button>
-       <h2 style="font-weight: bold;">Notification</h2>
+       <h2 style="font-weight: bold;">Notification </h2>
        <h6 class="subtitle font-weight-normal" style="color: #8d97ad;">View your notifications and stay up to date.</h6>
 
        <table class="table table-striped" id="editable">
