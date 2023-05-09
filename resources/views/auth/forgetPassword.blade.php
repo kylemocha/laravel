@@ -31,6 +31,7 @@
                 <div class="card">
                     <div class="card-header">Reset Password <a href="login"><span class="close">&times;</span></a></div>
                     <div class="card-body">
+                      
     
                       @if (Session::has('message'))
                            <div class="alert alert-success" role="alert">
