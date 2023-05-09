@@ -367,7 +367,8 @@
       </table>   
       
       <br>
-      <h3 style="font-weight: bold; margin:5px;">Ana Maas Schedule's</h3>
+
+      <h3 style="font-weight: bold; margin:5px;">Ana Maas Schedule</h3>
 
       <div class="container">
         <div class="row">

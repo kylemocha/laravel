@@ -30,6 +30,9 @@ class JournalViewController extends Controller
         $specialists = User::orderBy('is_admin', 'ASC')->where('is_admin', 2)->get();
         $ratings = Ratings::userr()->get();
 
+        //$meeps = User::where('user_id', $user_id)->first(); 
+        $meeps = User::take(1)->first();
+
         //calendar
         $events = array();
         $events = Events::orderBy('user_id', 'ASC')->where('user_id', 3)->get();
@@ -42,29 +45,9 @@ class JournalViewController extends Controller
               ];
             }
 
-        $rivers = array();
-        $rivers = Events::orderBy('user_id', 'ASC')->where('user_id', 4)->get();
-
-        foreach($rivers as $river){
-            $rivers [] = [
-                'title' =>  $river['name'],
-                'start' =>   $river['date'],
-                'time' =>   $river['time'],
-              ];
-            }
-
-            $roses = array();
-            $roses = Events::orderBy('user_id', 'ASC')->where('user_id', 5)->get();
-    
-            foreach($roses as $rose){
-                $roses [] = [
-                    'title' =>  $rose['name'],
-                    'start' =>   $rose['date'],
-                    'time' =>   $rose['time'],
-                  ];
-                }
        
-        return view('home_user', compact('posts', 'users', 'apps', 'notifs', 'specialists', 'ratings', 'events', 'rivers', 'roses'));
+       
+        return view('home_user', compact('posts', 'users', 'apps', 'notifs', 'specialists', 'ratings', 'events', 'meeps'));
        
     }  
 
